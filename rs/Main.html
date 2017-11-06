@@ -20,6 +20,9 @@
     <base href="">
     <link rel="home" href="/">
     <link rel="stylesheet" href="source/templates/default/style.css" type="text/css" media="screen">
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="source/templates/default/bootstrap/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="source/templates/default/style.css" type="text/css" media="screen">
 
 
     <script type="text/javascript" src="source/common/jquery/jquery.min.js"></script>
@@ -98,23 +101,6 @@
 
         /* Navigation */
 
-        div.topglmen {
-            height: 35px;
-            width: 100%;
-            background-color: #99CCFF;
-            text-align: center;
-            font-size: 16px;
-            border-top: 4px solid #6699CC;
-        }
-
-        .topglmendv {
-            float: left;
-        }
-
-        .topglmenurl {
-            color: #3f5b77;
-            text-decoration: none;
-        }
 
         /* Sub Navigation */
         div.topsubmenD {
@@ -191,18 +177,21 @@
     </div>
 </div>
 
-<div class=topglmen>
-    <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-    <div id=search_heard>
+<div class="row no-gutters topglmen-wrap">
+    <div class="topglmen col-lg-8">
+        <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
+        <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
+        <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
+        <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
+        <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
+        <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
+        <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
+    </div>
+
+    <div id=search_heard class="col-lg-4 search-form">
         <form accept-charset="UTF-8" action="/isearch" method="get">
-            <input id=search_formi type="text" name=q id="q" size="90" maxlength="150">
-            <input type="submit" id="search_forms" value=" искатЬ ">
+            <input class="search-form-input input-placeholder" type="text" placeholder="Искать" name=q id="q" size="90" maxlength="150">
+            <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
         </form>
     </div>
 </div>
@@ -1698,18 +1687,21 @@
 </div>
 
 
-<div class=topglmen>
-    <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-    <div id=search_heard>
+<div class="row no-gutters topglmen-wrap">
+    <div class="topglmen col-lg-8">
+        <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
+        <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
+        <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
+        <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
+        <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
+        <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
+        <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
+    </div>
+
+    <div id=search_heard class="col-lg-4 search-form">
         <form accept-charset="UTF-8" action="/isearch" method="get">
-            <input id=search_formi type="text" name=q id="q" size="90" maxlength="150">
-            <input type="submit" id="search_forms" value=" искатЬ ">
+            <input class="search-form-input input-placeholder" type="text" placeholder="Искать" name=q id="q" size="90" maxlength="150">
+            <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
         </form>
     </div>
 </div>
