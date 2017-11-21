@@ -19,7 +19,6 @@
     <link rel="cm/uploads/logo.jpg">
     <base href="">
     <link rel="home" href="/">
-    <link rel="stylesheet" href="source/templates/default/style.css" type="text/css" media="screen">
     <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="source/templates/default/bootstrap/bootstrap.css" type="text/css" media="screen">
     <link rel="stylesheet" href="source/templates/default/style.css" type="text/css" media="screen">
@@ -147,7 +146,6 @@
         #footergl .right {
             width: 140px;
             float: right;
-            left;
             text-align: right;
             padding: 15px;
             height: 100%;
@@ -175,7 +173,7 @@
 
 
     </div>
-</div>
+
 
 <div class="row no-gutters topglmen-wrap">
     <div class="topglmen col-lg-8">
@@ -208,12 +206,12 @@
 
 </div>
 
-<div id="sub-container">
+<div id="sub-container" class="clearfix sub-container">
 
 
-    <div id="wrapper">
+    <div id="wrapper" class="clearfix">
 
-        <div id="lsidebars">
+        <div id="lsidebars" class="col-lg-2 lsidebars">
 
             <aside id="lsidebar1">
                 <div class="wrap">
@@ -334,16 +332,16 @@
             </aside><!-- div id="lsidebar-1" -->
         </div><!-- div id="lsidebars" -->
 
-        <div id="content">
+        <div id="content" class="col-lg-7 content">
 
 
             <div class="type type_home">
 
-                <div class="column_top">
+                <div class="column_top clearfix">
 
                     <div class="col_top-left">
 
-                        <div id="widget bigtop">
+                        <div id="widget bigtop" class="bigtop">
                             <div class="wr"><h2 class="box"><span>BMedia</span></h2>
                                 <div class="widget-content">
                                     <ul class="is_link page_list BMedia">
@@ -452,16 +450,17 @@
                             </div>
                         </div>
 
-                        <div id="widget middledescription">
+                        <div id="widget middledescription" class="widget">
                             <div class="wr"><h2 class="box"><span>OneLeftPhoto</span></h2>
                                 <div class="widget-content">
                                     <ul class="is_link page_list OneLeftPhoto">
-                                        <li>
+                                        <li class="clearfix">
                                             <div class="widget_header"><h6><a
                                                     href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
-                                                бизнес: как мотивировать сотрудников</a></h6></div>
-                                            <div class="widget_date">07.07.2017</div>
-                                            <div class="widget_count_page">358</div>
+                                                бизнес: как мотивировать сотрудников</a></h6>
+                                                <div class="widget_date">07.07.2017</div>
+                                                <div class="widget_count_page">358</div>
+                                            </div>
                                             <div class="widget_prev"><a
                                                     href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
                                                     src="cm/uploads/prev/23/6642_22.gif" class="widgit_img"
@@ -588,7 +587,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+
 
                 </div><!-- class="col_top-left" -->
 
@@ -833,7 +832,7 @@
                 <div id="widget interview">
                     <div class="wr"><h2 class="box"><span>BigLeft</span></h2>
                         <div class="widget-content">
-                            <ul class="is_link page_list BigLeft">
+                            <ul class="is_link page_list BigLeft clearfix">
                                 <li><h6 class="widget_tit"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
                                     бизнес: как мотивировать сотрудников</a></h6>
                                     <div class="widget_date">07.07.2017</div>
@@ -1116,7 +1115,7 @@
     </div><!-- div id="content" -->
 
 
-    <div id="sidebars">
+    <div id="sidebars" class="col-lg-3 sidebars">
 
         <aside id="sidebar2">
             <div class="wrap">
@@ -1203,7 +1202,7 @@
                 <div class="widget block">
                     <div class="wr"><h2 class="box"><span>PhotoBlock</span></h2>
                         <div class="widget-content">
-                            <ul class="is_link page_list PhotoBlock">
+                            <ul class="is_link page_list PhotoBlock clearfix">
                                 <li>
                                     <div class="widget_prev"><a
                                             href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
@@ -1763,9 +1762,7 @@
                 href="http://rosinvest.com/news/archives/y/2003/">2003</a>
 
     </div>
-</div>
-
-<!-- /Footer --></div>
+</div><!-- /Footer -->
 
 
 <!--  Время: 1.6760 | SQL: 33 | Память: 3.91MB-->
