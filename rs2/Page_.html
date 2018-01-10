@@ -174,7 +174,7 @@
         #footergl .right {
             width: 140px;
             float: right;
-            left;
+            
             text-align: right;
             padding: 15px;
             height: 100%;
@@ -189,7 +189,7 @@
     </style>
 
 
-    <div id=myheard>
+    <div id=myheard class="myheard clearfix">
         <div id=logotip>
             <a href="/"><strong>RosInvest</strong>.Com</a>
         </div>
@@ -203,19 +203,20 @@
 
     </div>
 
-
-<div class=topglmen>
-    <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
+<div class="row no-gutters topglmen-wrap">
+<div class="topglmen col-lg-8">
+    <div class="topglmendv "><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
     <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
     <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-    <div id=search_heard>
+   </div> 
+    <div id=search_heard class="col-lg-4 search-form">
         <form accept-charset="UTF-8" action="/isearch" method="get">
-            <input id=search_formi type="text" name=q id="q" size="90" maxlength="150">
-            <input type="submit" id="search_forms" value=" искатЬ ">
+            <input id=search_formi class="search-form-input input-placeholder" type="text" name=q id="q" size="90" maxlength="150">
+            <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value=" искатЬ ">
         </form>
     </div>
 </div>
