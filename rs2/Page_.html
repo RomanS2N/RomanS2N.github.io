@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -113,7 +114,7 @@
 
         div.topglmen {
             height: 35px;
-            width: 100%;
+          
             background-color: #99CCFF;
             text-align: center;
             font-size: 16px;
@@ -163,28 +164,7 @@
             font-size: 13px;
         }
 
-        #footergl .left {
-            width: 220px;
-            float: left;
-            text-align: left;
-            padding: 20px;
-            height: 100%;
-        }
-
-        #footergl .right {
-            width: 140px;
-            float: right;
-            
-            text-align: right;
-            padding: 15px;
-            height: 100%;
-        }
-
-        #footergl .center {
-            margin: 10px 280px;
-            padding: 10px;
-            text-align: justify;
-        }
+      
 
     </style>
 
@@ -217,7 +197,7 @@
     <div id=search_heard class="col-lg-4 search-form">
         <form accept-charset="UTF-8" action="/isearch" method="get">
             <input id=search_formi class="search-form-input input-placeholder" type="text" name=q id="q" size="90" maxlength="150">
-            <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value=" искатЬ ">
+            <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
         </form>
     </div>
 </div>
@@ -234,13 +214,13 @@
 
 </div>
 
-<div id="sub-container">
+<div id="sub-container" class="clearfix sub-container">
 
 
-    <div id="wrapper">
+    <div id="wrapper" >
 
 
-        <div id="content">
+        <div id="content" class="col-lg-7 content">
 
 
             <div class="type type_page">
@@ -342,8 +322,9 @@
                                         idesc = $(this).find("span");
                                         if (idesc) idesc = idesc.text();
                                         if (idesc != '') {
-                                            if (ititle != '') ititle = ititle + '</p>
-                                                < p > ';idesc=' < i > '+idesc+<a name="cut"></a>' < /i>';}}$.fancybox.open({href:isrc,beforeLoad:function(){this.title=ititle+idesc;},});});});})(jQuery);</script>
+                                            if (ititle != '') ititle = ititle + '</p> < p > ';
+                                            idesc=' < i > '+idesc+'<a name="cut"></a></i>';
+                                        }}$.fancybox.open({href:isrc,beforeLoad:function(){this.title=ititle+idesc;},});});});})(jQuery);</script>
                         <script type="text/javascript">(function ($) {
                             $('head').append('<link rel="stylesheet" href="source/templates/default/stock/3rdParty/ad-gallery/jquery.ad-gallery.css" type="text/css" />');
                         })(jQuery);</script>
@@ -365,6 +346,11 @@
                                 });
                             });
                         })(jQuery);</script>
+                        <script type="text/javascript">
+			$(document).ready(function() {
+			$(".fancybox").fancybox();
+		});
+		</script>
                     </div>
                     <p>&laquo;Люди чувствовали себя намного счастливее, когда &nbsp;оглядывались н<u>азад и размышляли о
                         времени</u>, когда &nbsp;тратили деньги на других, а не на самих себя&raquo;, - сказала <em>она
@@ -401,7 +387,7 @@
                         </figure>
                     </div>
                     <p>Рисунок с ширеной больше обёртки (нужно сделать так что бы при их появлении они втискивались в
-                        страницу автоматически):</p>  <img alt="" height="1457"
+                        страницу автоматически):</p>  <img alt="" 
                                                            src="http://www.eurasiatravel.kz/assets/images/resources/2248/3ea8033454f18f133829c2e3d6c1415f0d44c12a.jpg"
                                                            width="1080"/>
                     <p></p>
@@ -954,7 +940,7 @@
         </div><!-- div id="content" -->
 
 
-        <div id="rsidebars">
+        <div id="rsidebars" class="col-lg-2">
 
             <nav class="parts">
                 <ul class="cat_link">
@@ -1021,8 +1007,8 @@
                             <div class="widget-content">
                                 <ul class="is_link page_list LСolumn">
                                     <li>
-                                        <div class="widget_prev"><a
-                                                href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
+                                        <div class="widget_prev"><a class="fancybox"
+                                                href="cm/uploads/prev/23/6642_22.gif"><img
                                                 src="cm/uploads/prev/23/6642_22.gif" class="widgit_img"
                                                 title="Аптечный бизнес: как мотивировать сотрудников"></a></div>
                                         <h6 class="widget_tit"><a
@@ -1211,7 +1197,7 @@
         </div> <!-- div class=rsidebars -->
 
 
-        <div id="sidebars">
+        <div id="sidebars" class="col-lg-3 sidebars">
 
             <aside id="sidebar2">
                 <div class="wrap">
@@ -1792,7 +1778,8 @@
 </div>
 
 
-<div class=topglmen>
+<div  class="row no-gutters topglmen-wrap">
+      <div class="topglmen col-lg-8">
     <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
@@ -1800,38 +1787,22 @@
     <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
     <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-    <div id=search_heard>
+    </div>
+    <div id=search_heard class="col-lg-4 search-form">
         <form accept-charset="UTF-8" action="/isearch" method="get">
-            <input id=search_formi type="text" name=q id="q" size="90" maxlength="150">
-            <input type="submit" id="search_forms" value=" искатЬ ">
+            <input class="search-form-input input-placeholder" id=search_formi type="text" placeholder="Искать" name=q id="q" size="90" maxlength="150">
+            <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
         </form>
     </div>
-</div>
 
+</div>
 <div class=topsubmenD></div>
 <div id="up_body">
 </div><!-- Footer -->
-<div id="footergl">
-    <div class="right">
-        <!--RAX counter-->
-        <script language="JavaScript"><!--
-        document.write('<a href="http://www.rax.ru/click" ' +
-            'target=_blank><img src="http://counter.yadro.ru/hit?t44.6;r' +
-            escape(document.referrer) + ((typeof(screen) == 'undefined') ? '' :
-                ';s' + screen.width + '*' + screen.height + '*' + (screen.colorDepth ?
-                screen.colorDepth : screen.pixelDepth)) + ';' + Math.random() +
-            '" width=1 height=1 border=0></a>')//--></script><!--/RAX-->
+<div id="footergl" class="footergl">
+   
 
-        <!--Rating@Mail.ru counter-->
-        <a rel="nofollow" target="_top" href="http://top.mail.ru/jump?from=549851">
-            <img src="http://d3.c6.b8.a0.top.mail.ru/counter?id=549851;t=96"
-                 border="0" height="18" width="88" alt="Rating@Mail.ru"></a>
-        <!--// Rating@Mail.ru counter-->
-
-
-    </div>
-
-    <div class="left">
+    <div class="left col-md-2">
         Условия <a href="/about/reklama-na-sajte">размещения рекламы</a>
         <p>
             Наша <a href="/about/redakcija">редакция</a>
@@ -1839,7 +1810,7 @@
             <a href="/msg.php">Обратная связь</a>
     </div>
 
-    <div class="center">
+    <div  class="center col-md-8">
         RosInvest.Com не несет ответственности за опубликованные материалы и комментарии пользователей. Возрастной
         цензор 16+.<p>
         Ответственность за высказанные, размещённую информацию и оценки, в рамках проекта RosInvest.Com, лежит полностью
@@ -1863,6 +1834,24 @@
                 href="http://rosinvest.com/news/archives/y/2005/">2005</a>, <a
                 href="http://rosinvest.com/news/archives/y/2004/">2004</a>, <a
                 href="http://rosinvest.com/news/archives/y/2003/">2003</a>
+
+ </div>
+     <div class="right col-md-2">
+        <!--RAX counter-->
+        <script language="JavaScript"><!--
+        document.write('<a href="http://www.rax.ru/click" ' +
+            'target=_blank><img src="http://counter.yadro.ru/hit?t44.6;r' +
+            escape(document.referrer) + ((typeof(screen) == 'undefined') ? '' :
+                ';s' + screen.width + '*' + screen.height + '*' + (screen.colorDepth ?
+                screen.colorDepth : screen.pixelDepth)) + ';' + Math.random() +
+            '" width=1 height=1 border=0></a>')//--></script><!--/RAX-->
+
+        <!--Rating@Mail.ru counter-->
+        <a rel="nofollow" target="_top" href="http://top.mail.ru/jump?from=549851">
+            <img src="http://d3.c6.b8.a0.top.mail.ru/counter?id=549851;t=96"
+                 border="0" height="18" width="88" alt="Rating@Mail.ru"></a>
+        <!--// Rating@Mail.ru counter-->
+
 
     </div>
 </div><!-- /Footer -->
