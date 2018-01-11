@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -323,8 +324,9 @@
                                         idesc = $(this).find("span");
                                         if (idesc) idesc = idesc.text();
                                         if (idesc != '') {
-                                            if (ititle != '') ititle = ititle + '</p>
-                                                < p > ';idesc=' < i > '+idesc+<a name="cut"></a>' < /i>';}}$.fancybox.open({href:isrc,beforeLoad:function(){this.title=ititle+idesc;},});});});})(jQuery);</script>
+                                            if (ititle != '') ititle = ititle + '</p> < p > ';
+                                            idesc=' < i > '+idesc+'<a name="cut"></a></i>';
+                                        }}$.fancybox.open({href:isrc,beforeLoad:function(){this.title=ititle+idesc;},});});});})(jQuery);</script>
                         <script type="text/javascript">(function ($) {
                             $('head').append('<link rel="stylesheet" href="source/templates/default/stock/3rdParty/ad-gallery/jquery.ad-gallery.css" type="text/css" />');
                         })(jQuery);</script>
@@ -346,6 +348,11 @@
                                 });
                             });
                         })(jQuery);</script>
+                        <script type="text/javascript">
+			$(document).ready(function() {
+			$(".fancybox").fancybox();
+		});
+		</script>
                     </div>
                     <p>&laquo;Люди чувствовали себя намного счастливее, когда &nbsp;оглядывались н<u>азад и размышляли о
                         времени</u>, когда &nbsp;тратили деньги на других, а не на самих себя&raquo;, - сказала <em>она
@@ -1002,8 +1009,8 @@
                             <div class="widget-content">
                                 <ul class="is_link page_list LСolumn">
                                     <li>
-                                        <div class="widget_prev"><a
-                                                href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
+                                        <div class="widget_prev"><a class="fancybox"
+                                                href="cm/uploads/prev/23/6642_22.gif"><img
                                                 src="cm/uploads/prev/23/6642_22.gif" class="widgit_img"
                                                 title="Аптечный бизнес: как мотивировать сотрудников"></a></div>
                                         <h6 class="widget_tit"><a
