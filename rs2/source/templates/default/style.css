@@ -443,7 +443,9 @@ h2.box, .widget h2 {
 .page_list .widget_tit, .page_list .widget_header h6 {
   font-size: 108.33%;
   margin: 0 0 5px; }
-
+.PhotoBlock .widget_prev{
+    margin-bottom: 5px;  
+}
 .bigtop .page_list .widget_tit {
   font-size: 200%;
   line-height: 1.17;
@@ -700,6 +702,7 @@ h2.box, .widget h2 {
   margin-bottom: 20px; }
 
 .widget.newws .widget-content ul li,
+.widget-content ul li,
 .parts ul.cat_link li {
   border-top: 1px solid #e5e5e5;
   padding-top: 7px;
@@ -881,7 +884,7 @@ Elements Page
   margin: 0 5px 0 0;
   border: none;
   padding: 0;
-  width: 95px;
+  width: max-content;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -moz-box-sizing: border-box;
