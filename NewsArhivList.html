@@ -19,10 +19,11 @@
     <link rel="cm/uploads/logo.jpg">
     <base href="">
     <link rel="home" href="/">
+    <link rel="stylesheet" href="source/templates/default/bootstrap/bootstrap.css" type="text/css" media="screen">
     <link rel="alternate" type="application/rss+xml" title="Все новости бизнеса" href="/rosinvest_com.rss">
     <link rel="stylesheet" href="source/templates/default/style.css" type="text/css" media="screen">
-<link rel="stylesheet" href="source/templates/default/bootstrap/bootstrap.css" type="text/css" media="screen">
-
+    <link rel="stylesheet" href="source/templates/default/icoMoon.css" media="all">
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="source/common/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="source/templates/default/js/my_ef.js"></script>
 
@@ -100,12 +101,11 @@
         /* Navigation */
 
         div.topglmen {
-            height: 35px;
-            width: 100%;
+           
             background-color: #99CCFF;
             text-align: center;
             font-size: 16px;
-            border-top: 4px solid #6699CC;
+            
         }
 
         .topglmendv {
@@ -119,8 +119,6 @@
 
         /* Sub Navigation */
         div.topsubmenD {
-            background-color: #ffffff;
-            border-bottom: 4px solid #6699CC;
         }
 
         div.topsubmen {
@@ -151,28 +149,7 @@
             font-size: 13px;
         }
 
-        #footergl .left {
-            width: 220px;
-            float: left;
-            text-align: left;
-            padding: 20px;
-            height: 100%;
-        }
-
-        #footergl .right {
-            width: 140px;
-            float: right;
-            left;
-            text-align: right;
-            padding: 15px;
-            height: 100%;
-        }
-
-        #footergl .center {
-            margin: 10px 280px;
-            padding: 10px;
-            text-align: justify;
-        }
+        
 
     </style>
 
@@ -192,7 +169,9 @@
     </div>
 </div>
 
-<div class=topglmen>
+
+<div class="row no-gutters topglmen-wrap"> 
+<div class="topglmen col-lg-8">
     <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
@@ -200,10 +179,11 @@
     <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
     <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-    <div id=search_heard>
+    </div>        
+    <div id=search_heard class="col-lg-4 search-form">
         <form accept-charset="UTF-8" action="/isearch" method="get">
-            <input id=search_formi type="text" name=q id="q" size="90" maxlength="150">
-            <input type="submit" id="search_forms" value=" искатЬ ">
+            <input id=search_formi class="search-form-input input-placeholder" type="text" name=q id="q" size="90" maxlength="150">
+            <input type="submit" id="search_forms" class="search-form-btn svg-icon svg-icon--search" value="">
         </form>
     </div>
 </div>
@@ -1121,7 +1101,7 @@
                     <div class="widget block">
                         <div class="wr"><h2 class="box"><span>PhotoBlock</span></h2>
                             <div class="widget-content">
-                                <ul class="is_link page_list PhotoBlock">
+                                <ul class="is_link page_list PhotoBlock clearfix">
                                     <li>
                                         <div class="widget_prev"><a
                                                 href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
@@ -1171,7 +1151,7 @@
                     <div class="widget littel_preview_description">
                         <div class="wr"><h2 class="box"><span>LTxtPhoto</span></h2>
                             <div class="widget-content">
-                                <ul class="is_link page_list LTxtPhoto">
+                                <ul class="is_link page_list LTxtPhoto clearfix">
                                     <li><h6 class="widget_tit"><a
                                             href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес:
                                         как мотивировать сотрудников</a></h6>
@@ -1620,8 +1600,8 @@
     </div>
 </div>
 
-
-<div class=topglmen>
+<div  class="row no-gutters topglmen-wrap">
+<div class="topglmen col-lg-8">
     <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
@@ -1629,10 +1609,12 @@
     <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
     <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-    <div id=search_heard>
+    </div>
+    <div id=search_heard class="col-lg-4 search-form">
+       
         <form accept-charset="UTF-8" action="/isearch" method="get">
-            <input id=search_formi type="text" name=q id="q" size="90" maxlength="150">
-            <input type="submit" id="search_forms" value=" искатЬ ">
+            <input class="search-form-input input-placeholder" id=search_formi type="text" name=q id="q" size="90" maxlength="150">
+            <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
         </form>
     </div>
 </div>
@@ -1640,27 +1622,9 @@
 <div class=topsubmenD></div>
 <div id="up_body">
 </div><!-- Footer -->
-<div id="footergl">
-    <div class="right">
-        <!--RAX counter-->
-        <script language="JavaScript"><!--
-        document.write('<a href="http://www.rax.ru/click" ' +
-            'target=_blank><img src="http://counter.yadro.ru/hit?t44.6;r' +
-            escape(document.referrer) + ((typeof(screen) == 'undefined') ? '' :
-                ';s' + screen.width + '*' + screen.height + '*' + (screen.colorDepth ?
-                screen.colorDepth : screen.pixelDepth)) + ';' + Math.random() +
-            '" width=1 height=1 border=0></a>')//--></script><!--/RAX-->
-
-        <!--Rating@Mail.ru counter-->
-        <a rel="nofollow" target="_top" href="http://top.mail.ru/jump?from=549851">
-            <img src="http://d3.c6.b8.a0.top.mail.ru/counter?id=549851;t=96"
-                 border="0" height="18" width="88" alt="Rating@Mail.ru"></a>
-        <!--// Rating@Mail.ru counter-->
-
-
-    </div>
-
-    <div class="left">
+<div id="footergl" class="footergl">
+  
+    <div class="left col-md-2">
         Условия <a href="/about/reklama-na-sajte">размещения рекламы</a>
         <p>
             Наша <a href="/about/redakcija">редакция</a>
@@ -1668,7 +1632,7 @@
             <a href="/msg.php">Обратная связь</a>
     </div>
 
-    <div class="center">
+    <div class="center col-md-8">
         RosInvest.Com не несет ответственности за опубликованные материалы и комментарии пользователей. Возрастной
         цензор 16+.<p>
         Ответственность за высказанные, размещённую информацию и оценки, в рамках проекта RosInvest.Com, лежит полностью
@@ -1710,9 +1674,29 @@
                 href="/news/archives/d/20170328/">28</a> <a href="/news/archives/d/20170329/">29</a> <a
                 href="/news/archives/d/20170330/">30</a> <a href="/news/archives/d/20170331/">31</a></div>
     </div>
+    
+      <div class="right col-md-2">
+        <!--RAX counter-->
+        <script language="JavaScript"><!--
+        document.write('<a href="http://www.rax.ru/click" ' +
+            'target=_blank><img src="http://counter.yadro.ru/hit?t44.6;r' +
+            escape(document.referrer) + ((typeof(screen) == 'undefined') ? '' :
+                ';s' + screen.width + '*' + screen.height + '*' + (screen.colorDepth ?
+                screen.colorDepth : screen.pixelDepth)) + ';' + Math.random() +
+            '" width=1 height=1 border=0></a>')//--></script><!--/RAX-->
+
+        <!--Rating@Mail.ru counter-->
+        <a rel="nofollow" target="_top" href="http://top.mail.ru/jump?from=549851">
+            <img src="http://d3.c6.b8.a0.top.mail.ru/counter?id=549851;t=96"
+                 border="0" height="18" width="88" alt="Rating@Mail.ru"></a>
+        <!--// Rating@Mail.ru counter-->
+
+
+    </div>
+
 </div>
 
-<!-- /Footer --></div>
+<!-- /Footer -->
 
 
 <!-- SIMULATION ASYNCHRONOUS LOADING BANNERS  -->
