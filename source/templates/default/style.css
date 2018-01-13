@@ -700,6 +700,7 @@ h2.box, .widget h2 {
   margin-bottom: 20px; }
 
 .widget.newws .widget-content ul li,
+.widget-content ul li,
 .parts ul.cat_link li {
   border-top: 1px solid #e5e5e5;
   padding-top: 7px;
