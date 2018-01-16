@@ -76,7 +76,27 @@ blockquote {
   padding: 25px 20px;
   border-left: none;
   margin-bottom: 15px; }
+button, input[type="button"], input[type="reset"],input[type="submit"]:not(#search_forms){
+	    background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 700;
+    border: none;
+    padding: 10px 15px;
+	
+	
+}
+ html input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:not(#search_forms):hover ,button:hover {background-color: #ed1c24;}
 
+select,input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i]:not(#search_formi) {
+	border: 1px solid #d0d0d0;
+    background-color: #fff;
+    background-image: none !important;
+    height: 37px;
+    padding: 5px 10px;
+}
+ 
 .myheard {
   width: 100%;
   background-color: #FFFFFF;
@@ -209,6 +229,17 @@ h6 {
   font: 700 14px/20px Georgia, "Times New Roman", Times, serif;
   letter-spacing: 0;
   margin-bottom: 5px; }
+
+.breadcrumb{
+    background-color: #fff;
+    border-radius: 0;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 7px 0;
+    color: #555;
+    font-size: 11px;
+    font-family: Georgia,&quot,Times New Roman&quot,Times,serif;
+	font-style: italic;}
 
 a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
 #footergl a:hover,
@@ -420,6 +451,20 @@ Main Content
 
 .page_list h2 {
   font-size: 100%; }
+.MLittel{
+	list-style-type: square;
+    padding-right: 15px;
+    background: url(images/dot-1.png) repeat-y 49.5% 0;
+    list-style-position: inside;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+	
+}
+.widget-content .MLittel li {
+	margin-right: 2%;
+    margin-left: 3%;
+}
 
 h2.box, .widget h2 {
   text-transform: uppercase;
@@ -702,7 +747,6 @@ h2.box, .widget h2 {
   margin-bottom: 20px; }
 
 .widget.newws .widget-content ul li,
-.widget-content ul li,
 .parts ul.cat_link li {
   border-top: 1px solid #e5e5e5;
   padding-top: 7px;
@@ -710,7 +754,22 @@ h2.box, .widget h2 {
   margin-bottom: 0;
   color: #222;
   list-style: none; }
+  ul.is_link li,ul.cat_link li{
+	  list-style-type:none;
+	  
+  }
+   ul.is_link li{
+	 font-weight:bold;
+	  
+  }
+li.current-page > span { font-weight: bold; }
 
+.widget-content ul li .level1{
+	margin-left:3%;
+}
+.widget-content ul li .level2 {
+    margin-left: 3%;
+}
 .widget.newws .widget-content > ul > li:first-child,
 .parts > ul.cat_link > li:first-child {
   padding-top: 0;
@@ -725,7 +784,7 @@ h2.box, .widget h2 {
   margin-bottom: 20px; }
 
 .widget.newws ul li:before,
-.parts ul.cat_link li:before {
+ ul.cat_link li:before {
   content: "\e604";
   font-family: 'icomoon';
   margin-right: 5px;
@@ -891,10 +950,8 @@ Elements Page
   color: #222; }
 
 .tabs .tabs-nav li span {
-  background-color: #e2e1e2;
   display: block;
   font-weight: 700;
-  padding: 5px 0;
   text-align: center;
   outline: none;
   text-transform: uppercase;
@@ -902,8 +959,24 @@ Elements Page
   transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
-  cursor: pointer; }
+  cursor: pointer; 
 
+	height: 44px;
+    background-color: #e2e1e2;
+    color: #fff;
+    font-weight: 700;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border: none;
+    padding: 10px 15px;
+    line-height: 22px;
+
+
+
+}
+li.tabs-current  span{
+	 background-color: #222;
+	 color: #fff; 
+}
 .tabs .tabs-nav li.active span,
 .tabs .tabs-nav li:hover span {
   text-decoration: none;
@@ -912,7 +985,7 @@ Elements Page
 
 .tabs-box {
   background-color: #fff;
-  padding: 10px 0 0; }
+  padding: 20px 0 0; }
 
 .tab-container-1 ul li {
   list-style: none;
@@ -977,7 +1050,8 @@ img {
 /* FIRST */
 ul {
   list-style: none; }
-
+  
+li.current-page > span { font-weight: bold; }
 a img {
   border: 0; }
 
@@ -1124,9 +1198,9 @@ pre {
 blockquote {
   margin-top: 35px;
   margin-bottom: 35px;
-  margin-left: 50px;
+  
   padding-left: 15px;
-  border-left: 3px solid #6699CC; }
+  }
 
 /*  -------   */
 blockquote p {
@@ -1310,16 +1384,45 @@ div.home_top {
 div.page_other_pages {
   margin: 20px 0 10px 0; }
 
-div.page_other_pages h3 {
-  border: 1px dashed #8591B7;
-  color: black;
-  margin: 0 0 5px 0;
-  background: #e6eff8;
-  padding: 4px 6px  4px; }
+div.page_other_pages h3 { 
+margin: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 5px 0;
+    margin-bottom: 15px;
+
+}
 
 div.page_other_pages ul {
   list-style-type: square;
-  padding-right: 15px; }
+  padding-right: 15px; 
+background: url(images/dot-1.png) repeat-y 49.5% 0;
+    list-style-position: inside;
+  -moz-column-count: 2; /* Firefox */
+  -webkit-column-count: 2; /* Safari and Chrome */
+  column-count: 2;
+}
+
+div.page_other_pages ul li {
+    list-style-type: none;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 7px;
+    margin-top: 7px;
+    margin-bottom: 0;
+    color: #222;
+    
+    margin-right: 2%;
+     margin-left: 2%;   
+    
+}
+
+div.page_other_pages ul .page_related_prev{
+    float: left;
+    margin-right: 10px;
+}
+
 
 div.category_desc {
   margin: 0 0 20px 0; }
@@ -1428,30 +1531,55 @@ div.calendar td a {
   text-decoration: underline; }
 
 /* COMMENT FORM */
+h3.comments {
+    margin: 0;
+    color: #222;
+    font: 700 20px/22px Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 0;
+    margin-bottom: 5px;
+    margin: 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
 div.comments-auth {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   padding: 10px;
   margin: 10px 0;
-  border: 1px dashed #8591B7;
-  background: #e6eff8; }
+      float: left;
+    width: 50%;
+ 
+  }
 
 div.comment-form div.comments-reg {
   margin: 0; }
 
 div.comment-form div.sep {
-  border-top: 1px solid #8591B7;
-  margin-top: 10px;
-  padding-top: 5px; }
+ 
+      }
 
 div.comment-form div.comments-textarea {
-  border: 1px solid #8591B7;
-  background: #e6eff8;
+  border: 1px solid #fff;
+  background: inherit;
   margin: 10px 0;
   padding: 10px;
   -webkit-border-radius: 10px;
-  border-radius: 10px; }
-
+  border-radius: 10px; 
+      float: left;
+    width: 50%;
+  
+  }
+div.comment-form div.comments-textarea label {
+	
+	font-size:12px;
+    color: #222;
+    font-weight: 700;
+    font-size: 12px;
+}
 div.comment-form input[type="radio"] {
   position: relative;
   top: 1px;
@@ -1473,9 +1601,32 @@ div.comment-form td {
 div.comment-form td.t1 {
   width: 85px;
   text-align: right; }
-
+div.comment-form .r1{
+	padding-top:1px;
+}
 div.comment-form td.t2 input {
   width: 100%; }
+  
+div.comment-form .r1 p input{
+	 width: calc(100% - 90px);
+	 border: 1px solid #d0d0d0;
+    background-color: #fff;
+    background-image: none !important;
+    height: 37px;
+    padding: 5px 10px;
+   
+	 
+}
+div.comment-form .r1 p label{
+width: 85px;
+    text-align: right;
+    display: block;
+    float: left;
+	padding-right:5px;
+	    color: #222;
+    font-weight: 700;
+	font-size:12px;
+}
 
 div.comment-form p.hint {
   margin: 0 0 5px 90px;
@@ -1489,8 +1640,34 @@ div.comment-form p.radio {
 
 div.comment-form textarea {
   width: 99%;
-  margin: 3px; }
-
+  margin: 3px;
+   border: 1px solid #d0d0d0;
+    background-color: #fff;
+    background-image: none !important;
+   
+    padding: 5px 10px;
+  }
+div.comment-form div.comments-textarea input{
+	border: 1px solid #d0d0d0;
+    background-color: #fff;
+    background-image: none !important;
+    height: 37px;
+    padding: 5px 10px;
+}
+div.comment-form div.comments-textarea input[type="submit"]{
+	background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 700;
+    border: none;
+    padding: 10px 15px;
+	float:right;
+	margin-top: 60px;
+}
+div.comment-form div.comments-textarea input[type="submit"]:hover{
+	background-color: #ED1C24;
+}
 *html div.comment-form textarea {
   width: 95%;
   margin: 3px; }
@@ -1537,7 +1714,10 @@ div.comment-error {
 /* COMMENTS */
 div.comments {
   margin: 20px 0 0 0; }
-
+div.tree-comment {
+   
+    border-bottom: 1px solid #d0d0d0;;
+}
 div.comments ul, div.comments ol {
   margin: 10px 0 20px 0;
   list-style-type: none; }
@@ -1546,13 +1726,20 @@ div.comments li {
   margin: 0 0 20px 30px; }
 
 div.comments li.users {
-  color: black; }
+  color: black; 
+  list-style-type:none;
+  }
+div.comments li.users p {
+padding-left: 100px;
+}
 
 div.comments li.comusers {
   color: black; }
 
 div.comments li.anonim {
-  color: black; }
+  color: black;
+list-style-type:none;
+  }
 
 div.comments li.anonim span.url {
   color: gray; }
@@ -1561,15 +1748,25 @@ div.comments li.anonim span.url a {
   color: gray; }
 
 div.comments div.comments_content {
-  color: black; }
+  color: black;
+  
+
+  }
 
 div.comments h3.comments {
-  border: 1px dashed #8591B7;
-  color: black;
-  margin: 0 0 5px 0;
-  background: #e6eff8;
-  padding: 3px; }
+ background-color: #222;
+    color: #fff;
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 700;
+    border: none;
+    padding: 10px 15px; }
 
+div.comments h3.comments:hover {
+	    background-color: #ed1c24;
+	
+}	
+	
 div.comments blockquote {
   margin-left: 0;
   padding: 10px;

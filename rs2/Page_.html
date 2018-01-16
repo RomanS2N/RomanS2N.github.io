@@ -68,7 +68,6 @@
 
         #up_body {
             text-align: center;
-            border-bottom: 2px solid #6699CC;
             padding: 0px;
             margin: 0px;
         }
@@ -115,12 +114,10 @@
         /* Navigation */
 
         div.topglmen {
-            height: 35px;
-          
-            background-color: #99CCFF;
+            height: 30px;
             text-align: center;
             font-size: 16px;
-            border-top: 4px solid #6699CC;
+            
         }
 
         .topglmendv {
@@ -135,7 +132,7 @@
         /* Sub Navigation */
         div.topsubmenD {
             background-color: #ffffff;
-            border-bottom: 4px solid #6699CC;
+        
         }
 
         div.topsubmen {
@@ -190,6 +187,7 @@
 <div class="row no-gutters topglmen-wrap"> 
 
 <div class="topglmen col-lg-8">
+	<div class="topglmendv home-menu-icon"><a class="icon-home" href="#"></a></div>
     <div class="topglmendv "><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
@@ -230,7 +228,7 @@
             <div class="type type_page">
 
 
-                <nav id="page_path">
+                <nav id="page_path" class="breadcrumb clearfix">
 
                     <a href='/'>Главная</a> &gt; <a href="category/statii" title="Статьи">Статьи</a> &gt; <a
                         href="category/interesnye-fakty" title="Интересные факты">Интересные факты</a> &gt; <a
@@ -239,7 +237,7 @@
                     страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не
                     выходит за боковые рамки див блока</a>
                 </nav><!-- nav id="page_path" -->
-                <article class="page_only">
+                <article class="page_only clearfix">
                     <h1 class=page_title>Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы
                         проверить не цепляет и не выходит за боковые рамки див блока</h1>
                     <div class="info">
@@ -396,7 +394,7 @@
                                                            width="1080"/>
                     <p></p>
                     <p>&nbsp;</p>
-                    <p>Заголовки:</p>
+                    <p class="breadcrumb">Заголовки:</p>
                     <h1>H1 заголовок</h1>
                     <h2>H2 Заголовок (<u>заголовок H2 используется как в тексте как под раздел</u>)</h2>
                     <h3>H3 Заголовок</h3><h4>H4 Заголовок</h4><h5>Н5 заголовок</h5>
@@ -506,26 +504,26 @@
                     </div>
                     <div class="page_other_pages"><h3>Еще записи по теме</h3>
                         <ul class="page_related">
-                            <li>
+                            <li class="clearfix">
                                 <div class="page_related_title"><a
                                         href="page/poslednee-rossijskoe-preduprezhdenie-google-twitter-i-facebook"
                                         title="Последнее российское предупреждение Google, Twitter и Facebook">Последнее
                                     российское предупреждение Google, Twitter и Facebook</a></div>
                                 <date>Понедельник, 25 мая 2015 г.</date>
                             </li>
-                            <li>
+                            <li class="clearfix">
                                 <div class="page_related_title"><a href="page/sravnitelno-chestnyj-sposob-otema-deneg"
                                                                    title="Сравнительно честный способ отъема денег">Сравнительно
                                     честный способ отъема денег</a></div>
                                 <date>Среда, 10 апреля 2013 г.</date>
                             </li>
-                            <li>
+                            <li class="clearfix">
                                 <div class="page_related_title"><a href="page/hyuindai-nachinaet-i-proigryvaet"
                                                                    title="Hyuindai начинает и проигрывает">Hyuindai
                                     начинает и проигрывает</a></div>
                                 <date>Четверг, 19 мая 2016 г.</date>
                             </li>
-                            <li>
+                            <li class="clearfix">
                                 <div class="page_related_prev"><a
                                         href="svetlaja-storona-biznesa-evgenija-kasperskogo"><img
                                         src="cm/uploads/prev/23/6641_11.gif"
@@ -535,7 +533,7 @@
                                     ужасов, в главной роли ВТБ</a></div>
                                 <date>Среда, 24 апреля 2013 г.</date>
                             </li>
-                            <li>
+                            <li class="clearfix">
                                 <div class="page_related_prev"><a
                                         href="svetlaja-storona-biznesa-evgenija-kasperskogo"><img
                                         src="cm/uploads/prev/23/6639_11.gif"
@@ -545,13 +543,13 @@
                                     нужен правительству?</a></div>
                                 <date>Вторник, 24 января 2017 г.</date>
                             </li>
-                            <li>
+                            <li class="clearfix">
                                 <div class="page_related_title"><a href="page/chernyj-shlejf-za-boeing-787-dreamliner"
                                                                    title="Черный шлейф за Boeing 787 Dreamliner">Черный
                                     шлейф за Boeing 787 Dreamliner</a></div>
                                 <date>Среда, 29 мая 2013 г.</date>
                             </li>
-                            <li>
+                            <li class="clearfix">
                                 <div class="page_related_prev"><a
                                         href="svetlaja-storona-biznesa-evgenija-kasperskogo"><img
                                         src="cm/uploads/prev/23/6633_11.gif"
@@ -577,7 +575,7 @@
                             <div class="tabs-box tabs-visible">
                                 <ul class="tree-comments-level-0">
                                     <li class="users">
-                                        <div class="tree-comment">
+                                        <div class="tree-comment clearfix">
                                             <div class="comment-info tree-comment">&nbsp;<span
                                                     class="tree-comment-author">Roman</span> |&nbsp;<span
                                                     class="tree-comment-date"><a
@@ -601,7 +599,7 @@
                                         </div><!--div class="comments-end"-->
                                         <ul class="tree-comments-list-childs">
                                             <li class="users">
-                                                <div class="tree-comment">
+                                                <div class="tree-comment tree-comment clearfix">
                                                     <div class="comment-info tree-comment">&nbsp;<span
                                                             class="tree-comment-author">Roman</span> |&nbsp;<span
                                                             class="tree-comment-date"><a
@@ -627,7 +625,7 @@
                                                 </div><!--div class="comments-end"-->
                                                 <ul class="tree-comments-list-childs">
                                                     <li class="users">
-                                                        <div class="tree-comment">
+                                                        <div class="tree-comment tree-comment clearfix">
                                                             <div class="comment-info tree-comment">&nbsp;<span
                                                                     class="tree-comment-author">Roman</span>
                                                                 |&nbsp;<span class="tree-comment-date"><a
@@ -671,7 +669,7 @@
                                                         </div><!--div class="comments-end"-->
                                                         <ul class="tree-comments-list-childs">
                                                             <li class="anonim">
-                                                                <div class="tree-comment">
+                                                                <div class="tree-comment  clearfix">
                                                                     <div class="comment-info tree-comment">&nbsp;<span
                                                                             class="tree-comment-author">111</span> |&nbsp;<span
                                                                             class="tree-comment-date"><a
@@ -695,7 +693,7 @@
                                                                 </div><!--div class="comments-end"-->
                                                                 <ul class="tree-comments-list-childs">
                                                                     <li class="anonim">
-                                                                        <div class="tree-comment">
+                                                                        <div class="tree-comment  clearfix">
                                                                             <div class="comment-info tree-comment">
                                                                                 &nbsp;<span class="tree-comment-author">3333</span>
                                                                                 |&nbsp;<span
@@ -729,7 +727,7 @@
                                         </ul>
                                     </li>
                                     <li class="users">
-                                        <div class="tree-comment">
+                                        <div class="tree-comment clearfix">
                                             <div class="comment-info tree-comment">&nbsp;<span
                                                     class="tree-comment-author">Roman</span> |&nbsp;<span
                                                     class="tree-comment-date"><a
@@ -752,7 +750,7 @@
                                             </div>
                                         </div><!--div class="comments-end"--></li>
                                     <li class="users">
-                                        <div class="tree-comment">
+                                        <div class="tree-comment clearfix">
                                             <div class="comment-info tree-comment">&nbsp;<span
                                                     class="tree-comment-author">Roman</span> |&nbsp;<span
                                                     class="tree-comment-date"><a
@@ -776,7 +774,7 @@
                                         </div><!--div class="comments-end"-->
                                         <ul class="tree-comments-list-childs">
                                             <li class="users">
-                                                <div class="tree-comment">
+                                                <div class="tree-comment clearfix">
                                                     <div class="comment-info tree-comment">&nbsp;<span
                                                             class="tree-comment-author">Roman</span> |&nbsp;<span
                                                             class="tree-comment-date"><a
@@ -804,7 +802,7 @@
                                         </ul>
                                     </li>
                                     <li class="anonim">
-                                        <div class="tree-comment">
+                                        <div class="tree-comment clearfix">
                                             <div class="comment-info tree-comment">&nbsp;<span
                                                     class="tree-comment-author">123</span> |&nbsp;<span
                                                     class="tree-comment-date"><a
@@ -851,7 +849,7 @@
                     </div>
                     <div class="break"></div>
                     <h3 class="comments">Оставьте комментарий!</h3>
-                    <div class="comment-form">
+                    <div class="comment-form clearfix">
                         <form action="" method="post">
                             <input type="hidden" name="comments_page_id" value="6640">
                             <input type="hidden" value="d283ba1f816a71674c2bb3ed471f8301" name="comments_session">
@@ -869,15 +867,16 @@
 
 
 
-                                    <table class="no-border">
-                                        <tr class="r1">
-                                            <td class="t1"><label for="comments_author">Ваше имя</label></td>
-                                            <td class="t2"><input type="text" name="comments_author"
+                                    
+                                        <div class="r1">
+										<p>
+                                            <label for="comments_author">Ваше имя</label>
+                                            <input type="text" name="comments_author"
                                                                   id="comments_author"
                                                                   onfocus="document.getElementById('comments_reg_1').checked = 'checked';">
-                                            </td>
-                                        </tr>
-                                    </table>
+                                            </p>
+                                        </div>
+                                    
 
                                     <p class="hint">Используйте нормальные имена.</p>
 
@@ -890,24 +889,28 @@
                                                                    value="reg"> Зарегистрирован или новая
                                         регистрация</label></p>
 
-                                    <table class="no-border">
-                                        <tr class="r1">
-                                            <td class="t1"><label for="comments_email"
-                                                                  class="comments_email">E-mail</label></td>
-                                            <td class="t2"><input type="text" name="comments_email" id="comments_email"
+                                    
+                                        <div class="r1">
+										<p>
+                                           <label for="comments_email"
+                                                                  class="comments_email">E-mail</label>
+                                           <input type="text" name="comments_email" id="comments_email"
                                                                   value="" class="text"
                                                                   onfocus="document.getElementById('comments_reg_2').checked = 'checked';">
+                                            
+											</p>
+                                        </div>
+                                        <div class="r1">
+										<p>
+                                           <label for="comments_password" class="comments_password">Пароль</label>
                                             </td>
-                                        </tr>
-                                        <tr class="r1">
-                                            <td class="t1"><label for="comments_password" class="comments_password">Пароль</label>
-                                            </td>
-                                            <td class="t2"><input type="password" name="comments_password"
+											
+                                           <input type="password" name="comments_password"
                                                                   id="comments_password" value=""
                                                                   onfocus="document.getElementById('comments_reg_2').checked = 'checked';">
-                                            </td>
-                                        </tr>
-                                    </table>
+                                           </p>
+                                        </div>
+                                    
 
                                     <p class="hint"></p>
 
@@ -947,21 +950,21 @@
         <div id="rsidebars" class="col-lg-2">
 
             <nav class="parts">
-                <ul class="cat_link">
-                    <li><a href="category/biznes-gambit" title="Бизнес гамбит">Бизнес гамбит</a>&nbsp;(1)</li>
-                    <li><a href="category/vlast-i-biznes" title="Власть и бизнес">Власть и бизнес</a>&nbsp;(1)</li>
-                    <li><a href="category/dengi" title="Деньги">Деньги</a>&nbsp;(1)</li>
-                    <li><a href="category/iznutri" title="Изнутри">Изнутри</a>&nbsp;(1)</li>
-                    <li><a href="category/intervju" title="Интервью">Интервью</a>&nbsp;(1)</li>
-                    <li><a href="category/interesnye-fakty" title="Интересные факты">Интересные факты</a>&nbsp;(1)</li>
-                    <li><a href="category/karera" title="Карьера">Карьера</a>&nbsp;(1)</li>
-                    <li><a href="category/lichnosti" title="Личности">Личности</a>&nbsp;(1)</li>
-                    <li><a href="category/lichnye-finansy" title="Личные финансы">Личные финансы</a>&nbsp;(1)</li>
-                    <li><a href="category/lozhnyj-shag" title="Ложный шаг">Ложный шаг</a>&nbsp;(1)</li>
-                    <li><a href="category/malyj-biznes" title="Малый бизнес">Малый бизнес</a>&nbsp;(1)</li>
-                    <li><a href="category/press-relizy" title="Пресс-релизы">Пресс-релизы</a>&nbsp;(1)</li>
-                    <li><a href="category/uspeshnye-proekty" title="Успешные проекты">Успешные проекты</a>&nbsp;(1)</li>
-                    <li><a href="category/citaty" title="Цитаты">Цитаты</a>&nbsp;(1)</li>
+                <ul class="is_link">
+                    <li><a href="category/biznes-gambit" title="Бизнес гамбит">Бизнес гамбит</a>&nbsp;</li>
+                    <li><a href="category/vlast-i-biznes" title="Власть и бизнес">Власть и бизнес</a>&nbsp;</li>
+                    <li><a href="category/dengi" title="Деньги">Деньги</a>&nbsp;</li>
+                    <li><a href="category/iznutri" title="Изнутри">Изнутри</a>&nbsp;</li>
+                    <li><a href="category/intervju" title="Интервью">Интервью</a>&nbsp;</li>
+                    <li><a href="category/interesnye-fakty" title="Интересные факты">Интересные факты</a>&nbsp;</li>
+                    <li><a href="category/karera" title="Карьера">Карьера</a>&nbsp;</li>
+                    <li><a href="category/lichnosti" title="Личности">Личности</a>&nbsp;</li>
+                    <li><a href="category/lichnye-finansy" title="Личные финансы">Личные финансы</a>&nbsp;</li>
+                    <li><a href="category/lozhnyj-shag" title="Ложный шаг">Ложный шаг</a>&nbsp;</li>
+                    <li><a href="category/malyj-biznes" title="Малый бизнес">Малый бизнес</a>&nbsp;</li>
+                    <li><a href="category/press-relizy" title="Пресс-релизы">Пресс-релизы</a>&nbsp;</li>
+                    <li><a href="category/uspeshnye-proekty" title="Успешные проекты">Успешные проекты</a>&nbsp;</li>
+                    <li><a href="category/citaty" title="Цитаты">Цитаты</a>&nbsp;(</li>
 
                 </ul>
             </nav>
@@ -1142,7 +1145,7 @@
                     <div id="widget newws">
                         <div class="wr"><h2 class="box"><span>Рубрики</span></h2>
                             <div class="widget-content">
-                                <ul class="is_link">
+                                <ul class="cat_link">
 
                                     <li class="group"><a href="category/biznes-mehanika" title="Бизнес технологии">Бизнес
                                         технологии<sup>1196</sup></a><br>
@@ -1383,7 +1386,7 @@
                                         как мотивировать сотрудников</a></h6>
                                         
 <div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
-                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>357</div></div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>357</div>
                                         <div class="widget_prev"><a
                                                 href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
                                                 src="cm/uploads/prev/23/6642_11.gif" class="widgit_img"
@@ -1393,6 +1396,7 @@
                                             прилавки ...
                                         </div>
                                         <a class="cut" href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Прочитать</a>
+                                        </div>
                                     </li>
                                     <li><div class="widget_heading clearfix">
                                             <h6 class="widget_tit"><a

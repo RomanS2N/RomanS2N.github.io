@@ -26,7 +26,7 @@ ul.tree-comments-level-0 {list-style-type: none; border-bottom: none; border: no
 ul.tree-comments-level-0 li {margin-left: 0; margin-bottom: 0;}
 ul.tree-comments-level-0 ul {border: none; list-style-type: none; display: block;}
 ul.tree-comments-level-0 li  div.tree-comment {width: 100%;} /* float: left;}*/
-ul.tree-comments-level-0 li  ul.tree-comments-list-childs {margin: 0 0 0 25px; 	list-style-type: none;}
+ul.tree-comments-level-0 li  ul.tree-comments-list-childs {margin: 0 0 0 0px; 	list-style-type: none;}
 
 /*div.tree-comment-avatar {float: left;}*/
 /*div.tree-comment-data {float: left;}	*/
