@@ -89,7 +89,7 @@ button, input[type="button"], input[type="reset"],input[type="submit"]:not(#sear
 }
  html input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:not(#search_forms):hover ,button:hover {background-color: #ed1c24;}
 
-select,input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i], input[type="text" i]:not(#search_formi) {
+select,input[type="email" i], input[type="number" i], input[type="password" i], input[type="tel" i], input[type="url" i],input[type="text" i]:not(.search-form-input) {
 	border: 1px solid #d0d0d0;
     background-color: #fff;
     background-image: none !important;
@@ -170,7 +170,8 @@ select,input[type="email" i], input[type="number" i], input[type="password" i], 
 
 /*----- Search box -----*/
 .search-form {
-  margin-top: 2px; }
+	    margin-top: 3px;
+ }
   .search-form-input {
     width: 89%;
     padding: 2px 10px;
@@ -454,11 +455,9 @@ Main Content
 .MLittel{
 	list-style-type: square;
     padding-right: 15px;
-    background: url(images/dot-1.png) repeat-y 49.5% 0;
+   
     list-style-position: inside;
-    -moz-column-count: 2;
-    -webkit-column-count: 2;
-    column-count: 2;
+    
 	
 }
 .widget-content .MLittel li {
@@ -1329,8 +1328,7 @@ div.page_preview_prvsng {
 
 div.loginform {
   padding: 20px 20px 20px 15px;
-  border: 1px solid #D5DDF3;
-  background: #e1eefb;
+
   -webkit-border-radius: 5px;
   border-radius: 5px; }
 

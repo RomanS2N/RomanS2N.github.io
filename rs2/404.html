@@ -19,6 +19,8 @@
     <link rel="cm/uploads/logo.jpg">
     <base href="">
     <link rel="home" href="/">
+	<link rel="stylesheet" href="source/templates/default/bootstrap/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="source/templates/default/icoMoon.css" media="all" />
     <link rel="stylesheet" href="source/templates/default/style.css" type="text/css" media="screen">
 
 
@@ -52,7 +54,7 @@
 
         #up_body {
             text-align: center;
-            border-bottom: 2px solid #6699CC;
+           
             padding: 0px;
             margin: 0px;
         }
@@ -100,8 +102,8 @@
 
         div.topglmen {
             height: 35px;
-            width: 100%;
-            background-color: #99CCFF;
+          
+            
             text-align: center;
             font-size: 16px;
             border-top: 4px solid #6699CC;
@@ -119,7 +121,7 @@
         /* Sub Navigation */
         div.topsubmenD {
             background-color: #ffffff;
-            border-bottom: 4px solid #6699CC;
+          
         }
 
         div.topsubmen {
@@ -191,22 +193,26 @@
     </div>
 </div>
 
-<div class=topglmen>
-	<div class="topglmendv home-menu-icon"><a class="icon-home" href="#"></a></div>
-    <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-    <div id=search_heard>
-        <form accept-charset="UTF-8" action="/isearch" method="get">
-            <input id=search_formi type="text" name=q id="q" size="90" maxlength="150">
-            <input type="submit" id="search_forms" value=" искатЬ ">
-        </form>
+<div class="row no-gutters topglmen-wrap">
+        <div class="topglmen col-lg-8">
+            <div class="topglmendv home-menu-icon"><a class=icon-home href="/novosti"></a></div>
+            <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
+        </div>
+
+        <div id=search_heard class="col-lg-4 search-form">
+            <form accept-charset="UTF-8" action="/isearch" method="get">
+                <input class="search-form-input input-placeholder" type="text" placeholder="Искать" name=q id="q" size="90" maxlength="150">
+                <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
+            </form>
+        </div>
     </div>
-</div>
+
 
 <div class=topsubmenD></div>
 <div id="up_body">
@@ -226,7 +232,7 @@
     <div id="wrapper">
 
 
-        <div id="content">
+        <div id="content" class="col-lg-7 content">
 
 
             <div class="type type_page_404">
@@ -250,7 +256,7 @@
         </div><!-- div id="content" -->
 
 
-        <div id="rsidebars">
+        <div id="rsidebars" class="col-lg-2">
 
 
             <aside id="sidebar1">
@@ -509,7 +515,7 @@
         </div> <!-- div class=rsidebars -->
 
 
-        <div id="sidebars">
+        <div id="sidebars" class="col-lg-3 sidebars">
 
             <aside id="sidebar2">
                 <div class="wrap">
@@ -1147,21 +1153,24 @@
 </div>
 
 
-<div class=topglmen>
-    <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-    <div id=search_heard>
-        <form accept-charset="UTF-8" action="/isearch" method="get">
-            <input id=search_formi type="text" name=q id="q" size="90" maxlength="150">
-            <input type="submit" id="search_forms" value=" искатЬ ">
-        </form>
+<div class="row no-gutters topglmen-wrap">
+        <div class="topglmen col-lg-8">
+            <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
+        </div>
+
+        <div id=search_heard class="col-lg-4 search-form">
+            <form accept-charset="UTF-8" action="/isearch" method="get">
+                <input class="search-form-input input-placeholder" type="text" placeholder="Искать" name=q id="q" size="90" maxlength="150">
+                <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
+            </form>
+        </div>
     </div>
-</div>
 
 <div class=topsubmenD></div>
 <div id="up_body">
