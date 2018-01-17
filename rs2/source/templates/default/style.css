@@ -757,7 +757,7 @@ h2.box, .widget h2 {
 	  list-style-type:none;
 	  
   }
-   ul.is_link li{
+   ul.is_link li a{
 	 font-weight:bold;
 	  
   }
