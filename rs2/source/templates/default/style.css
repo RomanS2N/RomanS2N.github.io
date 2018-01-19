@@ -20,7 +20,7 @@ html {
 body {
   color: #666;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 75%;
+  font-size: 80%;
   outline: none;
   overflow-x: hidden; }
 
@@ -38,7 +38,9 @@ hr {
   border-width: 1px 0 0;
   clear: both;
   height: 0;
-  margin: 20px 0; }
+  margin: 20px 0; 
+  
+  }
 
 ol {
   margin: 0px;
@@ -95,6 +97,27 @@ select,input[type="email" i], input[type="number" i], input[type="password" i], 
     background-image: none !important;
     height: 37px;
     padding: 5px 10px;
+	color: #222;
+}
+ input[type="checkbox"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    height: 27px;
+    width: 27px;
+    -webkit-appearance: none;
+    border: 2px solid #d0d0d0;
+    position: relative;
+}
+ input[type="checkbox"]:checked:before {
+       content: " ";
+    height: 18px;
+    width: 10px;
+    border-bottom: 3px solid #0c0c0c;
+    border-right: 3px solid #1c1b1b;
+    transform: rotate(41deg);
+    position: absolute;
+    margin-left: 7px;
 }
  
 .myheard {
@@ -199,7 +222,7 @@ h1 {
   color: #222;
   font: 700 32px/34px Georgia, "Times New Roman", Times, serif;
   letter-spacing: 0;
-  margin-bottom: 5px; }
+  margin-bottom: 15px; }
 
 h2 {
   color: #222;
@@ -240,7 +263,9 @@ h6 {
     color: #555;
     font-size: 11px;
     font-family: Georgia,&quot,Times New Roman&quot,Times,serif;
-	font-style: italic;}
+	font-style: italic;
+	margin-bottom: 15px;
+	}
 
 a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
 #footergl a:hover,
@@ -1043,6 +1068,10 @@ li.tabs-current  span{
     padding-right: 0;
     padding-left: 0; }
 
+	.rss_category{
+		float:right;
+	}
+	
 img {
   max-width: 100%; }
 
@@ -1099,6 +1128,8 @@ a img {
   padding: 8px 0px 8px 5px;
   display: block; }
 
+
+
 #news_time {
   margin: 5px 5px 5px 2px;
   float: left;
@@ -1107,7 +1138,9 @@ a img {
   padding: 3px 4px 3px 4px; }
 
 #news_url {
-  padding-top: 7px; }
+  padding-top: 7px; 
+  font-size: 85%;
+  }
 
 #news_time span {
   font-weight: normal;
@@ -1336,9 +1369,11 @@ div.loginform p.header {
   font-size: 1.2em;
   text-align: center;
   margin: 0 0 15px 0;
-  background: #6699CC;
+  background: #222;
   color: white;
-  padding: 3px; }
+  padding: 3px; 
+  line-height:30px;
+  }
 
 form.flogin span {
   font-weight: bold; }
@@ -1394,25 +1429,36 @@ margin: 0;
 }
 
 div.page_other_pages ul {
-  list-style-type: square;
-  padding-right: 15px; 
-background: url(images/dot-1.png) repeat-y 49.5% 0;
+     list-style-type: square;
+    padding-right: 15px;
+    background: url(images/dot-1.png) repeat-y 49.5% 0;
     list-style-position: inside;
-  -moz-column-count: 2; /* Firefox */
-  -webkit-column-count: 2; /* Safari and Chrome */
-  column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-basis: 46%;
+    -ms-flex-preferred-size: 46%;
+    flex-basis: 46%;
 }
 
 div.page_other_pages ul li {
-    list-style-type: none;
+  list-style-type: none;
     border-top: 1px solid #e5e5e5;
     padding-top: 7px;
     margin-top: 7px;
     margin-bottom: 0;
     color: #222;
-    
     margin-right: 2%;
-     margin-left: 2%;   
+    margin-left: 2%;
+    float: left;
+    width: 46%; 
     
 }
 
@@ -1750,8 +1796,25 @@ div.comments div.comments_content {
   
 
   }
-
 div.comments h3.comments {
+       color: #222;
+    background-color: #e2e1e2;
+	 border: none;
+    border-bottom: 2px solid #222;
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 700;
+    padding: 10px 15px;
+	padding-bottom:9px;
+}
+  .comments h3.comments:hover{
+	   color: #fff;
+    background-color: #222;
+	
+  }
+  
+  
+ li.tabs-current  h3.comments {
  background-color: #222;
     color: #fff;
     font-size: 14px;
@@ -1760,7 +1823,7 @@ div.comments h3.comments {
     border: none;
     padding: 10px 15px; }
 
-div.comments h3.comments:hover {
+ li.tabs-current  h3.comments:hover {
 	    background-color: #ed1c24;
 	
 }	

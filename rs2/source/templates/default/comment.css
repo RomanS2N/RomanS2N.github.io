@@ -18,6 +18,9 @@ img.gravatar {border: #6699CC solid 1px; padding: 3px; background: white;}
 
 div.comments ul {	overflow: visible; border-bottom: 0;}
 div.comments li span {font-style: normal;}
+div.comments li span.tree-comment-author{
+	font-weight:bold;
+}
 div.comments li.users {}
 div.comments li.comusers {}
 div.comments li.anonim {}
@@ -25,13 +28,18 @@ div.comments li.anonim {}
 ul.tree-comments-level-0 {list-style-type: none; border-bottom: none; border: none; padding: 0;}
 ul.tree-comments-level-0 li {margin-left: 0; margin-bottom: 0;}
 ul.tree-comments-level-0 ul {border: none; list-style-type: none; display: block;}
-ul.tree-comments-level-0 li  div.tree-comment {width: 100%;} /* float: left;}*/
+ul.tree-comments-level-0 li  div.tree-comment {width: 100%;position: relative;} /* float: left;}*/
 ul.tree-comments-level-0 li  ul.tree-comments-list-childs {margin: 0 0 0 0px; 	list-style-type: none;}
 
 /*div.tree-comment-avatar {float: left;}*/
 /*div.tree-comment-data {float: left;}	*/
 
-a.comment-form-button { cursor: pointer; padding: 3px 5px 3px 5px;} /*display: block; float: right;}*/
+a.comment-form-button {cursor: pointer;
+    padding: 3px 5px 3px 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+		font-weight:bold;} /*display: block; float: right;}*/
 textarea#comments_content {width: 98%;}
 div.comments li.anonim span.tree-comment-author { font-size: 11px;  font-weight: bold; }
 div.comments li.anonim span.tree-comment-date { font-size: 12px;}
