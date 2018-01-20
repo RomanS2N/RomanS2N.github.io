@@ -60,16 +60,19 @@
 
 
  <div class="row no-gutters topglmen-wrap">
-        <div class="topglmen col-lg-8">
-            <div class="topglmendv home-menu-icon"><a class=icon-home href="/novosti"></a></div>
-            <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-        </div>
+        <div class="dropdown topglmen col-lg-8">
+<button onclick="myFunction()" class="dropbtn">MENU</button>
+  <div id="myDropdown" class="dropdown-content">
+  <div class="topglmendv home-menu-icon"><a class="icon-home" href="#"></a></div>
+    <div class="topglmendv "><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
+  </div>
+</div>
 
         <div id=search_heard class="col-lg-4 search-form">
             <form accept-charset="UTF-8" action="/isearch" method="get">
@@ -710,7 +713,7 @@
                     <div class="widget littel_preview">
                         <div class="wr"><h2 class="box"><span>MLittel</span></h2>
                             <div class="widget-content">
-                                <ul class="is_link page_list MLittel">
+                                <ul class="is_link page_list MLittel clearfix">
                                     <li>
                                         <div class="widget_prev">
                                             <a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
@@ -1358,6 +1361,7 @@
 
 <div class="row no-gutters topglmen-wrap">
         <div class="topglmen col-lg-8">
+           <div class="topglmendv home-menu-icon"><a class="icon-home" href="#"></a></div>
             <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
             <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
             <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
@@ -1381,7 +1385,7 @@
 <div id="footergl" class="footergl">
 
 
-    <div class="left col-md-2">
+    <div class="left col-md-2 col-sm-2 ">
         Условия <a href="/about/reklama-na-sajte">размещения рекламы</a>
         <p>
             Наша <a href="/about/redakcija">редакция</a>
@@ -1389,7 +1393,7 @@
             <a href="/msg.php">Обратная связь</a>
     </div>
 
-    <div class="center col-md-8">
+    <div class="center col-md-8 col-sm-8">
         RosInvest.Com не несет ответственности за опубликованные материалы и комментарии пользователей. Возрастной
         цензор 16+.<p>
         Ответственность за высказанные, размещённую информацию и оценки, в рамках проекта RosInvest.Com, лежит полностью
@@ -1416,7 +1420,7 @@
 
     </div>
 
-    <div class="right col-md-2">
+    <div class="right col-md-2 col-sm-2">
         <!--RAX counter-->
         <script language="JavaScript"><!--
         document.write('<a href="http://www.rax.ru/click" ' +

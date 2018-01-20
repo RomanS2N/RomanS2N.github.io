@@ -40,143 +40,12 @@
     <!-- LOADING BANNERS  -->
     <script src="/cm/uploads/js/adv/collection2.js"></script>
     <!-- LOADING BANNERS  -->
-    <style type="text/css">
+   
 
-        /* HEDER */
-        #search_heard {
-            float: right;
-        }
+     
+    
+    
 
-        #search_formi {
-        }
-
-        #search_forms {
-        }
-
-        #up_body {
-            text-align: center;
-           
-            padding: 0px;
-            margin: 0px;
-        }
-
-        #myheard {
-            width: 100%;
-            background-color: #FFFFFF;
-            height: 120px;
-        }
-
-        /* margin-top: -1px;*/
-
-        /* HEDER LOGO */
-
-        #logotip a strong {
-            color: #336699;
-        }
-
-        #logotip {
-            float: left;
-            padding-top: 35px;
-            padding-left: 25px;
-        }
-
-        #logotip a {
-            color: #6699CC;
-            text-decoration: none;
-            font: normal 38px Arial, Sans-Serif;
-        }
-
-        /* HEDER CENTER */
-
-        #rightbox {
-            padding-top: 15px;
-            padding-right: 10px;
-            padding-left: 0px;
-            text-align: center;
-        }
-
-        #righth {
-            padding-left: 310px;
-        }
-
-        /* Navigation */
-
-        div.topglmen {
-            height: 35px;
-        
-          
-            text-align: center;
-            font-size: 16px;
-        
-        }
-
-        .topglmendv {
-            float: left;
-        }
-
-        .topglmenurl {
-            color: #3f5b77;
-            text-decoration: none;
-        }
-
-        /* Sub Navigation */
-        div.topsubmenD {
-            background-color: #ffffff;
-        
-        }
-
-        div.topsubmen {
-            height: 33px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .topsubmenu {
-            color: #6699CC;
-            font-size: 13px;
-            float: left;
-        }
-
-        .topsubmenu a {
-            color: #336699;
-            text-decoration: none;
-        }
-
-        #footergl {
-            color: #999;
-            width: 100%;
-            overflow: hidden;
-            font-size: 12px;
-        }
-
-        #footergl a {
-            font-size: 13px;
-        }
-
-        #footergl .left {
-            width: 220px;
-            float: left;
-            text-align: left;
-            padding: 20px;
-            height: 100%;
-        }
-
-        #footergl .right {
-            width: 140px;
-            float: right;
-            left;
-            text-align: right;
-            padding: 15px;
-            height: 100%;
-        }
-
-        #footergl .center {
-            margin: 10px 280px;
-            padding: 10px;
-            text-align: justify;
-        }
-
-    </style>
 
 
     <div id=myheard>
@@ -195,16 +64,19 @@
 </div>
 
 <div class="row no-gutters topglmen-wrap">
-        <div class="topglmen col-lg-8">
-            <div class="topglmendv home-menu-icon"><a class=icon-home href="/novosti"></a></div>
-            <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-        </div>
+       <div class="dropdown topglmen col-lg-8">
+<button onclick="myFunction()" class="dropbtn">MENU</button>
+  <div id="myDropdown" class="dropdown-content">
+  <div class="topglmendv home-menu-icon"><a class="icon-home" href="#"></a></div>
+    <div class="topglmendv "><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
+  </div>
+</div>
 
         <div id=search_heard class="col-lg-4 search-form">
             <form accept-charset="UTF-8" action="/isearch" method="get">
@@ -1384,7 +1256,7 @@
                     <div class="widget littel_preview">
                         <div class="wr"><h2 class="box"><span>MLittel</span></h2>
                             <div class="widget-content">
-                                <ul class="is_link page_list MLittel">
+                                <ul class="is_link page_list MLittel clearfix">
                                     <li>
                                         <div class="widget_prev">
                                             <a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
@@ -1997,29 +1869,32 @@
 
 
 <div class="row no-gutters topglmen-wrap">
-        <div class="topglmen col-lg-8">
-            <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
-            <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-        </div>
-
-        <div id=search_heard class="col-lg-4 search-form">
-            <form accept-charset="UTF-8" action="/isearch" method="get">
-                <input class="search-form-input input-placeholder" type="text" placeholder="Искать" name=q id="q" size="90" maxlength="150">
-                <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
-            </form>
-        </div>
+         <div class="dropdown topglmen col-lg-8">
+<button onclick="myFunction()" class="dropbtn">MENU</button>
+  <div id="myDropdown" class="dropdown-content">
+   <div class="topglmendv home-menu-icon"><a class="icon-home" href="#"></a></div>
+    <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
+    <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
+    </div>
+    </div>
+     <div id=search_heard class="col-lg-4 search-form">
+        <form accept-charset="UTF-8" action="/isearch" method="get">
+            <input class="search-form-input input-placeholder" id=search_formi type="text" placeholder="Искать" name=q id="q" size="90" maxlength="150">
+            <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
+        </form>
+    </div>
     </div>
 
 <div class=topsubmenD></div>
 <div id="up_body">
 </div><!-- Footer -->
 <div id="footergl">
-    <div class="right">
+    <div class="right col-md-2 col-sm-2">
         <!--RAX counter-->
         <script language="JavaScript"><!--
         document.write('<a href="http://www.rax.ru/click" ' +
@@ -2038,7 +1913,7 @@
 
     </div>
 
-    <div class="left">
+    <div class="left col-md-2 col-sm-2">
         Условия <a href="/about/reklama-na-sajte">размещения рекламы</a>
         <p>
             Наша <a href="/about/redakcija">редакция</a>
@@ -2046,7 +1921,7 @@
             <a href="/msg.php">Обратная связь</a>
     </div>
 
-    <div class="center">
+    <div class="center col-md-8 col-sm-8">
         RosInvest.Com не несет ответственности за опубликованные материалы и комментарии пользователей. Возрастной
         цензор 16+.<p>
         Ответственность за высказанные, размещённую информацию и оценки, в рамках проекта RosInvest.Com, лежит полностью
