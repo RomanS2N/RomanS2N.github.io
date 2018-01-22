@@ -983,7 +983,7 @@ Elements Page
           box-sizing: border-box;
   -moz-box-sizing: border-box;
   color: #222;
-        border-bottom: 2px solid #222;
+       
 }
 
 .tabs .tabs-nav li span {
@@ -1006,7 +1006,7 @@ Elements Page
     border: none;
     padding: 10px 15px;
     line-height: 22px;
-
+ border-bottom: 2px solid #222;
 
 
 }
@@ -1015,7 +1015,7 @@ li.tabs-current  span{
 	 color: #fff; 
 }
 .tabs .tabs-nav li.active span,
-.tabs .tabs-nav li:hover span {
+.tabs .tabs-nav li:hover span,.tabs .tabs-nav li.tabs-current span{
   text-decoration: none;
   background-color: #222;
   color: #fff; }
