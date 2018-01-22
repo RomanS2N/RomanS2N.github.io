@@ -159,7 +159,7 @@ select,input[type="email" i], input[type="number" i], input[type="password" i], 
   float: left;
   font-family: 'Oswald', sans-serif;
   margin: 4px 0;
-  padding: 0 12px;
+  padding: 0 8px;
   border-left: 1px solid #222;
   position: relative;
   z-index: 1000; }
@@ -173,7 +173,7 @@ select,input[type="email" i], input[type="number" i], input[type="password" i], 
     z-index: 1001; }
   .topglmen .topglmendv .topglmenurl {
     display: inline-block;
-    font-size: 112.5%;
+    font-size: 105.5%;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
@@ -2860,7 +2860,8 @@ span.glyphicon {
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  
+
+      background-color: #222;
 }
 
 #myInput {
