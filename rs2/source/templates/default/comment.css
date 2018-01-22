@@ -44,6 +44,18 @@ textarea#comments_content {width: 98%;}
 div.comments li.anonim span.tree-comment-author { font-size: 11px;  font-weight: bold; }
 div.comments li.anonim span.tree-comment-date { font-size: 12px;}
 div.comments h3.comments {border: 1px solid #8097e1; padding: 5px;}
+li.users span.tree-comment-date:before{
+    content: "\e603";
+        font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 5px;
+}
 
 span.tree-comment-ip {float: right; margin-right: 5px;}
 

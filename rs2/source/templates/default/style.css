@@ -101,11 +101,16 @@ select,input[type="email" i], input[type="number" i], input[type="password" i], 
 }
  input[type="checkbox"] {
     -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+     box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
     height: 27px;
     width: 27px;
+      -moz-appearance: none;
     -webkit-appearance: none;
+     -o-appearance: none;
+     appearance: none;
     border: 2px solid #d0d0d0;
     position: relative;
 }
@@ -119,7 +124,37 @@ select,input[type="email" i], input[type="number" i], input[type="password" i], 
     position: absolute;
     margin-left: 7px;
 }
- 
+ input[type="radio"] {
+    -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    -webkit-appearance: none;
+     -moz-appearance: none;
+     -o-appearance: none;
+     appearance: none;
+     margin-top: 10px;
+    margin-bottom: -8px;
+    margin-right: 10px;
+}
+input[type="radio"]:checked:before{
+   content: " ";
+    height: 17px;
+    width: 17px;
+    position: absolute;
+    margin-left: 3px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-top: 3px;
+}
+.curs-a-bold a{
+    font-weight: bold;
+}
 .myheard {
   width: 100%;
   background-color: #FFFFFF;
@@ -465,6 +500,9 @@ Main Content
 #sub-container {
   border: 10px solid #f9f9f9;
   padding: 20px 0 40px; }
+.iformer-block a {
+    font-weight: bold;
+}
 
 .sub-container .widget {
   margin-bottom: 15px; }
@@ -472,10 +510,21 @@ Main Content
 .widget_prev {
     margin-bottom: 10px;
 }
-
-.widget.social_links{
-    margin-bottom: 0px;
+.page_list.LTxtPhoto li{
+        list-style: none;
+    border-top: 1px solid #d0d0d0;
+    padding-top: 10px;
+    margin: 10px 0 0;
 }
+.page_list.LTxtPhoto li:before, .page_list.LTxtPhoto li:after,ul.is_link li:after,ul.is_link.page_list.LittelBlock li:before {
+    content: " ";
+    display: table;
+    box-sizing: border-box;
+    clear: both;
+}
+
+ul.is_link.page_list.LittelBlock
+
 .widget .top_cat li {
   list-style: none; }
 
@@ -551,7 +600,27 @@ h2.box, .widget h2 {
   color: #6a6a6a;
   display: inline-block;
   margin-right: 15px; }
+.page_date:before{
+        content: "\e603";
+    font-family: 'icomoon';
+     margin-right: 10px;
 
+}
+.comments-link:before{
+     font-family: 'icomoon';
+     margin-right: 10px;
+    content: "\e605";
+}
+.page_only .cut:before{
+     font-family: 'icomoon';
+     margin-right: 10px;
+      content: "\e612";
+}
+.page_view:before{
+    content: "\e606";
+    font-family: 'icomoon';
+     margin-right: 10px;
+}
 .widget_count_page{
         display: inline-block;
 }
@@ -566,6 +635,11 @@ h2.box, .widget h2 {
   margin-right: 5px;
   float: left;
   margin-top: 1px; }
+.entry-icon.icon-clock {
+  margin-right: 5px;
+
+  margin-top: 1px; }
+
 
 .entry-date span,
 .entry-comments a,
@@ -595,7 +669,10 @@ h2.box, .widget h2 {
 .littel_preview .widget_prev, .littelblocks .widget_prev {
   width: 21%;
   margin-right: 10px;
-  float: left; }
+  float: left;
+        margin-top: 5px;
+    
+}
 
 .littel_preview .widget_heading, .littelblocks .widget_heading {
   overflow: hidden; }
@@ -854,7 +931,9 @@ Categories page
 .page_only .img_prewiev {
   width: 30%;
   margin-right: 15px;
-  float: left; }
+  float: left;
+    margin-top: 4px;
+}
 
 .page_only .img_prewiev img {
   width: 100%; }
@@ -868,10 +947,14 @@ Categories page
   color: #666; }
 
 .page_only .info {
-  margin-bottom: 7px; }
-
+  margin-bottom: 15px; }
+.page_only .info a{
+    margin-right: 5px;
+}
 .page_only .page_content {
-  line-height: 20px; }
+  line-height: 20px;
+margin-top: -3px;
+}
 
 .pagination {
   display: block;
@@ -879,7 +962,9 @@ Categories page
           border-radius: 0;
   font-size: 16px;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 700; }
+  font-weight: 700; 
+margin-top: 15px;
+}
 
 .pagination a,
 .pagination span,
@@ -936,7 +1021,9 @@ Single page
 .LittelBlock .widget_prev {
   width: 21%;
   margin-right: 10px;
-  float: left; }
+  float: left;
+        margin-top: 5px;
+}
 
 .LittelBlock .widget_heading {
   overflow: hidden; }
@@ -1004,7 +1091,7 @@ Elements Page
     font-weight: 700;
     font-family: Georgia, "Times New Roman", Times, serif;
     border: none;
-    padding: 10px 15px;
+    padding:  10px 15px 8px 15px;
     line-height: 22px;
  border-bottom: 2px solid #222;
 
@@ -1083,8 +1170,43 @@ li.tabs-current  span{
 
 	.rss_category{
 		float:right;
+        display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 	}
-	
+.fa-facebook,.fa-vk,.fa-twitter,.fa-rss{
+		
+        display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+        
+    padding: 0px;
+    margin: 0px 5px 0px 5px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 17px;
+    overflow: hidden;
+    border: 1px solid #D0D0D0;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+	}
+	.rss_category:before{
+		content: "\f09e";
+        margin-right: 10px;
+	}
+    
 img {
   max-width: 100%; }
 
@@ -1152,9 +1274,11 @@ a img {
 
 #news_url {
   padding-top: 7px; 
-  font-size: 85%;
+  font-size: 110%;
   }
-
+.newslist a{
+    font-size: 110%;
+}
 #news_time span {
   font-weight: normal;
   font-size: 13px; }
@@ -2793,13 +2917,17 @@ div.topsubmenD {
             clear: both; 
             margin-bottom: 10px;
         }
-  
+.contact-forms-selelect{
+    margin: auto;  margin-bottom: 10px;
+    margin-left: 33px;
+}
   
      .textleft{
              text-align: left;
         }
 		.setup_informer{
 		margin-bottom:15px;
+            margin-top: 15px;
 		}
 		
   
