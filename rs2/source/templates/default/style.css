@@ -2965,7 +2965,7 @@ span.glyphicon {
   color: #69C;
   text-align: center; }
   
-    .dropbtn {
+    .dropbtn,.dropbtn2 {
   
     display:none;
 }
@@ -2973,7 +2973,7 @@ span.glyphicon {
 
  @media screen and (max-width: 980px){
   
-  .dropbtn {
+  .dropbtn,.dropbtn2  {
   
     color: white;
     padding: 0px; 
@@ -2991,8 +2991,11 @@ span.glyphicon {
 
       background-color: #222;
 }
+.dropbtn2:hover, .dropbtn2:focus {
 
-#myInput {
+      background-color: #222;
+}
+#myInput,#myInput2 {
     border-box: box-sizing;
     background-image: url('searchicon.png');
     background-position: 14px 12px;
@@ -3003,9 +3006,9 @@ span.glyphicon {
     border-bottom: 1px solid #ddd;
 }
 
-#myInput:focus {outline: 3px solid #ddd;}
+#myInput:focus,#myInput2:focus {outline: 3px solid #ddd;}
 
-.dropdown {
+.dropdown,.dropdown2 {
     position: relative;
     display: inline-block;
 }
@@ -3026,7 +3029,7 @@ span.glyphicon {
     padding-left: 10px;
 }
 
-.dropdown-content div {
+.dropdown-content div{
     color: black;
     padding: 12px 16px;
     text-decoration: none;
@@ -3034,14 +3037,14 @@ span.glyphicon {
 	float:none;
 
 }
-.dropdown-content div a{
+.dropdown-content div a,.dropdown-content div a{
 		margin-bottom:10px;
 	margin-top:10px;
 }
 
  .dropdown-content  > div:hover {background-color: #ddd}
 
-.show {display:block;} 
+ .show {display:block;} 
    .topglmen .topglmendv {
    float:  none;}
   
