@@ -2840,6 +2840,7 @@ div.topsubmenD {
             height: 30px;
             text-align: center;
             font-size: 16px;
+			
             
         }
 
@@ -2931,17 +2932,47 @@ div.topsubmenD {
 		}
 		
   
+  #secondary-nav {
+    border-top: 1px solid #222;
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+#secondary-menu li:first-child {
+    margin: 0 0 0 3px;
+}
+#secondary-menu li {
+    list-style: none;
+    float: left;
+    margin: 0 0 0 25px;
+    font-size: 11px;
+}
+#responsive-menu, #secondary-responsive-menu {
+    display: none;
+    border: 1px solid #222;
+    padding: 5px 10px;
+}
+#secondary-menu li a {
+    display: block;
+    color: #555;
+}
   
   
   
+  @media only screen and (max-width: 980px) and (min-width: 480px)  {
+
+#responsive-menu, #secondary-responsive-menu {
+    display: block;
+}
   
   
+  }
   
-  
-  
-  
-  
-  
+  @media only screen and (max-width: 980px) and (min-width: 480px){
+
+#bottom-menu, #secondary-menu {
+    display: none;
+}
+  }
   
   
   
