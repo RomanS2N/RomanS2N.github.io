@@ -215,8 +215,8 @@
                                         idesc = $(this).find("span");
                                         if (idesc) idesc = idesc.text();
                                         if (idesc != '') {
-                                            if (ititle != '') ititle = ititle + '</p> < p > ';
-                                            idesc=' < i > '+idesc+'<a name="cut"></a></i>';
+                                            if (ititle != '') ititle = ititle + '<p> </p> ';
+                                            idesc=' <i> '+idesc+'<a name="cut"></a> </i>';
                                         }}$.fancybox.open({href:isrc,beforeLoad:function(){this.title=ititle+idesc;},});});});})(jQuery);</script>
                         <script type="text/javascript">(function ($) {
                             $('head').append('<link rel="stylesheet" href="source/templates/default/stock/3rdParty/ad-gallery/jquery.ad-gallery.css" type="text/css" />');
@@ -280,8 +280,8 @@
                         </figure>
                     </div>
                     <p>Рисунок с ширеной больше обёртки (нужно сделать так что бы при их появлении они втискивались в
-                        страницу автоматически):</p>  <img alt="" height="1457"
-                                                           src="http://www.eurasiatravel.kz/assets/images/resources/2248/3ea8033454f18f133829c2e3d6c1415f0d44c12a.jpg"
+                        страницу автоматически):</p>  
+						<img alt="" height="1457"    src="http://www.eurasiatravel.kz/assets/images/resources/2248/3ea8033454f18f133829c2e3d6c1415f0d44c12a.jpg"
                                                            width="1080"/>
                     <p></p>
                     <p>&nbsp;</p>

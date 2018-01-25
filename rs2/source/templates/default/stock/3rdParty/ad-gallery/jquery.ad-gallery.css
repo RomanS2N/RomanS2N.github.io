@@ -87,11 +87,15 @@
         left: 0px;
         padding: 7px;
         text-align: center;
-        width: 100%;
+        width: 100% !important;
         z-index: 2;
-        background: url(opa75.png);
-        color: rgb(250, 55, 94);
+        background: rgba(255, 255, 255, 0.5);
+        color:#000;
+		
       }
+	  .ad-gallery .ad-image-wrapper .ad-image .ad-image-description .ad-description-title ~ span{
+		   color:#766e6e;
+	  }
       * html .ad-gallery .ad-image-wrapper .ad-image .ad-image-description {
         background: none;
         filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (enabled=true, sizingMethod=scale, src='opa75.png');
@@ -136,19 +140,27 @@
     * html .ad-gallery .ad-forward, .ad-gallery .ad-back {
       height: 100px;
     }
-    .ad-gallery .ad-back {
-      cursor: pointer;
-      left: -20px;
-      width: 13px;
-      display: block;
-      background: url(ad_scroll_back.png) 0px 22px no-repeat;
-    }
+  .ad-gallery .ad-back {
+    cursor: pointer;
+    left: -20px;
+    width: 13px;
+    display: block;
+    background: url(ad_scroll_back.png) 0px 22px no-repeat;
+    border: 20px solid transparent;
+    border-right: 20px solid #000;
+    height: 10px;
+    margin-top: 3px;
+}
+	
     .ad-gallery .ad-forward {
       cursor: pointer;
       display: block;
       right: -20px;
       width: 13px;
-      background: url(ad_scroll_forward.png) 0px 22px no-repeat;
+      border: 20px solid transparent;	
+	  border-left: 20px solid #000;
+	  height: 10px;
+    margin-top: 3px;
     }
     .ad-gallery .ad-nav .ad-thumbs {
       overflow: hidden;
@@ -162,9 +174,15 @@
         .ad-gallery .ad-thumbs li {
           float: left;
           padding-right: 5px;
+		      list-style-type: none;
         }
           .ad-gallery .ad-thumbs li a {
             display: block;
+			width:max-content;
+			width:-moz-max-content;
+			width:-0-max-content;
+			width:-webkit-max-content;
+			
           }
             .ad-gallery .ad-thumbs li a img {
               border: 3px solid #CCC;

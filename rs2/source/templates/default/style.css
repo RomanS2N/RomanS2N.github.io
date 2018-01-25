@@ -2956,7 +2956,9 @@ div.topsubmenD {
     color: #555;
 }
   
-  
+  span.child {
+    font-size: 80%;
+}
   
   @media only screen and (max-width: 980px) and (min-width: 480px)  {
 
