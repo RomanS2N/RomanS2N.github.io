@@ -55,7 +55,8 @@
       background: url(trans.gif);
     }
       .ad-gallery .ad-image-wrapper .ad-prev .ad-prev-image, .ad-gallery .ad-image-wrapper .ad-next .ad-next-image {
-        background: url(ad_prev.png);
+       border: 20px solid #fff;
+    border-right: 20px solid #000;
         width: 30px;
         height: 30px;
         display: none;
@@ -65,7 +66,8 @@
         z-index: 101;
       }
       .ad-gallery .ad-image-wrapper .ad-next .ad-next-image {
-        background: url(ad_next.png);
+        border: 20px solid #fff;
+    border-left: 20px solid #000;
         width: 30px;
         height: 30px;
         right: 0;
@@ -150,6 +152,7 @@
     border-right: 20px solid #000;
     height: 10px;
     margin-top: 3px;
+	 margin-left: -20px;
 }
 	
     .ad-gallery .ad-forward {
@@ -161,6 +164,7 @@
 	  border-left: 20px solid #000;
 	  height: 10px;
     margin-top: 3px;
+	    margin-right: -20px;
     }
     .ad-gallery .ad-nav .ad-thumbs {
       overflow: hidden;

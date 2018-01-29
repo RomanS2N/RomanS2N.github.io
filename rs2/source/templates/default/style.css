@@ -964,6 +964,7 @@ margin-top: -3px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 700; 
 margin-top: 15px;
+margin-bottom: 15px;
 }
 
 .pagination a,
@@ -2961,7 +2962,7 @@ div.topsubmenD {
     font-size: 80%;
 }
   
-  @media only screen and (max-width: 980px) and (min-width: 480px)  {
+  @media only screen and (max-width: 980px) and (min-width: 320px)  {
 
 #responsive-menu, #secondary-responsive-menu {
     display: block;
@@ -2970,7 +2971,7 @@ div.topsubmenD {
   
   }
   
-  @media only screen and (max-width: 980px) and (min-width: 480px){
+  @media only screen and (max-width: 980px) and (min-width: 320px){
 
 #bottom-menu, #secondary-menu {
     display: none;
@@ -2979,7 +2980,16 @@ div.topsubmenD {
   
   
   
-  
+    @media only screen and (max-width: 1200px) and (min-width: 768px){
+		
+		#rsidebars{
+			float:right;
+			
+		}
+		#content{
+			margin-bottom:10px;
+		}
+	}
   
   
   
@@ -3005,7 +3015,7 @@ span.glyphicon {
 }
   
 
- @media screen and (max-width: 980px){
+ @media screen and (max-width: 1200px){
   
   .dropbtn,.dropbtn2  {
   
@@ -3019,6 +3029,14 @@ span.glyphicon {
     cursor: pointer;
     display: block;
     height: 30px;
+}
+
+.search-form-input {
+width: 88%;}
+.table-responsive{
+	width:100%;
+	overflow-x:auto;
+	    -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -3082,5 +3100,68 @@ span.glyphicon {
    .topglmen .topglmendv {
    float:  none;}
   
-  
+ 
+}
+ @media screen and (max-width: 970px){
+	 form.contact-form {
+    margin: 5px 11px 50px 0px;
+}
+	 #content {
+    margin-bottom: 10px;
+}
+	 
+ }
+
+
+ @media screen and (max-width: 781px){
+	 
+#footergl .center {
+    clear: both;
+}
+
+div.page_other_pages ul {
+background: url(images/dot-1.png) repeat-y 49% 0;}
+
+.Top_category li:first-child{
+width:100%;
+ border-right: 0px solid #fff;
+}
+.Top_category li {
+    width: 100%;
+    border-left: 0px solid #fff;
+	padding-left: 0px;
+}
+ }
+ 
+  @media screen and (max-width: 970px){
+	 div.comments-auth {
+    width: 100%;
+}
+	
+div.comment-form div.comments-textarea {
+    width: 100%;
+}
+	  
+}
+
+ 
+ @media screen and (max-width: 480px){
+
+	.search-form-input {
+width: 75%;
+margin-left: 3px;
+} 
+div.comments li{
+	margin-left:0px;}	 
+
+div.page_other_pages ul {
+background: url(images/dot-1.png) repeat-y 48% 0;}
+
+#footergl .left {
+  width: 180px;}
+
+form.contact-form textarea{
+	width:100%;
+	
+}
 }
