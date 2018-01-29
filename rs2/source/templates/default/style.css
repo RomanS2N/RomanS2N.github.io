@@ -2966,6 +2966,7 @@ div.topsubmenD {
 
 #responsive-menu, #secondary-responsive-menu {
     display: block;
+	margin-left: 10px;
 }
   
   
@@ -3102,6 +3103,12 @@ width: 88%;}
   
  
 }
+ @media screen and (max-width: 991px){
+.clearleaft{
+	clear:left;
+}
+ }
+
  @media screen and (max-width: 970px){
 	 form.contact-form {
     margin: 5px 11px 50px 0px;
