@@ -499,8 +499,8 @@
                             <div class="widget-content">
                                 <ul class="is_link page_list PhotoBlock clearfix">
                                     <li>
-                                        <div class="widget_prev"><a
-                                                href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
+                                        <div class="widget_prev"><a class="fancybox"
+                                                href="cm/uploads/prev/23/6642_11.gif"><img
                                                 src="cm/uploads/prev/23/6642_11.gif" class="widgit_img"
                                                 title="Аптечный бизнес: как мотивировать сотрудников"></a></div>
                                         <div class="widget_heading">
@@ -511,8 +511,8 @@
 <div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
                                     </li>
                                     <li>
-                                        <div class="widget_prev"><a
-                                                href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"><img
+                                        <div class="widget_prev"><a class="fancybox"
+                                                href="cm/uploads/prev/23/6641_11.gif"><img
                                                 src="cm/uploads/prev/23/6641_11.gif" class="widgit_img"
                                                 title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a>
                                         </div>
@@ -524,8 +524,8 @@
 <div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
                                     </li>
                                     <li>
-                                        <div class="widget_prev"><a
-                                                href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"><img
+                                        <div class="widget_prev"><a class="fancybox"
+                                                href="cm/uploads/prev/23/6640_11.gif"><img
                                                 src="cm/uploads/prev/23/6640_11.gif" class="widgit_img"
                                                 title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a>
                                         </div>
@@ -538,7 +538,7 @@
 <div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
                                     </li>
                                     <li>
-                                        <div class="widget_prev"><a href="page/pochemu-v-turcii-deshevle"><img
+                                        <div class="widget_prev"><a class="fancybox"  href="cm/uploads/prev/23/6639_11.gif"><img
                                                 src="cm/uploads/prev/23/6639_11.gif" class="widgit_img"
                                                 title="Почему в Турции дешевле?"></a></div>
                                         <div class="widget_heading">
@@ -1141,7 +1141,59 @@
 </div>
 
 <!-- /Footer --></div>
-
+      <script src="source/templates/default/stock/3rdParty/ad-gallery/jquery.ad-gallery.min.js"
+                                type="text/javascript"></script>
+                        <script type="text/javascript">(function ($) {
+                            $('head').append('<link rel="stylesheet" href="source/templates/default/stock/3rdParty/fancybox2/jquery.fancybox.css" type="text/css" />');
+                        })(jQuery);</script>
+                        <script src="source/templates/default/stock/3rdParty/fancybox2/jquery.fancybox.pack.js"
+                                type="text/javascript"></script>
+                        <script type="text/javascript">(function ($) {
+                            $(function () {
+                                $("#ad-gallery_cke_x5ukifom_slideShow").on("click", ".ad-image", function () {
+                                    var imgObj = $(this).find("img");
+                                    var isrc = imgObj.attr("src");
+                                    var ititle = null;
+                                    var idesc = null;
+                                    var iname = isrc.split('/');
+                                    iname = iname[iname.length - 1];
+                                    var imgdescid = $(this).find(".ad-image-description");
+                                    if (imgdescid) {
+                                        ititle = $(this).find(".ad-description-title");
+                                        if (ititle) ititle = ititle.text();
+                                        if (ititle != '') ititle = '<big>' + ititle + '</big>';
+                                        idesc = $(this).find("span");
+                                        if (idesc) idesc = idesc.text();
+                                        if (idesc != '') {
+                                            if (ititle != '') ititle = ititle + '<p> </p> ';
+                                            idesc=' <i> '+idesc+'<a name="cut"></a> </i>';
+                                        }}$.fancybox.open({href:isrc,beforeLoad:function(){this.title=ititle+idesc;},});});});})(jQuery);</script>
+                        <script type="text/javascript">(function ($) {
+                            $('head').append('<link rel="stylesheet" href="source/templates/default/stock/3rdParty/ad-gallery/jquery.ad-gallery.css" type="text/css" />');
+                        })(jQuery);</script>
+                        <script type="text/javascript">(function ($) {
+                            $(function () {
+                                var galleries = $('#ad-gallery_cke_x5ukifom_slideShow').adGallery({
+                                    loader_image      : '<!--cke_bookmark_308S--><!--cke_bookmark_308E-->cm/uploads/prev/23/6640_33.gif',
+                                    width             : false,
+                                    height            : 300,
+                                    start_at_index    : 0,
+                                    animation_speed   : 500,
+                                    update_window_hash: false,
+                                    effect            : 'resize',
+                                    slideshow         : {
+                                        enable   : true,
+                                        autostart: true,
+                                        speed    : 5000,
+                                    },
+                                });
+                            });
+                        })(jQuery);</script>
+                        <script type="text/javascript">
+			$(document).ready(function() {
+			$(".fancybox").fancybox();
+		});
+		</script>
 
 <!--  Время: 1.3435 | SQL: 3 | Память: 4.34MB-->
 
