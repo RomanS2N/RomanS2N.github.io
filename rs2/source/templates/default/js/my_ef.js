@@ -24,7 +24,8 @@ jQuery(document).ready(function() {
                 kopa_accordion_click(jQuery(this));
             });
         }
-        
+    
+	 
 });
 
 function kopa_accordion_click (obj) {
@@ -94,6 +95,41 @@ function myFunction() {
 function myFunction2() {
     $("#myDropdown2").toggleClass("show");
 }
+
+
+function vkopenn() {
+    $(".vkbox").toggleClass("show");
+}
+
+
+jQuery(window).load(function(){
+  
+  if( jQuery(".kp-featured-news-slider").length > 0){
+      jQuery('.kp-featured-news-slider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails",
+        slideshow: false,
+        start: function(slider){
+          jQuery('body').removeClass('loading');
+        }
+      });
+  }
+
+  if( jQuery(".kp-single-slider").length > 0){
+      jQuery('.kp-single-slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        slideshow: true,
+        start: function(slider){
+          jQuery('body').removeClass('loading');
+        }
+      });
+  }
+
+});
+
+
+
 
 
 

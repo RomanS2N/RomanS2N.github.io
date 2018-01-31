@@ -1,10 +1,10 @@
-/**/div.comment-reply {text-align: right; }
+/**/div.comment-reply {text-align: right;clear: left; }
 div.comment-form-comment {text-align: left;}
 
 div.tree-comment {padding: 5px 2px 8px 2px; margin: 8px 0 10px 0; border-bottom: 1px dashed #bbd3eb;}
 
 div.comments-user {font-size: 0.8em; margin: 10px 0; padding: 10px; border: 1px solid #8591B7; background: #e6eff8; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; }
-div.comments-textarea {font-size: 0.8em; margin: 10px 0; padding: 10px; border: 1px solid #8591B7; background: #e6eff8; -webkit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px;}
+div.comments-textarea {font-size: 0.8em; margin: 10px 0; padding: 10px; border: 1px solid #000; }
 /*div.comment-form div.comments-textarea	     */
 div.comment-form-comment p.radio {font-weight: bold;}
 div.comment-form-comment td {padding: 2px;}
