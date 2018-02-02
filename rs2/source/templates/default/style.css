@@ -1402,7 +1402,16 @@ Elements Page
 
 
 }
-
+@media screen and (min-width: 2100px){
+	
+	.tabs .tabs-nav li span {
+		    height: 2vw;
+    padding: 0.6vw 0.9vw 8px 0.9vw;
+	       line-height: inherit;
+	}
+		
+	
+}
 
 li.tabs-current  span{
 	 background-color: #222;
