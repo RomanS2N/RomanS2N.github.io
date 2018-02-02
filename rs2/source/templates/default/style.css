@@ -99,6 +99,17 @@ select,input[type="email"], input[type="number"], input[type="password"], input[
     padding: 5px 10px;
 	color: #222;
 }
+ @media screen and (min-width: 2100px) {
+	 
+	 select, input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"]:not(.search-form-input) {
+
+    height: 1.5vw;
+   
+}
+	 
+	 
+ }
+
  input[type="checkbox"] {
     -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
@@ -215,6 +226,14 @@ input[type="radio"]:checked:before{
     height: 21px;
     line-height: 21px;
     color: #000; }
+	
+	@media screen and (min-width: 2100px){
+		.topglmen .topglmendv .topglmenurl {
+    font-size: 0.9vw;
+  
+    line-height: 1;
+}
+	}
   .topglmen .topglmendv a {
     display: inline-block; }
   .topglmen .topglmendv .icon-home {
@@ -225,7 +244,19 @@ input[type="radio"]:checked:before{
     line-height: 27px;
     color: #fff;
     background-color: #222; }
-
+@media screen and (min-width: 2100px){
+	
+	.topglmen .topglmendv .icon-home {
+    font-size: 1vw;
+    width: 2vw;
+    height: 1.3vw;
+    line-height: 1.3;
+   
+  
+}
+	
+	
+}
 /*----- Search box -----*/
 .search-form {
 	    margin-top: 3px;
@@ -301,7 +332,13 @@ h6 {
 	font-style: italic;
 	margin-bottom: 15px;
 	}
-
+@media screen and (min-width: 2100px){
+	.breadcrumb{
+		
+		font-size: 0.7vw;
+	}
+	
+}
 a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover,
 #footergl a:hover,
 #toggle-view li h3:hover {
@@ -505,6 +542,19 @@ Main Content
 #sub-container {
   border: 10px solid #f9f9f9;
   padding: 20px 0 40px; }
+  
+  @media screen and (max-width: 768px){
+	   #wrapper {
+		       display: flex;
+               flex-direction: column;
+	   }
+	  
+	  #content {
+		  order: -1;
+	  }
+  }
+
+  
 .iformer-block a {
     font-weight: bold;
 }
@@ -1031,11 +1081,57 @@ h2.box, .widget h2 {
 	  list-style-type:none;
 	  
   }
+  
+
+  
    ul.is_link li a{
 	 font-weight:bold;
-	 font: 700 14px/20px Georgia, "Times New Roman", Times, serif;
+	 font: 700 115%/20px Georgia, "Times New Roman", Times, serif;
 	  
   }
+  
+  
+  
+  
+  
+    @media screen and (min-width: 2100px) {
+		body {
+   
+		font-size: 0.65vw;
+		 line-height: 1.3;
+		}
+		p {
+   
+    line-height: 1.2;
+}
+	   ul.is_link li a{
+	 font-weight:bold;
+	 font: 700 0.65vw/1vw Georgia, "Times New Roman", Times, serif;
+	  
+  }
+  .widget_date, .comments-link, .page_date, .page_view, .comments-link, .widget_count_page {
+    font-size: 0.65vw;
+	
+    
+  }
+  
+	
+  h2.box, .widget h2 {
+     line-height: 1.7;
+    font-size: 0.7vw;
+	}
+	
+	.widget_short_text {
+ 
+    line-height: 1.3;
+	}
+	
+	}
+	
+	
+	
+	
+	
 li.current-page > span { font-weight: bold; }
 
 .widget-content ul li .level1{
@@ -1063,7 +1159,14 @@ li.current-page > span { font-weight: bold; }
   font-family: 'icomoon';
   margin-right: 5px;
   font-size: 11px; }
-
+  
+ @media screen and (min-width: 2100px) {
+	.widget.newws ul li:before, ul.cat_link li:before {
+ 
+    font-size: 0.65vw;
+}
+	
+}
 /* =========================================================
 Bottom Sidebar
 ============================================================ */
@@ -1089,7 +1192,16 @@ Categories page
   font-size: 150%;
   margin: 0 0 5px;
   line-height: 22px; }
-
+  @media screen and (min-width: 2100px) {
+	  
+	.page_only .page_title {
+  font-size: 1.2vw;
+ 
+  line-height: 1.3; }
+	  
+  } 
+  
+  
 .page_only .img_prewiev {
   width: 30%;
   margin-right: 15px;
@@ -1137,6 +1249,15 @@ margin-bottom: 15px;
   font-weight: 700;
   color: #222; }
 
+  @media screen and (min-width: 2100px) {
+	  .pagination a, .pagination span, .pagination strong {
+
+	  font-size: 1vw;}
+	  .pagination {
+	  font-size: 1vw;}
+	  
+  }
+  
 .pagination span {
   color: #222; }
 
@@ -1244,8 +1365,9 @@ Elements Page
   }
 
 .tabs .tabs-nav li {
-  float: left;
-  list-style: none outside none;
+  float: left;3182
+  list-style: none;
+  outside: none;
   margin: 0 5px 0 0;
   border: none;
   padding: 0;
@@ -1254,7 +1376,7 @@ Elements Page
           box-sizing: border-box;
   -moz-box-sizing: border-box;
   color: #222;
-       
+     list-style-type: none;  
 }
 
 .tabs .tabs-nav li span {
@@ -1280,6 +1402,8 @@ Elements Page
 
 
 }
+
+
 li.tabs-current  span{
 	 background-color: #222;
 	 color: #fff; 
@@ -1388,6 +1512,25 @@ li.tabs-current  span{
     text-align: center;
     vertical-align: middle;
 	}
+	
+	  @media screen and (min-width: 2100px) {
+	.fa-facebook, .fa-vk, .fa-twitter, .fa-rss {
+    line-height: 1;
+    height: 1.7vw;
+    width: 1.7vw;
+    line-height: 1vw;
+    font-size: 1.2vw;
+    border: 2px solid #D0D0D0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding-top: 1.3%;
+}
+		  
+		  
+	  }
+	
+	
 	.rss_category:before{
 		content: "\f09e";
         margin-right: 10px;
@@ -1462,6 +1605,15 @@ a img {
   padding-top: 7px; 
   font-size: 110%;
   }
+  
+    @media screen and (min-width: 2100px) {
+	#news_url {
+   
+
+	    line-height: 1.8;
+}
+	}
+	
 .newslist a{
     font-size: 110%;
 }
@@ -1469,6 +1621,13 @@ a img {
   font-weight: normal;
   font-size: 13px; }
 
+   @media screen and (min-width: 2100px) {
+	 #news_time span {
+
+  font-size: 0.8vw; }  
+	   
+   }
+  
 div.comments-other-form {
   padding: 10px 15px 15px 0px;
   text-align: left; }
@@ -2037,6 +2196,19 @@ div.comment-form .r1 p input{
    
 	 
 }
+ @media screen and (min-width: 2100px) {
+	 
+	div.comment-form .r1 p input{
+
+    height: 1.5vw;
+   
+}
+	 
+	 
+ }
+
+
+
 div.comment-form .r1 p label{
 width: 85px;
     text-align: right;
@@ -3048,6 +3220,8 @@ div.topsubmenD {
             height: 120px;
         }
 
+		
+		
         /* margin-top: -1px;*/
 
         /* HEDER LOGO */
@@ -3070,6 +3244,19 @@ div.topsubmenD {
             font: normal 38px Arial, Sans-Serif;
         }
 
+		@media screen and (min-width: 2100px) {
+	
+	#logotip {
+    padding-top: 1.5vw;}
+	
+	#myheard {
+    height: 7vw;
+}
+#logotip a {
+    font: normal 3vw Arial, Sans-Serif;
+}	
+}
+		
         /* HEDER CENTER */
 
         #rightbox {
@@ -3135,7 +3322,15 @@ div.topsubmenD {
         #footergl a {
             font-size: 13px;
         }
-		
+		  @media screen and (min-width: 2100px) {
+			  #footergl {
+    font-size: 0.7vw;
+}
+			  #footergl a {
+    font-size: 0.7vw;
+}
+		  }
+		  
 		
 		.er{font-size: 2000%;line-height:1;}
   
@@ -3148,6 +3343,11 @@ div.topsubmenD {
             height: 100%;
         }
 
+		  @media screen and (min-width: 2100px) {
+			   #footergl .left {
+			   width: 10vw;}
+			  
+		  }
         #footergl .right {
             width: 140px;
             float: right;
