@@ -2002,6 +2002,17 @@ margin: 0;
 
 }
 
+ @media screen and (min-width: 2100px){
+	 
+	 div.page_other_pages h3 { 
+    font-size: 0.8vw;
+  
+
+}
+
+	 
+ }
+
 div.page_other_pages ul {
      list-style-type: square;
     padding-right: 15px;
@@ -2047,7 +2058,13 @@ div.page_other_pages ul .page_related_prev img {
     object-fit: cover;
 }
  
-
+  @media screen and (min-width: 2100px){
+	  div.page_other_pages ul .page_related_prev img {
+    width: 5vw;
+	  height: 3.5vw;}
+	  
+	  
+  }
 
 div.category_desc {
   margin: 0 0 20px 0; }
@@ -2174,8 +2191,8 @@ h3.comments {
 @media screen and (min-width: 2100px){
  h3.comments {
 
-    font-size: 0.65vw;
-    line-height: inherit;
+    font-size: 0.8vw;
+    line-height: 1.3;
 }}
 
 
