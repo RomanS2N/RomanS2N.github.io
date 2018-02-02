@@ -1546,10 +1546,10 @@ li.tabs-current  span{
 	  @media screen and (min-width: 2100px) {
 	.fa-facebook, .fa-vk, .fa-twitter, .fa-rss {
     line-height: 1;
-    height: 1.7vw;
-    width: 1.7vw;
+    height: 1.6vw;
+    width: 1.6vw;
     line-height: 1vw;
-    font-size: 1.2vw;
+    font-size: 1vw;
     border: 2px solid #D0D0D0;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1887,8 +1887,26 @@ div.loginform p.header {
   line-height:30px;
   }
 
+
+  
 form.flogin span {
   font-weight: bold; }
+  
+  
+     @media screen and (min-width: 2100px){
+	 
+	
+div.loginform p.header {
+  font-size: 0.9vw;
+      line-height: 1.2;
+
+  }
+	form.flogin span {
+    font-size: 0.7vw; }
+
+	
+ }
+  
 
 form.flogin input.flog_user {
   width: 98%; }
@@ -3446,6 +3464,174 @@ div.topsubmenD {
             margin-top: 15px;
 		}
 		
+     .arh-ulopt {
+                        font-size: 11pt;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-weight: normal;
+                        font-family: Times New Roman;
+                    }
+
+					
+				 @media screen and (min-width: 2100px){
+					 
+					   .arh-ulopt {
+                        font-size: 0.9vw;
+                     
+                    }
+					 
+					 
+				 }	
+					
+                    .arh-yzo {
+                        background-color: #ffffff;
+                        text-align: center;
+                        color: #51505F;
+                    }
+
+                    a.arh-nuurl, a.arh-nuurl:visited {
+                        text-decoration: none;
+                        background: none;
+                    }
+
+                    a.arh-nuurl:active:hover {
+                        text-decoration: underline;
+                        background: none;
+                    }
+
+                    tr.arh-mnt {
+                        color: #51505F;
+                        background-color: #f9f9f9;
+                        text-align: center;
+                    }
+
+                    tr.arh-nnt {
+                        background-color: #f9f9f9;
+                        text-align: center;
+                        color: #5D5D5D;
+                    }
+
+                    td.arh-nntr {
+                        color: red;
+                    }
+
+                    table.arh-mnt {
+                        border-collapse: collapse;
+                        width: 145px;
+                        text-align: center;
+                        border: 1px solid #DBDBDB;
+                        float: left;
+                        marrgin-left: 2%;
+                        margin: 3% 1% 4% 1%;
+						    min-height: 150px;
+                    }
+					
+					
+					@media screen and (min-width: 2100px){
+						 table.arh-mnt {
+						 width: 10vw;
+						 min-height: 10vw;}
+					}
+
+                    .arh-navb {
+                        border-collapse: collapse;
+                       font-size: 105%;
+                        text-align: center;
+                        background-color: #f9f9f9;
+                        border: 1px solid #cccccc;
+                        clear: both;
+                        margin: 10px 0 5px 0;
+						
+                    }
+                       .arh-navb a {
+					   font-size: 115%;
+					   line-height: 30px;
+					   
+					   }
+									 
+                    .arh-navw {
+                        border-collapse: collapse;
+                        width: 100%;
+                        text-align: center;
+                        border: 1px solid #cccccc;
+                        background-color:#f9f9f9;
+                        margin-top: 20px;
+						line-height:30px;
+                    }
+    @media screen and (min-width: 2100px){
+									  .arh-navb a { line-height: 2;}
+
+									   .arh-navw, .arh-navb {line-height:2;}
+									  
+
+									}
+									
+									
+									
+									
+									
+
+
+                    .arh-yzo {
+                        background-color: #ffffff;
+                        text-align: center;
+                        color: #51505F;
+                    }
+
+                    a.arh-nuurl, a.arh-nuurl:visited {
+                        text-decoration: none;
+                        background: none;
+                    }
+
+                    a.arh-nuurl:active:hover {
+                        text-decoration: underline;
+                        background: none;
+                    }
+
+                    tr.arh-mnt {
+                        color: #51505F;
+                        background-color: #DBDBDB;
+                        text-align: center;
+                    }
+
+                    tr.arh-nnt {
+                        background-color: #E9E9E9;
+                        text-align: center;
+                        color: #5D5D5D;
+                    }
+
+                    td.arh-nntr {
+                        color: red;
+                    }
+
+                
+
+                
+
+                 
+					 .arh-navb a {
+					   font-size: 115%;
+					   line-height: 30px;
+					   
+					   }
+					   
+					   .arh-navw a{
+					    font-size: 115%;
+					   line-height: 30px;
+					   }								
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									
+  
   
   #secondary-nav {
     border-top: 1px solid #222;
