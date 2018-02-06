@@ -20,7 +20,9 @@ div.comments ul {	overflow: visible; border-bottom: 0;}
 div.comments li span {font-style: normal;}
 div.comments li span.tree-comment-author{
 	font-weight:bold;
+	font-size: 140%;
 }
+
 div.comments li.users {}
 div.comments li.comusers {}
 div.comments li.anonim {}
@@ -41,7 +43,7 @@ a.comment-form-button {cursor: pointer;
     right: 0px;
 		font-weight:bold;} /*display: block; float: right;}*/
 textarea#comments_content {width: 98%;}
-div.comments li.anonim span.tree-comment-author { font-size: 11px;  font-weight: bold; }
+div.comments li.anonim span.tree-comment-author { font-size: 140%;  font-weight: bold; }
 div.comments li.anonim span.tree-comment-date { font-size: 12px;}
 
 @media screen and (min-width: 2100px){
