@@ -18,6 +18,9 @@ img.gravatar {border: #6699CC solid 1px; padding: 3px; background: white;}
 
 div.comments ul {	overflow: visible; border-bottom: 0;}
 div.comments li span {font-style: normal;}
+div.comments li span.tree-comment-date{
+	margin-left: 10px;
+}
 div.comments li span.tree-comment-author{
 	font-weight:bold;
 	font-size: 140%;

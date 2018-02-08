@@ -21,7 +21,13 @@
 		  }
 		  
 		
-	.er{font-size: 2000%;line-height:1;}
+	.er{
+	    font-size: 250%;
+    line-height: 1;
+    margin-top: 1px;
+    margin-right: 10px;
+	float: left;
+	}
   
   
     #footergl .left {
