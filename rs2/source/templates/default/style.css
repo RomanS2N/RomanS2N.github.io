@@ -3977,6 +3977,8 @@ top: 50%;}
     top: 35%;
 }
 
+
+
 @media only screen and (max-width: 768px){
 .kp-featured-news-slider.slaider2 .flex-direction-nav li a {
 	
@@ -3988,6 +3990,11 @@ top: 32vw;}
 
 
 
+@media only screen and (min-width: 1600px){
+	.kp-featured-news-slider.slaider2 .flex-viewport {
+    max-height: 4000px;}
+	
+}
 
 @media only screen and (max-width: 1200px){
 	.kp-featured-news-slider .flex-control-thumbs {display:none;}	
