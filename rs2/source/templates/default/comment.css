@@ -16,6 +16,15 @@ div.comment-form-comment p.you-comment {font-weight: bold;}
 
 img.gravatar {border: #6699CC solid 1px; padding: 3px; background: white;}
 
+@media screen and (min-width: 2100px){
+	img.gravatar {
+	width: 3.5vw;
+    height: 3.5vw;
+	
+	}
+	
+}
+
 div.comments ul {	overflow: visible; border-bottom: 0;}
 div.comments li span {font-style: normal;}
 div.comments li span.tree-comment-date{
