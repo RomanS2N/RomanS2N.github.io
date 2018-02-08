@@ -1,0 +1,77 @@
+/*----- Accordion -----*/
+.accordion-title {
+    position: relative;
+    background-color: #e2e2e2;
+    margin-bottom: 3px;
+}
+.accordion-title h3 {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+	  @media screen and (min-width: 2100px) {
+		  .accordion-title h3 {
+    font-size: 0.6vw;
+    line-height: 1.3vw;
+}
+		 
+	 
+	  }
+.accordion-title span {
+    width: 22px;
+    height: 22px;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    border: 1px solid #dedede;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 20px;
+    color: #222;
+    font-size: 18px;
+    cursor: pointer;
+}
+  @media screen and (min-width: 2100px) {
+.accordion-title span {
+    width: 1vw;
+    height: 1vw;
+   
+    line-height: 1;
+    font-size: 1vw;
+ 
+}		 
+	  }
+.accordion-title.active {
+    background-color: #fff;
+    border-bottom: 5px solid #222;
+    border-top: 1px solid #d0d0d0;
+}
+
+.accordion-container {
+    margin-top: 15px;
+}
+.accordion-container p {
+    margin-bottom: 20px;
+}
+.accordion-container ul li {
+    border-top: 1px solid #d0d0d0;
+    padding-top: 15px;
+    margin: 0 0 10px;
+}
+.accordion-container ul li:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+.accordion-container ul li .entry-item .entry-thumb {
+    float: left;
+    margin-right: 10px;
+}
+.accordion-container ul li .entry-item .entry-title {
+    margin: 0px 0 5px;
+    font-size: 11px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
