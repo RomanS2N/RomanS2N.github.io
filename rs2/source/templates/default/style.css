@@ -176,6 +176,7 @@ input[type="checkbox"]:checked:before {
      margin-top: 10px;
     margin-bottom: -8px;
     margin-right: 10px;
+     position: relative;
 }
 input[type="radio"]:checked:before {
     content: " ";
@@ -186,6 +187,11 @@ input[type="radio"]:checked:before {
     background-color: #000;
     border-radius: 50%;
     margin-top: 2px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 .curs-a-bold a{
     font-weight: bold;
@@ -610,7 +616,7 @@ Main Content
 .sub-container .widget {
   margin-bottom: 15px; }
 
-.widget_prev {
+.widget_prev img {
     margin-bottom: 10px;
 }
 .page_list.LTxtPhoto li{
@@ -3800,11 +3806,18 @@ width:100%;
  select.forms, input.forms{
 	     font-size: 16px;
  }
+.costcontainer{
+    position: relative;
+        display: block;
+    margin: auto;
+}
  input.w90 + label{
-	margin-left:-80px;
+	margin-left:-50px;
   animation:myfirst 5s;
   -moz-animation:myfirst 0.5s linear infinite;/* Firefox */
 -webkit-animation:myfirst 0.5s linear infinite; /* Safari and Chrome */
+     -o-animation:myfirst 0.5s linear infinite; 
+     animation:myfirst 0.5s linear infinite; 
   }
 
 
@@ -3819,7 +3832,16 @@ width:100%;
 0%   {color:#000;}
 100% {color:#fff;}
 }
-  
+   @-o-keyframes myfirst 
+{
+0%   {color:#000;}
+100% {color:#fff;}
+}
+   @keyframes myfirst
+{
+0%   {color:#000;}
+100% {color:#fff;}
+}
  input.w90:focus + label{
 	 color:rgba(255, 255, 255, 0);
 	 visibility:hidden;
@@ -3828,14 +3850,17 @@ width:100%;
  
  @media screen and (max-width: 600px){
 	input.forms.w90 {width: 90%;
-	    margin: auto;
-    display: block;
+	 
 	
 	
 	
 	}
 	input.w90 + label {
-    margin-left: 0px;}
+    margin-left: 0px;
+            position: absolute;
+   right: 22%;
+    top: 12px;
+     }
 	
 	.kursvivod select {
 		margin-top:10px;
