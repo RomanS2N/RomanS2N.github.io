@@ -76,6 +76,11 @@ li.users span.tree-comment-date:before{
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     margin-right: 5px;
+    color: #6a6a6a;
+    font-family: 'icomoon';
+    font-size: 91.667%;
+margin-right: 8px;
+  margin-top: 2px;
 }
 
 span.tree-comment-ip {float: right; margin-right: 5px;}

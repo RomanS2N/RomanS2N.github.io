@@ -155,6 +155,8 @@ input[type="checkbox"]:checked:before {
     width: 7px;
     border-bottom: 3px solid #0c0c0c;
     border-right: 3px solid #1c1b1b;
+    -webkit-transform: rotate(41deg);
+    -o-transform: rotate(41deg);
     transform: rotate(41deg);
     position: absolute;
     margin-left: 3px;
@@ -697,7 +699,13 @@ h2.box, .widget h2 {
   padding-right: 15px;
   width: 62%;
   padding-bottom: 10px; }
+@media only screen and (max-width: 768px){
+    .col_top-left {
 
+        border-right:none;}
+    
+    
+}
 .col_top-right {
   float: left;
   border-left: 1px solid #D0D0D0;
@@ -759,9 +767,12 @@ h2.box, .widget h2 {
   float: left;
   margin-top: 1px; }
 .entry-icon.icon-clock {
-  margin-right: 5px;
+        margin-right: 7px;
+    color: #6a6a6a;
+    font-family: 'icomoon';
+    font-size: 91.667%;
 
-  margin-top: 1px; }
+  margin-top: 2px; }
 
 
 .entry-date span,
@@ -969,6 +980,14 @@ h2.box, .widget h2 {
     border-right: 1px solid #d0d0d0;
     padding: 15px 15px 10px 0;
     margin-top: -15px; }
+
+@media only screen and (max-width: 768px){
+    .BigLeft li:first-child {
+  
+        border-right: none;}
+    
+}
+
     .BigLeft li:first-child .widget_prev {
       width: 100%;
       position: relative;
