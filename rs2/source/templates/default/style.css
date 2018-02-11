@@ -3961,16 +3961,18 @@ div#page_wrap{
 	height:25vw;
 }
 .kp-featured-news-slider .flex-control-thumbs {
-	 top: 20vw;
-	 float:left;
-     display: -webkit-box;
+	    top: 19vw;
+    float: left;
+    display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-	 -webkit-justify-content: center;
-	 -ms-justify-content: center;
-	 justify-content: center;
-     overflow-x: hidden;}
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    overflow-x: hidden;
+    position: absolute;
+    height: 6vw;}
 
 
 
@@ -4006,7 +4008,7 @@ div#page_wrap{
 }
 .flex-control-thumbs li {
 
-    height:6vw\0/;
+    height:5vw\0/;
     -o-object-fit: cover\0/;
     object-fit: cover\0/;
     /* для всех IE */}
