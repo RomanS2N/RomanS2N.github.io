@@ -115,19 +115,21 @@ jQuery(window).load(function(){
       });
   }
 
-  if( jQuery(".kp-single-slider").length > 0){
-      jQuery('.kp-single-slider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        slideshow: true,
-        start: function(slider){
-          jQuery('body').removeClass('loading');
-        }
-      });
-  }
-
+  
+$('.kp-featured-news-slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+ 
+    
 });
 
+ 
 
 
 

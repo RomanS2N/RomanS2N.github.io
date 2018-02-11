@@ -689,7 +689,7 @@ h2.box, .widget h2 {
     margin-bottom: 5px;  
 }
 .bigtop .page_list .widget_tit {
-  font-size: 200%;
+  font-size: 160%;
   line-height: 1.17;
   margin: 10px 0; }
 
@@ -4004,7 +4004,7 @@ div#page_wrap{
 // width: 15%; /* для всех IE */}
 
 .flexslider .BMedia.slides li{
-	    border-left: 1px solid #ffffff;
+	 
 }
 .mediablocks  li {
 	border:none;
