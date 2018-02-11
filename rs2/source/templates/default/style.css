@@ -246,7 +246,7 @@ input[type="radio"]:checked:before {
 	@media screen and (min-width: 1200px){
 		 .topglmen .topglmendv .topglmenurl {
     display: inline-block;
-		 font-size: 1.15vw;}
+		 font-size: 1.12vw;}
 	}
 	
 	@media screen and (min-width: 2100px){
@@ -797,6 +797,12 @@ h2.box, .widget h2 {
   font-weight: 400;
   color: #6a6a6a;
   font-size: 92%; }
+
+.page_list .cut:before , .page_only .cut:before,ul.is_link li a.more:before {
+    font-family: 'icomoon';
+    margin-right: 10px;
+    content: "\e612";
+}
 
 .page_only .cut {
   display: block;
@@ -1370,7 +1376,7 @@ margin-top: 35px;
 .pagination span,
 .pagination strong {
   padding: 0 8px;
-  font-size: 16px;
+  font-size: 100%;
   font-weight: 700;
   color: #222; }
 
@@ -1462,7 +1468,9 @@ Single page
   border-top: 1px solid #d0d0d0;
   margin: 0 2%;
   width: 46%;
-  padding: 15px 0; }
+  padding: 15px 0; 
+
+}
 
 /*--------------- Masonry Container ----------------*/
 /* disable transitions on pf-container */
@@ -1493,7 +1501,7 @@ Elements Page
   float: left;3182
   list-style: none;
   outside: none;
-  margin: 0 5px 0 0;
+  margin: 0 1% 0 0;
   border: none;
   padding: 0;
   width: max-content;
@@ -1502,6 +1510,7 @@ Elements Page
   -moz-box-sizing: border-box;
   color: #222;
      list-style-type: none;  
+    width: 32%;
 }
 
 .tabs .tabs-nav li span {
@@ -3755,7 +3764,7 @@ width: 88%;}
         min-width: 260px;
     overflow: auto;
     border: 1px solid #ddd;
-    z-index: 1;
+    z-index: 99;
 	
 	    padding-top: 15px;
     padding-bottom: 15px;
