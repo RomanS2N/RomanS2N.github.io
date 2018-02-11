@@ -4000,8 +4000,16 @@ div#page_wrap{
     background-size: cover !important;
 }
 
+.flex-control-nav.flex-control-thumbs{
+    height:6vw\0/;
+    overflow: hidden\0/;
+}
 .flex-control-thumbs li {
-// width: 15%; /* для всех IE */}
+
+    height:6vw\0/;
+    -o-object-fit: cover\0/;
+    object-fit: cover\0/;
+    /* для всех IE */}
 
 .flexslider .BMedia.slides li{
 	 
