@@ -16,12 +16,16 @@
     <meta property="og:title" content=""/>
     <meta property="og:description" content=""/>
     <meta property="og:image" content="cm/uploads/logo.jpg"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="cm/uploads/logo.jpg">
     <base href="">
     <link rel="home" href="/">
-    <link rel="stylesheet" href="source/templates/default/style.css" type="text/css" media="screen">
-
-
+    
+  <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="source/templates/default/bootstrap/bootstrap.css" type="text/css" media="screen">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="source/templates/default/icoMoon.css" media="all" />
+<link rel="stylesheet" href="source/templates/default/style.css" type="text/css" media="screen">
     <script type="text/javascript" src="source/common/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="source/templates/default/js/my_ef.js"></script>
 
@@ -39,139 +43,17 @@
     <!-- LOADING BANNERS  -->
     <style type="text/css">
 
-        /* HEDER */
-        #search_heard {
-            float: right;
-        }
+  
 
-        #search_formi {
-        }
 
-        #search_forms {
-        }
+     
 
-        #up_body {
-            text-align: center;
-            border-bottom: 2px solid #6699CC;
-            padding: 0px;
-            margin: 0px;
-        }
 
-        #myheard {
-            width: 100%;
-            background-color: #FFFFFF;
-            height: 120px;
-        }
 
-        /* margin-top: -1px;*/
 
-        /* HEDER LOGO */
 
-        #logotip a strong {
-            color: #336699;
-        }
+   
 
-        #logotip {
-            float: left;
-            padding-top: 35px;
-            padding-left: 25px;
-        }
-
-        #logotip a {
-            color: #6699CC;
-            text-decoration: none;
-            font: normal 38px Arial, Sans-Serif;
-        }
-
-        /* HEDER CENTER */
-
-        #rightbox {
-            padding-top: 15px;
-            padding-right: 10px;
-            padding-left: 0px;
-            text-align: center;
-        }
-
-        #righth {
-            padding-left: 310px;
-        }
-
-        /* Navigation */
-
-        div.topglmen {
-            height: 35px;
-            width: 100%;
-            background-color: #99CCFF;
-            text-align: center;
-            font-size: 16px;
-            border-top: 4px solid #6699CC;
-        }
-
-        .topglmendv {
-            float: left;
-        }
-
-        .topglmenurl {
-            color: #3f5b77;
-            text-decoration: none;
-        }
-
-        /* Sub Navigation */
-        div.topsubmenD {
-            background-color: #ffffff;
-            border-bottom: 4px solid #6699CC;
-        }
-
-        div.topsubmen {
-            height: 33px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .topsubmenu {
-            color: #6699CC;
-            font-size: 13px;
-            float: left;
-        }
-
-        .topsubmenu a {
-            color: #336699;
-            text-decoration: none;
-        }
-
-        #footergl {
-            color: #999;
-            width: 100%;
-            overflow: hidden;
-            font-size: 12px;
-        }
-
-        #footergl a {
-            font-size: 13px;
-        }
-
-        #footergl .left {
-            width: 220px;
-            float: left;
-            text-align: left;
-            padding: 20px;
-            height: 100%;
-        }
-
-        #footergl .right {
-            width: 140px;
-            float: right;
-            left;
-            text-align: right;
-            padding: 15px;
-            height: 100%;
-        }
-
-        #footergl .center {
-            margin: 10px 280px;
-            padding: 10px;
-            text-align: justify;
-        }
 
     </style>
 
@@ -191,21 +73,28 @@
     </div>
 </div>
 
-<div class=topglmen>
-    <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
+<div class="row no-gutters topglmen-wrap">
+      <div class="dropdown topglmen col-lg-8 col-md-2  col-xs-3">
+<button onclick="myFunction()" class="dropbtn">MENU</button>
+  <div id="myDropdown" class="dropdown-content">
+  <div class="topglmendv home-menu-icon"><a class="icon-home" href="#"></a></div>
+    <div class="topglmendv "><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
     <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
     <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-    <div id=search_heard>
-        <form accept-charset="UTF-8" action="/isearch" method="get">
-            <input id=search_formi type="text" name=q id="q" size="90" maxlength="150">
-            <input type="submit" id="search_forms" value=" искатЬ ">
-        </form>
-    </div>
+  </div>
 </div>
+
+        <div id=search_heard class="col-lg-4 col-md-10  col-xs-9 search-form">
+            <form accept-charset="UTF-8" action="/isearch" method="get">
+                <input class="search-form-input input-placeholder" type="text" placeholder="Искать" name=q id="q" size="90" maxlength="150">
+                <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
+            </form>
+        </div>
+    </div>
 
 <div class=topsubmenD></div>
 <div id="up_body">
@@ -219,7 +108,7 @@
 
 </div>
 
-<div id="sub-container">
+<div id="sub-container" class="clearfix sub-container">
 
 
     <div id="wrapper">
@@ -332,8 +221,11 @@
     </div>
 </div>
 
-
-<div class=topglmen>
+<div class="row no-gutters topglmen-wrap">
+         <div class="dropdown topglmen col-lg-8 col-md-2  col-xs-3">
+<button onclick="myFunction2()" class="dropbtn2">MENU</button>
+  <div id="myDropdown2" class="dropdown-content">
+   <div class="topglmendv home-menu-icon"><a class="icon-home" href="#"></a></div>
     <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
@@ -341,38 +233,23 @@
     <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
     <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-    <div id=search_heard>
+    </div>
+    </div>
+     <div id=search_heard class="col-lg-4 col-md-10  col-xs-9 search-form">
         <form accept-charset="UTF-8" action="/isearch" method="get">
-            <input id=search_formi type="text" name=q id="q" size="90" maxlength="150">
-            <input type="submit" id="search_forms" value=" искатЬ ">
+            <input class="search-form-input input-placeholder" id=search_formi type="text" placeholder="Искать" name=q id="q" size="90" maxlength="150">
+            <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
         </form>
     </div>
-</div>
+  </div>
 
 <div class=topsubmenD></div>
 <div id="up_body">
 </div><!-- Footer -->
 <div id="footergl">
-    <div class="right">
-        <!--RAX counter-->
-        <script language="JavaScript"><!--
-        document.write('<a href="http://www.rax.ru/click" ' +
-            'target=_blank><img src="http://counter.yadro.ru/hit?t44.6;r' +
-            escape(document.referrer) + ((typeof(screen) == 'undefined') ? '' :
-                ';s' + screen.width + '*' + screen.height + '*' + (screen.colorDepth ?
-                screen.colorDepth : screen.pixelDepth)) + ';' + Math.random() +
-            '" width=1 height=1 border=0></a>')//--></script><!--/RAX-->
-
-        <!--Rating@Mail.ru counter-->
-        <a rel="nofollow" target="_top" href="http://top.mail.ru/jump?from=549851">
-            <img src="http://d3.c6.b8.a0.top.mail.ru/counter?id=549851;t=96"
-                 border="0" height="18" width="88" alt="Rating@Mail.ru"></a>
-        <!--// Rating@Mail.ru counter-->
 
 
-    </div>
-
-    <div class="left">
+    <div class="left col-md-2 col-sm-12">
         Условия <a href="/about/reklama-na-sajte">размещения рекламы</a>
         <p>
             Наша <a href="/about/redakcija">редакция</a>
@@ -380,7 +257,7 @@
             <a href="/msg.php">Обратная связь</a>
     </div>
 
-    <div class="center">
+    <div class="center col-md-8 col-sm-12">
         RosInvest.Com не несет ответственности за опубликованные материалы и комментарии пользователей. Возрастной
         цензор 16+.<p>
         Ответственность за высказанные, размещённую информацию и оценки, в рамках проекта RosInvest.Com, лежит полностью
@@ -421,6 +298,24 @@
                 href="/news/archives/d/20170326/">26</a> <a href="/news/archives/d/20170327/">27</a> <a
                 href="/news/archives/d/20170328/">28</a> <a href="/news/archives/d/20170329/">29</a> <a
                 href="/news/archives/d/20170330/">30</a> <a href="/news/archives/d/20170331/">31</a></div>
+    </div>
+	    <div class="right col-md-2 col-sm-12">
+        <!--RAX counter-->
+        <script language="JavaScript"><!--
+        document.write('<a href="http://www.rax.ru/click" ' +
+            'target=_blank><img src="http://counter.yadro.ru/hit?t44.6;r' +
+            escape(document.referrer) + ((typeof(screen) == 'undefined') ? '' :
+                ';s' + screen.width + '*' + screen.height + '*' + (screen.colorDepth ?
+                screen.colorDepth : screen.pixelDepth)) + ';' + Math.random() +
+            '" width=1 height=1 border=0></a>')//--></script><!--/RAX-->
+
+        <!--Rating@Mail.ru counter-->
+        <a rel="nofollow" target="_top" href="http://top.mail.ru/jump?from=549851">
+            <img src="http://d3.c6.b8.a0.top.mail.ru/counter?id=549851;t=96"
+                 border="0" height="18" width="88" alt="Rating@Mail.ru"></a>
+        <!--// Rating@Mail.ru counter-->
+
+
     </div>
 </div>
 

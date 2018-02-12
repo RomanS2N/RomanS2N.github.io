@@ -1,0 +1,89 @@
+.myheard {
+  width: 100%;
+  background-color: #FFFFFF;
+  min-height: 120px; }
+
+/* HEDER LOGO */
+#logotip a strong {
+  color: #336699; }
+
+#logotip {
+  float: left;
+  padding-top: 35px;
+  padding-left: 25px; }
+
+#logotip a {
+  color: #6699CC;
+  text-decoration: none;
+  font: normal 38px Arial, Sans-Serif; }
+
+/* HEDER CENTER */
+#rightbox {
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-left: 0px;
+  text-align: center; }
+
+#righth {
+  padding-left: 310px; }
+
+/*----- Header and Footer Menu -----*/
+.topglmen-wrap {
+  border-top: 5px solid #222;
+  border-bottom: 5px solid #222; }
+
+.topglmen .topglmendv {
+  list-style: none;
+  float: left;
+  font-family: 'Oswald', sans-serif;
+  margin: 4px 0;
+  padding: 0 12px;
+  border-left: 1px solid #222;
+  position: relative;
+  z-index: 1000; }
+  .topglmen .topglmendv:first-child {
+    padding-left: 3px;
+    border-left: none; }
+  .topglmen .topglmendv.home-menu-icon {
+    padding-right: 0;
+    margin: 1px -1px 1px 0;
+    position: relative;
+    z-index: 1001; }
+  .topglmen .topglmendv .topglmenurl {
+    display: inline-block;
+    font-size: 112.5%;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 21px;
+    line-height: 21px;
+    color: #000; }
+  .topglmen .topglmendv a {
+    display: inline-block; }
+  .topglmen .topglmendv .icon-home {
+    font-size: 18px;
+    width: 37px;
+    height: 27px;
+    text-align: center;
+    line-height: 27px;
+    color: #fff;
+    background-color: #222; }
+
+/*----- Search box -----*/
+.search-form {
+  margin-top: 2px; }
+  .search-form-input {
+    width: 89%;
+    padding: 2px 10px;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.8;
+    background-color: #fff;
+    border: none;
+    border-right: 1px dotted #d7d7d7;
+    font-family: Arial, Helvetica, sans-serif; }
+  .search-form-btn {
+    width: 10%;
+    display: inline-block;
+    vertical-align: middle;
+    border: none; }

@@ -1,2 +1,76 @@
 .footergl {
   padding-top: 15px; }
+  
+#footergl {
+            color: #999;
+            width: 100%;
+            overflow: hidden;
+            font-size: 12px;
+        }
+
+#footergl a {
+            font-size: 13px;
+        }
+@media screen and (min-width: 2100px) {
+	 #footergl {
+    font-size: 0.7vw;
+}
+	 #footergl a {
+    font-size: 0.7vw;
+}
+		  }
+		  
+		
+	.er{
+	    font-size: 250%;
+    line-height: 1;
+    margin-top: 1px;
+    margin-right: 10px;
+	float: left;
+	}
+  
+  
+    #footergl .left {
+            width: 220px;
+            float: left;
+            text-align: left;
+            padding: 20px;
+            height: 100%;
+        }
+
+	@media screen and (max-width: 992px) {
+		   #footergl .left {
+            width: auto;
+            
+        }
+		   #footergl .left p{
+           display:inline;
+		   margin: 16px 10px 20px 0px;
+            
+        }
+	}	
+		
+@media screen and (min-width: 2100px) {
+	#footergl .left {
+			   width: 10vw;}
+			  
+		  }
+    #footergl .right {
+            width: 140px;
+            float: right;
+            text-align: right;
+            padding: 15px;
+            height: 100%;
+        }
+
+    #footergl .center {
+            
+            padding: 10px;
+            text-align: justify;
+        }
+  
+    .form-element-right{
+            float: right; 
+            clear: both; 
+            margin-bottom: 10px;
+        }

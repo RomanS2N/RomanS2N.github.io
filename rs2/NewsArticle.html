@@ -20,13 +20,16 @@
     <meta property="og:description"
           content="Госдума приняла во втором чтении проект поправок в Гражданский кодекс, касающихся финансовых сделок.В первом чтении документ был принят в 2012 году.Законопроект ..."/>
     <meta property="og:type" content="article">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <base href="">
-
+    <link rel="stylesheet" href="source/templates/default/bootstrap/bootstrap.css" type="text/css" media="screen">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
     <link rel="alternate" type="application/rss+xml" title="Все новости бизнеса" href="/rosinvest_com.rss">
     <link rel="stylesheet" href="source/templates/default/style.css" type="text/css" media="screen">
-
-
+  
+    <link rel="stylesheet" href="source/templates/default/icoMoon.css" media="all">
     <script type="text/javascript" src="source/common/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="source/templates/default/js/my_ef.js"></script>
 
@@ -42,143 +45,7 @@
     <!-- LOADING BANNERS  -->
     <script src="cm/uploads/js/adv/collection2.js"></script>
     <!-- LOADING BANNERS  -->
-    <style type="text/css">
 
-        /* HEDER */
-        #search_heard {
-            float: right;
-        }
-
-        #search_formi {
-        }
-
-        #search_forms {
-        }
-
-        #up_body {
-            text-align: center;
-            border-bottom: 2px solid #6699CC;
-            padding: 0px;
-            margin: 0px;
-        }
-
-        #myheard {
-            width: 100%;
-            background-color: #FFFFFF;
-            height: 120px;
-        }
-
-        /* margin-top: -1px;*/
-
-        /* HEDER LOGO */
-
-        #logotip a strong {
-            color: #336699;
-        }
-
-        #logotip {
-            float: left;
-            padding-top: 35px;
-            padding-left: 25px;
-        }
-
-        #logotip a {
-            color: #6699CC;
-            text-decoration: none;
-            font: normal 38px Arial, Sans-Serif;
-        }
-
-        /* HEDER CENTER */
-
-        #rightbox {
-            padding-top: 15px;
-            padding-right: 10px;
-            padding-left: 0px;
-            text-align: center;
-        }
-
-        #righth {
-            padding-left: 310px;
-        }
-
-        /* Navigation */
-
-        div.topglmen {
-            height: 35px;
-            width: 100%;
-            background-color: #99CCFF;
-            text-align: center;
-            font-size: 16px;
-            border-top: 4px solid #6699CC;
-        }
-
-        .topglmendv {
-            float: left;
-        }
-
-        .topglmenurl {
-            color: #3f5b77;
-            text-decoration: none;
-        }
-
-        /* Sub Navigation */
-        div.topsubmenD {
-            background-color: #ffffff;
-            border-bottom: 4px solid #6699CC;
-        }
-
-        div.topsubmen {
-            height: 33px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .topsubmenu {
-            color: #6699CC;
-            font-size: 13px;
-            float: left;
-        }
-
-        .topsubmenu a {
-            color: #336699;
-            text-decoration: none;
-        }
-
-        #footergl {
-            color: #999;
-            width: 100%;
-            overflow: hidden;
-            font-size: 12px;
-        }
-
-        #footergl a {
-            font-size: 13px;
-        }
-
-        #footergl .left {
-            width: 220px;
-            float: left;
-            text-align: left;
-            padding: 20px;
-            height: 100%;
-        }
-
-        #footergl .right {
-            width: 140px;
-            float: right;
-            left;
-            text-align: right;
-            padding: 15px;
-            height: 100%;
-        }
-
-        #footergl .center {
-            margin: 10px 280px;
-            padding: 10px;
-            text-align: justify;
-        }
-
-    </style>
 
 
     <div id=myheard>
@@ -195,23 +62,28 @@
 
     </div>
 </div>
-
-<div class=topglmen>
-    <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
+<div  class="row no-gutters topglmen-wrap">
+<div class="dropdown topglmen col-lg-8 col-md-2  col-xs-3">
+<button onclick="myFunction()" class="dropbtn">MENU</button>
+  <div id="myDropdown" class="dropdown-content">
+  <div class="topglmendv home-menu-icon"><a class="icon-home" href="#"></a></div>
+    <div class="topglmendv "><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
     <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
     <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
     <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-    <div id=search_heard>
+  </div>
+</div>   
+    <div id="search_heard" class="col-lg-4 col-md-10  col-xs-9 search-form" >
         <form accept-charset="UTF-8" action="/isearch" method="get">
-            <input id=search_formi type="text" name=q id="q" size="90" maxlength="150">
-            <input type="submit" id="search_forms" value=" искатЬ ">
+            <input  class="search-form-input input-placeholder" id=search_formi type="text" name=q id="q" size="90" maxlength="150">
+            <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
         </form>
     </div>
 </div>
-
+   
 <div class=topsubmenD></div>
 <div id="up_body">
 
@@ -224,19 +96,19 @@
 
 </div>
 
-<div id="sub-container">
+<div id="sub-container" class="clearfix sub-container">
 
 
     <div id="wrapper">
 
 
-        <div id="content">
+        <div id="content" class="col-lg-7  col-sm-9 content">
 
 
             <div class="type type_page">
 
 
-                <nav id="page_path">
+                <nav id="page_path" class="breadcrumb clearfix">
 
                     <a href='/'>Главная</a> &gt; <a href='/novosti' title='Новости бизнеса '>Новости бизнеса </a>&gt; <a
                         href='/novosti/r13' title='Банковские'>Банковские</a> &gt; <a href='/novosti/1320148'
@@ -441,21 +313,23 @@
         </div><!-- div id="content" -->
 
 
-        <div id="rsidebars">
+        <div id="rsidebars" class="col-lg-2 col-sm-3">
 
             <nav class="parts">
-                <ul class="cat_link">
-                    <li><a href="/novosti/r11" title="Hi-Tech">Hi-Tech</a></li>
-                    <li><a href="/novosti/r12" title="Авторынок">Авторынок</a></li>
-                    <li><a href="/novosti/r13" title="Банковские">Банковские</a></li>
-                    <li><a href="/novosti/r7" title="Бумпром и Леспром">Бумпром и Леспром</a></li>
-                    <li><a href="/novosti/r10" title="Макроэкономика">Макроэкономика</a></li>
-                    <li><a href="/novosti/r8" title="Металлургия">Металлургия</a></li>
-                    <li><a href="/novosti/r15" title="Недвижимость">Недвижимость</a></li>
-                    <li><a href="/novosti/r4" title="Продукты питания">Продукты питания</a></li>
-                    <li><a href="/novosti/r6" title="Страхование">Страхование</a></li>
-                    <li><a href="/novosti/r9" title="ТЭК">ТЭК</a></li>
-                    <li><a href="/novosti/r16" title="Химпром">Химпром</a></li>
+                <ul class="is_link">
+                    <li><a href="/novosti/r11" title="Hi-Tech">Hi-Tech</a>&nbsp;</li>
+                    <li><a href="/novosti/r12" title="Авторынок">Авторынок</a>&nbsp;</li>
+                    <li><a href="/novosti/r13" title="Банковские">Банковские</a>&nbsp;</li>
+                    <li><a href="/novosti/r7" title="Бумпром и Леспром">Бумпром и Леспром</a>&nbsp;</li>
+                    <li><a href="/novosti/r10" title="Макроэкономика">Макроэкономика</a>&nbsp;</li>
+                    <li><a href="/novosti/r8" title="Металлургия">Металлургия</a>&nbsp;</li>
+                    <li><a href="/novosti/r15" title="Недвижимость">Недвижимость</a>&nbsp;</li>
+                    <li><a href="/novosti/r4" title="Продукты питания">Продукты питания</a>&nbsp;</li>
+                    <li><a href="/novosti/r6" title="Страхование">Страхование</a>&nbsp;</li>
+                    <li><a href="/novosti/r9" title="ТЭК">ТЭК</a>&nbsp;</li>
+                    <li><a href="/novosti/r16" title="Химпром">Химпром</a>&nbsp;</li>
+					
+
                 </ul>
             </nav>
             <aside id="sidebar1">
@@ -511,11 +385,13 @@
                                                 href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
                                                 src="cm/uploads/prev/23/6642_22.gif" class="widgit_img"
                                                 title="Аптечный бизнес: как мотивировать сотрудников"></a></div>
-                                        <h6 class="widget_tit"><a
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                 href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
                                             бизнес: как мотивировать сотрудников</a></h6>
-                                        <div class="widget_date">07.07.2017</div>
-                                        <div class="widget_count_page">357</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>357</div></div>
                                     </li>
                                     <li>
                                         <div class="widget_prev"><a
@@ -523,11 +399,13 @@
                                                 src="cm/uploads/prev/23/6641_22.gif" class="widgit_img"
                                                 title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a>
                                         </div>
-                                        <h6 class="widget_tit"><a
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                 href="/page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
                                             России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
-                                        <div class="widget_date">07.07.2017</div>
-                                        <div class="widget_count_page">529</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>529</div>
                                     </li>
                                     <li>
                                         <div class="widget_prev"><a
@@ -535,21 +413,25 @@
                                                 src="cm/uploads/prev/23/6640_22.gif" class="widgit_img"
                                                 title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a>
                                         </div>
-                                        <h6 class="widget_tit"><a
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                 href="/page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
                                             страница : и сразу тестируем оооооооочень длинный заголовок, что бы
                                             проверить не цепляет и не выходит за боковые рамки див блока</a></h6>
-                                        <div class="widget_date">07.07.2017</div>
-                                        <div class="widget_count_page">413</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>413</div>
                                     </li>
                                     <li>
                                         <div class="widget_prev"><a href="/page/pochemu-v-turcii-deshevle"><img
                                                 src="cm/uploads/prev/23/6639_22.gif" class="widgit_img"
                                                 title="Почему в Турции дешевле?"></a></div>
-                                        <h6 class="widget_tit"><a href="/page/pochemu-v-turcii-deshevle">Почему в Турции
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a href="/page/pochemu-v-turcii-deshevle">Почему в Турции
                                             дешевле?</a></h6>
-                                        <div class="widget_date">06.07.2017</div>
-                                        <div class="widget_count_page">382</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>06.07.2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>382</div>
                                     </li>
                                     <li>
                                         <div class="widget_prev"><a
@@ -557,67 +439,79 @@
                                                 src="cm/uploads/prev/23/6638_22.gif" class="widgit_img"
                                                 title="Внутри секретного и прибыльного мира «суперрепетиторов»"></a>
                                         </div>
-                                        <h6 class="widget_tit"><a
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                 href="/page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov">Внутри
                                             секретного и прибыльного мира «суперрепетиторов»</a></h6>
-                                        <div class="widget_date">06.07.2017</div>
-                                        <div class="widget_count_page">386</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>06.07.2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>386</div>
                                     </li>
                                     <li>
                                         <div class="widget_prev"><a href="/page/rodom-iz-formula-1"><img
                                                 src="cm/uploads/prev/23/6637_22.gif" class="widgit_img"
                                                 title="Родом из Formula 1"></a></div>
-                                        <h6 class="widget_tit"><a href="/page/rodom-iz-formula-1">Родом из Formula 1</a>
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a href="/page/rodom-iz-formula-1">Родом из Formula 1</a>
                                         </h6>
-                                        <div class="widget_date">05.07.2017</div>
-                                        <div class="widget_count_page">246</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>05.07.2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>246</div>
                                     </li>
                                     <li>
                                         <div class="widget_prev"><a href="/page/predprinimateli-protiv-onlajn-kass"></a>
                                         </div>
-                                        <h6 class="widget_tit"><a href="/page/predprinimateli-protiv-onlajn-kass">Предприниматели
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a href="/page/predprinimateli-protiv-onlajn-kass">Предприниматели
                                             против онлайн-касс</a></h6>
-                                        <div class="widget_date">05.07.2017</div>
-                                        <div class="widget_count_page">488</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>05.07.2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>488</div>
                                     </li>
                                     <li>
                                         <div class="widget_prev"><a href="/page/novaja-staraja-veshh-ot-apple"><img
                                                 src="cm/uploads/prev/23/6635_22.gif" class="widgit_img"
                                                 title="Новая старая вещь от Apple"></a></div>
-                                        <h6 class="widget_tit"><a href="/page/novaja-staraja-veshh-ot-apple">Новая
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a href="/page/novaja-staraja-veshh-ot-apple">Новая
                                             старая вещь от Apple</a></h6>
-                                        <div class="widget_date">04.07.2017</div>
-                                        <div class="widget_count_page">409</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>04.07.2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>409</div>
                                     </li>
                                     <li>
                                         <div class="widget_prev"><a href="/page/pravilnye-voprosy-google"><img
                                                 src="cm/uploads/prev/23/6634_22.gif" class="widgit_img"
                                                 title="Правильные вопросы Google"></a></div>
-                                        <h6 class="widget_tit"><a href="/page/pravilnye-voprosy-google">Правильные
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a href="/page/pravilnye-voprosy-google">Правильные
                                             вопросы Google</a></h6>
-                                        <div class="widget_date">04.07.2017</div>
-                                        <div class="widget_count_page">419</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>04.07.2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>419</div>
                                     </li>
                                     <li>
                                         <div class="widget_prev"><a
                                                 href="/page/svetlaja-storona-biznesa-evgenija-kasperskogo"><img
                                                 src="cm/uploads/prev/23/6633_22.gif" class="widgit_img"
                                                 title="Светлая сторона бизнеса Евгения Касперского"></a></div>
-                                        <h6 class="widget_tit"><a
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                 href="/page/svetlaja-storona-biznesa-evgenija-kasperskogo">Светлая
                                             сторона бизнеса Евгения Касперского</a></h6>
-                                        <div class="widget_date">04.07.2017</div>
-                                        <div class="widget_count_page">398</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>04.07.2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>398</div>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <div id="widget newws">
+                    <div id="widget newws" class="widget newws">
                         <div class="wr"><h2 class="box"><span>Рубрики</span></h2>
                             <div class="widget-content">
-                                <ul class="is_link">
+                                <ul class="cat_link">
                                     <li class="group"><a href="/category/biznes-mehanika" title="Бизнес технологии">Бизнес
                                         технологии<sup>1196</sup></a><br>
                                         <ul class="child level1">
@@ -696,7 +590,7 @@
         </div> <!-- div class=rsidebars -->
 
 
-        <div id="sidebars">
+        <div id="sidebars" class="col-lg-3 col-sm-9 sidebars">
 
             <aside id="sidebar2">
                 <div class="wrap">
@@ -723,7 +617,7 @@
                     <div class="widget littel_preview">
                         <div class="wr"><h2 class="box"><span>MLittel</span></h2>
                             <div class="widget-content">
-                                <ul class="is_link page_list MLittel">
+                                <ul class="is_link page_list MLittel clearfix">
                                     <li>
                                         <div class="widget_prev">
                                             <a href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
@@ -731,11 +625,13 @@
                                                     title="Аптечный бизнес: как мотивировать сотрудников"></a>
                                         </div>
 
-                                        <h6 class="widget_tit"><a
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                 href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
                                             бизнес: как мотивировать сотрудников</a></h6>
-                                        <div class="widget_date">07/07/2017</div>
-                                        <div class="widget_count_page">357</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07/07/2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>357</div></div>
                                     </li>
                                     <li>
                                         <div class="widget_prev">
@@ -744,11 +640,13 @@
                                                     title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a>
                                         </div>
 
-                                        <h6 class="widget_tit"><a
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                 href="/page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
                                             России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
-                                        <div class="widget_date">07/07/2017</div>
-                                        <div class="widget_count_page">529</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07/07/2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>529</div>
                                     </li>
                                     <li>
                                         <div class="widget_prev">
@@ -757,12 +655,14 @@
                                                     title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a>
                                         </div>
 
-                                        <h6 class="widget_tit"><a
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                 href="/page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
                                             страница : и сразу тестируем оооооооочень длинный заголовок, что бы
                                             проверить не цепляет и не выходит за боковые рамки див блока</a></h6>
-                                        <div class="widget_date">07/07/2017</div>
-                                        <div class="widget_count_page">413</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07/07/2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>413</div>
                                     </li>
                                     <li>
                                         <div class="widget_prev">
@@ -771,10 +671,12 @@
                                                     title="Почему в Турции дешевле?"></a>
                                         </div>
 
-                                        <h6 class="widget_tit"><a href="/page/pochemu-v-turcii-deshevle">Почему в Турции
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a href="/page/pochemu-v-turcii-deshevle">Почему в Турции
                                             дешевле?</a></h6>
-                                        <div class="widget_date">06/07/2017</div>
-                                        <div class="widget_count_page">382</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>06/07/2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>382</div>
                                     </li>
                                 </ul>
                             </div>
@@ -784,16 +686,18 @@
                     <div class="widget block">
                         <div class="wr"><h2 class="box"><span>PhotoBlock</span></h2>
                             <div class="widget-content">
-                                <ul class="is_link page_list PhotoBlock">
+                                <ul class="is_link page_list PhotoBlock clearfix">
                                     <li>
                                         <div class="widget_prev"><a
                                                 href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
                                                 src="cm/uploads/prev/23/6642_11.gif" class="widgit_img"
                                                 title="Аптечный бизнес: как мотивировать сотрудников"></a></div>
-                                        <h6 class="widget_tit"><a
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                 href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
                                             бизнес: как мотивировать сотрудников</a></h6>
-                                        <div class="widget_date">07.07.2017</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
                                     </li>
                                     <li>
                                         <div class="widget_prev"><a
@@ -801,10 +705,12 @@
                                                 src="cm/uploads/prev/23/6641_11.gif" class="widgit_img"
                                                 title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a>
                                         </div>
-                                        <h6 class="widget_tit"><a
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                 href="/page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
                                             России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
-                                        <div class="widget_date">07.07.2017</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
                                     </li>
                                     <li>
                                         <div class="widget_prev"><a
@@ -812,19 +718,23 @@
                                                 src="cm/uploads/prev/23/6640_11.gif" class="widgit_img"
                                                 title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a>
                                         </div>
-                                        <h6 class="widget_tit"><a
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                 href="/page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
                                             страница : и сразу тестируем оооооооочень длинный заголовок, что бы
                                             проверить не цепляет и не выходит за боковые рамки див блока</a></h6>
-                                        <div class="widget_date">07.07.2017</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
                                     </li>
                                     <li>
                                         <div class="widget_prev"><a href="/page/pochemu-v-turcii-deshevle"><img
                                                 src="cm/uploads/prev/23/6639_11.gif" class="widgit_img"
                                                 title="Почему в Турции дешевле?"></a></div>
-                                        <h6 class="widget_tit"><a href="/page/pochemu-v-turcii-deshevle">Почему в Турции
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a href="/page/pochemu-v-turcii-deshevle">Почему в Турции
                                             дешевле?</a></h6>
-                                        <div class="widget_date">06.07.2017</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>06.07.2017</div>
                                     </li>
                                 </ul>
                             </div>
@@ -834,12 +744,14 @@
                     <div class="widget littel_preview_description">
                         <div class="wr"><h2 class="box"><span>LTxtPhoto</span></h2>
                             <div class="widget-content">
-                                <ul class="is_link page_list LTxtPhoto">
-                                    <li><h6 class="widget_tit"><a
+                                <ul class="is_link page_list LTxtPhoto clearfix">
+                                    <li><div class="widget_heading clearfix">
+                                            <h6 class="widget_tit"><a
                                             href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес:
                                         как мотивировать сотрудников</a></h6>
-                                        <div class="widget_date">07.07.2017</div>
-                                        <div class="widget_count_page">357</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>357</div></div>
                                         <div class="widget_prev"><a
                                                 href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
                                                 src="cm/uploads/prev/23/6642_11.gif" class="widgit_img"
@@ -848,13 +760,15 @@
                                             Большинство производителей аптечных товаров ставят главной целью попасть на
                                             прилавки ...
                                         </div>
-                                        <a class="cut" href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Прочитать</a>
+                                        <a class="cut" href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Прочитать</a> 
                                     </li>
-                                    <li><h6 class="widget_tit"><a
+                                    <li><div class="widget_heading clearfix">
+                                            <h6 class="widget_tit"><a
                                             href="/page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
                                         России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
-                                        <div class="widget_date">07.07.2017</div>
-                                        <div class="widget_count_page">529</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>529</div>
                                         <div class="widget_prev"><a
                                                 href="/page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"><img
                                                 src="cm/uploads/prev/23/6641_11.gif" class="widgit_img"
@@ -865,14 +779,16 @@
                                             ...
                                         </div>
                                         <a class="cut"
-                                           href="/page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Прочитать</a>
+                                           href="/page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Прочитать</a> </div>
                                     </li>
-                                    <li><h6 class="widget_tit"><a
+                                    <li><div class="widget_heading clearfix">
+                                            <h6 class="widget_tit"><a
                                             href="/page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
                                         страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не
                                         цепляет и не выходит за боковые рамки див блока</a></h6>
-                                        <div class="widget_date">07.07.2017</div>
-                                        <div class="widget_count_page">413</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>413</div>
                                         <div class="widget_prev"><a
                                                 href="/page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"><img
                                                 src="cm/uploads/prev/23/6640_11.gif" class="widgit_img"
@@ -883,12 +799,14 @@
                                             ...
                                         </div>
                                         <a class="cut"
-                                           href="/page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Прочитать</a>
+                                           href="/page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Прочитать</a> </div>
                                     </li>
-                                    <li><h6 class="widget_tit"><a href="/page/pochemu-v-turcii-deshevle">Почему в Турции
+                                    <li><div class="widget_heading clearfix">
+                                            <h6 class="widget_tit"><a href="/page/pochemu-v-turcii-deshevle">Почему в Турции
                                         дешевле?</a></h6>
-                                        <div class="widget_date">06.07.2017</div>
-                                        <div class="widget_count_page">382</div>
+                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>06.07.2017</div>
+                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>382</div>
                                         <div class="widget_prev"><a href="/page/pochemu-v-turcii-deshevle"><img
                                                 src="cm/uploads/prev/23/6639_11.gif" class="widgit_img"
                                                 title="Почему в Турции дешевле?"></a></div>
@@ -896,7 +814,7 @@
                                             Турецкий отдых - это отличный стимул для развития российских направлений.
                                             ...
                                         </div>
-                                        <a class="cut" href="/page/pochemu-v-turcii-deshevle">Прочитать</a></li>
+                                        <a class="cut" href="/page/pochemu-v-turcii-deshevle">Прочитать</a> </div></li>
                                 </ul>
                             </div>
                         </div>
@@ -922,12 +840,14 @@
                                                                 src="cm/uploads/prev/23/6642_11.gif" class="widgit_img"
                                                                 title="Аптечный бизнес: как мотивировать сотрудников"></a>
                                                         </div>
-                                                        <h6 class="widget_tit"><a
+                                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                                 href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
                                                             бизнес: как мотивировать сотрудников</a></h6>
 
-                                                        <div class="widget_date">07.07.2017</div>
-                                                        <div class="widget_count_page">357</div>
+                                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>357</div></div>
                                                     </li>
                                                     <li>
                                                         <div class="widget_prev"><a
@@ -935,13 +855,15 @@
                                                                 src="cm/uploads/prev/23/6641_11.gif" class="widgit_img"
                                                                 title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a>
                                                         </div>
-                                                        <h6 class="widget_tit"><a
+                                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                                 href="/page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
                                                             России от членских взносов в ПАСЕ, чем это обернется?</a>
                                                         </h6>
 
-                                                        <div class="widget_date">07.07.2017</div>
-                                                        <div class="widget_count_page">529</div>
+                                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>529</div>
                                                     </li>
                                                     <li>
                                                         <div class="widget_prev"><a
@@ -949,40 +871,47 @@
                                                                 src="cm/uploads/prev/23/6640_11.gif" class="widgit_img"
                                                                 title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a>
                                                         </div>
-                                                        <h6 class="widget_tit"><a
+                                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                                 href="/page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
                                                             страница : и сразу тестируем оооооооочень длинный заголовок,
                                                             что бы проверить не цепляет и не выходит за боковые рамки
                                                             див блока</a></h6>
 
-                                                        <div class="widget_date">07.07.2017</div>
-                                                        <div class="widget_count_page">413</div>
+                                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>413</div>
                                                     </li>
                                                     <li>
                                                         <div class="widget_prev"><a
                                                                 href="/page/pochemu-v-turcii-deshevle"><img
                                                                 src="cm/uploads/prev/23/6639_11.gif" class="widgit_img"
                                                                 title="Почему в Турции дешевле?"></a></div>
-                                                        <h6 class="widget_tit"><a
+                                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                                 href="/page/pochemu-v-turcii-deshevle">Почему в Турции
                                                             дешевле?</a></h6>
 
-                                                        <div class="widget_date">06.07.2017</div>
-                                                        <div class="widget_count_page">382</div>
+                                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>06.07.2017</div>
+                                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>382</div>
                                                     </li>
                                                 </ul>
                                             </div>
                                             <b></b>
                                             <div class="tabs-box">
                                                 <ul class="is_link page_list">
-                                                    <li><h6 class="widget_tit"><a
+                                                    <li><div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                             href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
                                                         бизнес: как мотивировать сотрудников</a></h6></li>
-                                                    <li><h6 class="widget_tit"><a
+                                                    <li><div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                             href="/page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
                                                         России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
                                                     </li>
-                                                    <li><h6 class="widget_tit"><a
+                                                    <li><div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                             href="/page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
                                                         страница : и сразу тестируем оооооооочень длинный заголовок, что
                                                         бы проверить не цепляет и не выходит за боковые рамки див
@@ -992,14 +921,17 @@
                                             <b></b>
                                             <div class="tabs-box">
                                                 <ul class="is_link page_list">
-                                                    <li><h6 class="widget_tit"><a
+                                                    <li><div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                             href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
                                                         бизнес: как мотивировать сотрудников</a></h6></li>
-                                                    <li><h6 class="widget_tit"><a
+                                                    <li><div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                             href="/page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
                                                         России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
                                                     </li>
-                                                    <li><h6 class="widget_tit"><a
+                                                    <li><div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                             href="/page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
                                                         страница : и сразу тестируем оооооооочень длинный заголовок, что
                                                         бы проверить не цепляет и не выходит за боковые рамки див
@@ -1029,12 +961,14 @@
                                                                 src="cm/uploads/prev/23/6642_11.gif" class="widgit_img"
                                                                 title="Аптечный бизнес: как мотивировать сотрудников"></a>
                                                         </div>
-                                                        <h6 class="widget_tit"><a
+                                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                                 href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
                                                             бизнес: как мотивировать сотрудников</a></h6>
 
-                                                        <div class="widget_date">07.07.2017</div>
-                                                        <div class="widget_count_page">357</div>
+                                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>357</div></div>
                                                     </li>
                                                     <li>
                                                         <div class="widget_prev"><a
@@ -1042,13 +976,15 @@
                                                                 src="cm/uploads/prev/23/6641_11.gif" class="widgit_img"
                                                                 title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a>
                                                         </div>
-                                                        <h6 class="widget_tit"><a
+                                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                                 href="/page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
                                                             России от членских взносов в ПАСЕ, чем это обернется?</a>
                                                         </h6>
 
-                                                        <div class="widget_date">07.07.2017</div>
-                                                        <div class="widget_count_page">529</div>
+                                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>529</div>
                                                     </li>
                                                     <li>
                                                         <div class="widget_prev"><a
@@ -1056,26 +992,30 @@
                                                                 src="cm/uploads/prev/23/6640_11.gif" class="widgit_img"
                                                                 title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a>
                                                         </div>
-                                                        <h6 class="widget_tit"><a
+                                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                                 href="/page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
                                                             страница : и сразу тестируем оооооооочень длинный заголовок,
                                                             что бы проверить не цепляет и не выходит за боковые рамки
                                                             див блока</a></h6>
 
-                                                        <div class="widget_date">07.07.2017</div>
-                                                        <div class="widget_count_page">413</div>
+                                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>413</div>
                                                     </li>
                                                     <li>
                                                         <div class="widget_prev"><a
                                                                 href="/page/pochemu-v-turcii-deshevle"><img
                                                                 src="cm/uploads/prev/23/6639_11.gif" class="widgit_img"
                                                                 title="Почему в Турции дешевле?"></a></div>
-                                                        <h6 class="widget_tit"><a
+                                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                                 href="/page/pochemu-v-turcii-deshevle">Почему в Турции
                                                             дешевле?</a></h6>
 
-                                                        <div class="widget_date">06.07.2017</div>
-                                                        <div class="widget_count_page">382</div>
+                                                        
+<div class="widget_date"><span class="entry-icon icon-clock"></span>06.07.2017</div>
+                                                        <div class="widget_count_page"><span class="entry-icon icon-eye"></span>382</div>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -1083,14 +1023,17 @@
                                             </div>
                                             <div class="accordion-container" style="display: none;">
                                                 <ul class="is_link page_list">
-                                                    <li><h6 class="widget_tit"><a
+                                                    <li><div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                             href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
                                                         бизнес: как мотивировать сотрудников</a></h6></li>
-                                                    <li><h6 class="widget_tit"><a
+                                                    <li><div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                             href="/page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
                                                         России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
                                                     </li>
-                                                    <li><h6 class="widget_tit"><a
+                                                    <li><div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                             href="/page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
                                                         страница : и сразу тестируем оооооооочень длинный заголовок, что
                                                         бы проверить не цепляет и не выходит за боковые рамки див
@@ -1101,14 +1044,17 @@
                                             </div>
                                             <div class="accordion-container" style="display: none;">
                                                 <ul class="is_link page_list">
-                                                    <li><h6 class="widget_tit"><a
+                                                    <li><div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                             href="/page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
                                                         бизнес: как мотивировать сотрудников</a></h6></li>
-                                                    <li><h6 class="widget_tit"><a
+                                                    <li><div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                             href="/page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
                                                         России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
                                                     </li>
-                                                    <li><h6 class="widget_tit"><a
+                                                    <li><div class="widget_heading">
+                                            <h6 class="widget_tit"><a
                                                             href="/page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
                                                         страница : и сразу тестируем оооооооочень длинный заголовок, что
                                                         бы проверить не цепляет и не выходит за боковые рамки див
@@ -1123,8 +1069,7 @@
                         <div class="widget newslistblock">
                             <div class="wr"><h2 class="box"><span>NewsBlock</span></h2>
                                 <div class="widget-content">
-                                    <div class="" NewsList NewsForMain
-                                    ">
+                                    <div class="NewsList NewsForMain">
                                     <div id=news_block>
                                         <div id=news_time><span class="n_hour">18</span>:<span class="n_minut">40</span>
                                         </div>
@@ -1285,55 +1230,43 @@
     </div>
 </div>
 
-
-<div class=topglmen>
-    <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
-    <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
-    <div id=search_heard>
-        <form accept-charset="UTF-8" action="/isearch" method="get">
-            <input id=search_formi type="text" name=q id="q" size="90" maxlength="150">
-            <input type="submit" id="search_forms" value=" искатЬ ">
-        </form>
-    </div>
+<div class="row no-gutters topglmen-wrap">
+      <div class="dropdown topglmen col-lg-8 col-md-2  col-xs-3">
+<button onclick="myFunction2()" class="dropbtn2">MENU</button>
+  <div id="myDropdown2" class="dropdown-content">
+           <div class="topglmendv home-menu-icon"><a class="icon-home" href="#"></a></div>
+            <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
+        </div>
 </div>
+        <div id=search_heard class="col-lg-4 col-md-10  col-xs-9 search-form">
+            <form accept-charset="UTF-8" action="/isearch" method="get">
+                <input class="search-form-input input-placeholder" type="text" placeholder="Искать" name=q id="q" size="90" maxlength="150">
+                <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
+            </form>
+        </div>
+    </div>
 
 <div class=topsubmenD></div>
 <div id="up_body">
 </div><!-- Footer -->
 <div id="footergl">
-    <div class="right">
-        <!--RAX counter-->
-        <script language="JavaScript"><!--
-        document.write('<a href="http://www.rax.ru/click" ' +
-            'target=_blank><img src="http://counter.yadro.ru/hit?t44.6;r' +
-            escape(document.referrer) + ((typeof(screen) == 'undefined') ? '' :
-                ';s' + screen.width + '*' + screen.height + '*' + (screen.colorDepth ?
-                screen.colorDepth : screen.pixelDepth)) + ';' + Math.random() +
-            '" width=1 height=1 border=0></a>')//--></script><!--/RAX-->
+ 
 
-        <!--Rating@Mail.ru counter-->
-        <a rel="nofollow" target="_top" href="http://top.mail.ru/jump?from=549851">
-            <img src="http://d3.c6.b8.a0.top.mail.ru/counter?id=549851;t=96"
-                 border="0" height="18" width="88" alt="Rating@Mail.ru"></a>
-        <!--// Rating@Mail.ru counter-->
-
-
-    </div>
-
-    <div class="left">
+    <div class="left  col-md-2 col-sm-12">
         Условия <a href="/about/reklama-na-sajte">размещения рекламы</a>
         <p>
             Наша <a href="/about/redakcija">редакция</a>
         <p>
             <a href="/msg.php">Обратная связь</a>
     </div>
-
-    <div class="center">
+ 
+    <div class="center col-md-8 col-sm-12">
         RosInvest.Com не несет ответственности за опубликованные материалы и комментарии пользователей. Возрастной
         цензор 16+.<p>
         Ответственность за высказанные, размещённую информацию и оценки, в рамках проекта RosInvest.Com, лежит полностью
@@ -1375,9 +1308,28 @@
                 href="/news/archives/d/20100928/">28</a> <a href="/news/archives/d/20100929/">29</a> <a
                 href="/news/archives/d/20100930/">30</a></div>
     </div>
+	<div class="right col-md-2 col-sm-12">
+        <!--RAX counter-->
+        <script language="JavaScript"><!--
+        document.write('<a href="http://www.rax.ru/click" ' +
+            'target=_blank><img src="http://counter.yadro.ru/hit?t44.6;r' +
+            escape(document.referrer) + ((typeof(screen) == 'undefined') ? '' :
+                ';s' + screen.width + '*' + screen.height + '*' + (screen.colorDepth ?
+                screen.colorDepth : screen.pixelDepth)) + ';' + Math.random() +
+            '" width=1 height=1 border=0></a>')//--></script><!--/RAX-->
+
+        <!--Rating@Mail.ru counter-->
+        <a rel="nofollow" target="_top" href="http://top.mail.ru/jump?from=549851">
+            <img src="http://d3.c6.b8.a0.top.mail.ru/counter?id=549851;t=96"
+                 border="0" height="18" width="88" alt="Rating@Mail.ru"></a>
+        <!--// Rating@Mail.ru counter-->
+
+
+    </div>
+      
 </div>
 
-<!-- /Footer --></div>
+<!-- /Footer -->
 
 
 <!--  Время: 1.1564 | SQL: 4 | Память: 3.92MB-->
