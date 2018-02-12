@@ -641,7 +641,10 @@ ul.is_link.page_list.LittelBlock
 
 .sub-container .widget:first-child, .sidebars .widget:first-child {
   margin-top: 0; }
-
+.bigtop{
+    margin: 0 -15px 0 -15px;
+    
+}
 .page_list h2 {
   font-size: 100%; }
 .MLittel{
