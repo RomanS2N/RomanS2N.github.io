@@ -176,7 +176,7 @@ input[type="checkbox"]:checked:before {
      -o-appearance: none;
      appearance: none;
      margin-top: 10px;
-    margin-bottom: -8px;
+    margin-bottom: -4px;
     margin-right: 10px;
      position: relative;
 }

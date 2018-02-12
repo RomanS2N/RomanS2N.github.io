@@ -17,6 +17,16 @@
   padding-top: 35px;
   padding-left: 25px; }
 
+@media screen and (max-width: 1200px){
+    #logotip {
+    float:none;
+    display: inline-block;
+}
+    #myheard {
+    text-align: center;
+}
+    
+}
 #logotip a {
   color: #bdbaba;
   text-decoration: none;
