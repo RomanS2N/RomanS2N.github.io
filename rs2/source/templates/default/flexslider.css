@@ -243,9 +243,11 @@ html[xmlns] .flexslider .slides {
   width: 20%;
   float: left;
   margin: 0;
-  padding-right: 4px;
+      padding-right: 2px;
+    padding-left: 4px;
   height: 5vw;
 }
+
 .flex-control-thumbs img {
   width: 100%;
   height: auto;
