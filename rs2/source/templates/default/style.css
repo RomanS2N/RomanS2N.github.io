@@ -642,7 +642,7 @@ ul.is_link.page_list.LittelBlock
 .sub-container .widget:first-child, .sidebars .widget:first-child {
   margin-top: 0; }
 .bigtop{
-    margin: 0 -15px 0 -15px;
+    
     
 }
 .page_list h2 {
@@ -1632,7 +1632,7 @@ li.tabs-current  span{
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
-    line-height: 2;
+    line-height: 3;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 	    font-weight: 900;
