@@ -1,594 +1,1369 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Статьи</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="NOODP,NOYDIR">
+    <meta name="rating" content="General">
+    <meta name="distribution" content="Global">
+
+    <meta name="Site-created" content="14-04-2003">
+    <meta name="description" content="Статьи">
+    <meta name="keywords" content="Статьи">
+
+    <meta property="og:url" content="category/statii"/>
+    <meta property="og:site_name" content="RosInvest.Com"/>
+    <meta property="og:title" content="Статьи"/>
+    <meta property="og:description" content="Статьи"/>
+    <meta property="og:image" content="cm/uploads/logo.jpg"/>
+    <link rel="cm/uploads/logo.jpg">
+    <base href="">
+    <link rel="home" href="/">
+    <link rel="alternate" type="application/rss+xml" title="Все новые записи" href="cm/feed">
+    <link rel="alternate" type="application/rss+xml" title="Все новые комментарии" href="cm/comments/feed">
+    <link rel="alternate" type="application/rss+xml" title="Записи этой рубрики" href="category/statii/feed">
+    <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="source/templates/default/bootstrap/bootstrap.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="source/templates/default/icoMoon.css" media="all" />
+    <link rel="stylesheet" href="source/templates/default/style.css" type="text/css" media="screen">
 
 
+    <script type="text/javascript" src="source/common/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="source/templates/default/js/my_ef.js"></script>
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html><head>
-	<title>Статьи</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta name="robots" content="NOODP,NOYDIR"> 
-	<meta name="rating" content="General">
-	<meta name="distribution" content="Global">
-	
-	<meta name="Site-created" content="14-04-2003">
-	<meta name="description" content="Статьи">
-	<meta name="keywords" content="Статьи">
-	
-	<meta property="og:url" content="category/statii" />
-    <meta property="og:site_name" content="RosInvest.Com" />
-    <meta property="og:title" content="Статьи" />
-    <meta property="og:description" content="Статьи" />
-	<meta property="og:image" content="cm/uploads/logo.jpg" />
-	<link rel="cm/uploads/logo.jpg">	<base href="">
-	<link rel="home" href="/">
-	<link rel="alternate" type="application/rss+xml" title="Все новые записи" href="cm/feed">
-	<link rel="alternate" type="application/rss+xml" title="Все новые комментарии" href="cm/comments/feed">
-	<link rel="alternate" type="application/rss+xml" title="Записи этой рубрики" href="category/statii/feed">
-	<link rel="stylesheet" href="source/templates/default/style.css" type="text/css" media="screen">
-	
-	
-
-	<script type="text/javascript" src="source/common/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="source/templates/default/js/my_ef.js"></script>
-	
-<script type="text/javascript" src="source/common/jquery/jquery.cookie.js"></script>
+    <script type="text/javascript" src="source/common/jquery/jquery.cookie.js"></script>
 
 
-
-
-
-</head><body>
+</head>
+<body>
 <!-- end header -->
 <div id="container">
 
 
+    <!-- LOADING BANNERS  -->
+    <script src="/cm/uploads/js/adv/collection2.js"></script>
+    <!-- LOADING BANNERS  -->
+
+    <div id=myheard class="myheard clearfix">
+        <div id=logotip>
+            <a href="/"><strong>RosInvest</strong>.Com</a>
+        </div>
+        <div id=righth>
+            <div id=rightbox>
+
+                <div id="adv_block_headA" class="adv_block_headA"></div>
+            </div>
+        </div>
 
 
-
-<!-- LOADING BANNERS  -->
-<script src="/cm/uploads/js/adv/collection2.js"></script>
-<!-- LOADING BANNERS  -->
-<style type="text/css"> 
-
-/* HEDER */
-#search_heard{  float:right; } 
-#search_formi   { }
-#search_forms  { }
+    </div>
 
 
+    <div class="row no-gutters topglmen-wrap">
+        <div class="topglmen col-lg-8">
+            <div class="topglmendv home-menu-icon"><a class=icon-home href="/novosti"></a></div>
+            <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
+        </div>
 
-#up_body{ text-align:center; border-bottom: 2px solid #6699CC; padding: 0px; margin:0px;}
-#myheard {width: 100%; background-color:#FFFFFF; height:120px;  } 
+        <div id=search_heard class="col-lg-4 search-form">
+            <form accept-charset="UTF-8" action="/isearch" method="get">
+                <input class="search-form-input input-placeholder" type="text" placeholder="Искать" name=q id="q" size="90" maxlength="150">
+                <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
+            </form>
+        </div>
+    </div>
 
-/* margin-top: -1px;*/
-
-
-/* HEDER LOGO */
-
-#logotip a strong { color: #336699; }
-#logotip { float: left; padding-top: 35px; padding-left: 25px; }
-#logotip a { color: #6699CC; text-decoration: none; font: normal 38px Arial, Sans-Serif;  }
-
-
-/* HEDER CENTER */
-
-#rightbox {padding-top: 15px; padding-right: 10px;  padding-left: 0px; text-align:center; }
-#righth {padding-left: 310px;}
-/* Navigation */
-
-div.topglmen { height:35px;  width: 100%;background-color:#99CCFF; text-align:center;  font-size: 16px; border-top:4px solid #6699CC;}
-.topglmendv {float:left;}
-.topglmenurl {color: #3f5b77;  text-decoration: none;}
- 
-
-/* Sub Navigation */
-div.topsubmenD {background-color:#ffffff; border-bottom: 4px solid #6699CC;}
-
-div.topsubmen {height:33px;  width: 100%;  text-align:center; }
-.topsubmenu { color: #6699CC;  font-size: 13px; float: left;}
-.topsubmenu a {color: #336699; text-decoration: none;}
+<div class=topsubmenD></div>
+<div id="up_body">
 
 
- 
+    <!--rosinvest.com-->
+    <!--Площадка: РосИнвест / * / *-->
+    <!--Тип баннера: Перетяжка-->
 
-#footergl { color: #999; width: 100%; overflow:hidden;  font-size: 12px; }
-#footergl a {  font-size: 13px; }
+    <div id="adv_block_toplineA" class="adv_block_toplineA"></div>
 
-#footergl .left {width:220px; float: left; text-align:left; padding: 20px; height:100%; }
-#footergl .right {width:140px;  float: right;  left; text-align:right ;  padding: 15px; height:100%; }
-#footergl .center{margin:10px 280px;  padding: 10px; text-align: justify; }
-
-</style>
-
-
-<div id=myheard>
-<div id=logotip>
-<a href="/"><strong>RosInvest</strong>.Com</a>
-</div> <div id=righth> <div id=rightbox>
-
-<div id="adv_block_headA" class="adv_block_headA"></div> 
-</div>
- </div>
- 
- 
- 
- </div>
 </div>
 
-<div class=topglmen><div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div><div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div><div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div><div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div><div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div><div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div><div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div><div id=search_heard> 
-		<form accept-charset="UTF-8"  action="/isearch" method="get">
-		<input id=search_formi type="text" name=q id="q" size="90" maxlength="150">
-		<input type="submit" id="search_forms" value=" искатЬ ">
-		</form></div></div>
-
-<div  class=topsubmenD></div><div id="up_body"> 
+<div id="sub-container" class="clearfix sub-container">
 
 
-
-<!--rosinvest.com-->
-<!--Площадка: РосИнвест / * / *-->
-<!--Тип баннера: Перетяжка-->
-
-<div id="adv_block_toplineA" class="adv_block_toplineA"></div> 
-
-</div>	
-	
-	<div id="sub-container">  
-
- 
+    <div id="wrapper">
 
 
-		<div id="wrapper">   
-
-		
-			<div id="content">  
-			
-			
-<div class="type type_category">
+        <div id="content" class="col-lg-7 content">
 
 
-<nav id="page_path"> 
-		
-<a href='/'>Главная</a> &gt; <a href="category/statii" title="Статьи">Статьи</a>  	
-	</nav><!-- nav id="page_path" --><div class="widget Top_category>"><div class="widget block"><div class="wr"><h2 class="box"><span>Главные статьи раздела</span></h2><div class="widget-content"><ul class="top_cat"><li><div class="widget_prev"> <img src="cm/uploads/prev/23/6640_33.gif" class="widgit_img" title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></div><h6 class="widget_tit"><a href="page/reuters-eks-zhena-putina-svjazana-s-mnogomillionnoj-nedvizhimostju" title="Reuters: экс-жена Путина связана с многомиллионной недвижимостью">Reuters: экс-жена Путина связана с многомиллионной недвижимостью</a></h6><div class="widget_date">Понедельник, 22 мая 2017 г.</div><div class="widget_count_page">82</div><div class="widget_short_text">По утверждению издания Reuters, бывшая жена российского президента Владимира Путина помогла создать и теперь поддерживает фонд, который владеет исторической собственностью ...</div>Reuters: экс-жена Путина связана с многомиллионной недвижимостью<li><li><h6 class="widget_tit"><a href="page/sopernichestvo-mezhdu-iphone-i-android-mozhet-vskore-stat-namnogo-interesnee" title="Соперничество между iPhone и Android может вскоре стать намного интереснее">Соперничество между iPhone и Android может вскоре стать намного интереснее</a></h6><div class="widget_date">Понедельник, 19 июня 2017 г.</div><div class="widget_count_page">46</div><div class="widget_short_text">Хотя Google по-прежнему рекламирует Android как ОС для масс, не секрет, что поисковик в последние годы медленно, но уверенно проявляет ...</div>Соперничество между iPhone и Android может вскоре стать намного интереснее<li><li><h6 class="widget_tit"><a href="page/chto-esli-puzyr-bitkoin-lopnet" title="Что если пузырь биткоин лопнет">Что если пузырь биткоин лопнет?</a></h6><div class="widget_date">Четверг, 8 июня 2017 г.</div><div class="widget_count_page">30</div><div class="widget_short_text">Чаще всего, слово “bitcoin” сейчас связывается со словом “пузырь”. На рынках часто образуются пузыри, но бум цифровой валюты биткоин является ...</div>Что если пузырь биткоин лопнет?<li><li><h6 class="widget_tit"><a href="page/sdelano-v-sirii-nadpisi-kotorye-podstegivajut-prodazhi-obuvi-v-rossijskoj-seti" title="Сделано в Сирии: надпись, которая подстегивают продажи обуви в российской сети">Сделано в Сирии: надпись, которая подстегивают продажи обуви в российской сети</a></h6><div class="widget_date">Четверг, 25 мая 2017 г.</div><div class="widget_count_page">24</div><div class="widget_short_text">Надписи “сделано в Сирии” и “сделано в Крыму” на полках в 350 магазинах Zenden Андрея Павлова создали шумиху в социальных ...</div>Сделано в Сирии: надпись, которая подстегивают продажи обуви в российской сети<li><li><h6 class="widget_tit"><a href="page/rossijskoe-blizhe-k-telu" title="Российское ближе к телу">Российское ближе к телу</a></h6><div class="widget_date">Четверг, 8 июня 2017 г.</div><div class="widget_count_page">22</div><div class="widget_short_text">У жителей России повысился интерес к отечественным брендам одежды. Она не соответствует модным тенденциям, однако, покупатели теперь считают их достаточно ...</div>Российское ближе к телу<li></ul></div></div></div></div><h1 class="category">Статьи</h1><div class="rss_category"><a class="rss_link" href="category/statii/feed">RSS</a></div>
-<div class="page_only">
-<div class="info"><h6 class=page_title><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja" title="Отказ России от членских взносов в ПАСЕ,  чем это обернется">Отказ России от членских взносов в ПАСЕ,  чем это обернется?</a></h6><span class="page_category">Рубрика:</span> <a href="category/statii">Статьи</a> | <a href="category/iznutri">Изнутри</a><br><span class="page_date">Пятница, 7 июля 2017 г.</span><span class="page_view">Просмотров: 529</span><span class="comments-link"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja#comments">Обсудить</a></span> [ <a href="cm/admin/page_edit/6641">Edit page</a>]</div><div class="img_prewiev"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja" title=""><img src="cm/uploads/prev/23/6641_22.gif"></a></div><div class="page_content">Российские власти решили сократить выплаты в Совет Европы из-за введенных против нашей страны санкций, и ограничений в отношении делегации в ПАСЕ. Какие вероятные последствия подобного демарша ожидают Россию?<span class="cut"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja" title="Далее...">Далее...</a></span><div class="break"></div></div>
-</div><!--div class="page_only"-->
-
-<div class="page_only">
-<div class="info"><h6 class=page_title><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg" title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока">Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока</a></h6><span class="page_category">Рубрика:</span> <a href="category/statii">Статьи</a> | <a href="category/interesnye-fakty">Интересные факты</a><br><span class="page_date">Пятница, 7 июля 2017 г.</span><span class="page_view">Просмотров: 413</span><span class="comments-link"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg#comments">Комментариев: 9</a></span> [ <a href="cm/admin/page_edit/6640">Edit page</a>]</div><div class="img_prewiev"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg" title=""><img src="cm/uploads/prev/23/6640_22.gif"></a></div><div class="page_content">Покупки могут временно улучшить плохое настроение, но ощущение вины, которая следует за крупной тратой средств, часто бывает хуже. Есть несколько приемов, которые вы можете использовать, чтобы предотвратить желание раскошелиться<span class="cut"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg" title="Далее...">Далее...</a></span><div class="break"></div></div>
-</div><!--div class="page_only"-->
-
-<div class="page_only">
-<div class="info"><h6 class=page_title><a href="page/pochemu-v-turcii-deshevle" title="Почему в Турции дешевле">Почему в Турции дешевле?</a></h6><span class="page_category">Рубрика:</span> <a href="category/statii">Статьи</a> | <a href="category/interesnye-fakty">Интересные факты</a><br><span class="page_date">Четверг, 6 июля 2017 г.</span><span class="page_view">Просмотров: 382</span><span class="comments-link"><a href="page/pochemu-v-turcii-deshevle#comments">Обсудить</a></span> [ <a href="cm/admin/page_edit/6639">Edit page</a>]</div><div class="img_prewiev"><a href="page/pochemu-v-turcii-deshevle" title=""><img src="cm/uploads/prev/23/6639_22.gif"></a></div><div class="page_content">Турецкий отдых - это отличный стимул для развития российских направлений. Представители туристической области делают неутешительные для российских курортов выводы: турецкий демпинг сильно давит на привлекательность российских направлений.<span class="cut"><a href="page/pochemu-v-turcii-deshevle" title="Далее...">Далее...</a></span><div class="break"></div></div>
-</div><!--div class="page_only"-->
-
-<div class="page_only">
-<div class="info"><h6 class=page_title><a href="page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov" title="Внутри секретного и прибыльного мира «суперрепетиторов»">Внутри секретного и прибыльного мира «суперрепетиторов»</a></h6><span class="page_category">Рубрика:</span> <a href="category/statii">Статьи</a> | <a href="category/iznutri">Изнутри</a><br><span class="page_date">Четверг, 6 июля 2017 г.</span><span class="page_view">Просмотров: 386</span><span class="comments-link"><a href="page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov#comments">Обсудить</a></span> [ <a href="cm/admin/page_edit/6638">Edit page</a>]</div><div class="img_prewiev"><a href="page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov" title=""><img src="cm/uploads/prev/23/6638_22.gif"></a></div><div class="page_content">Услуги в области образования приносят экономике Великобритании £17,5 млрд в год, но что является движущей силой спроса на британское образование и почему некоторые родители готовы потратить тысячи фунтов стерлингов, чтобы обеспечить "суперрепетитора" для своего ребенка?<span class="cut"><a href="page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov" title="Далее...">Далее...</a></span><div class="break"></div></div>
-</div><!--div class="page_only"-->
-
-<div class="page_only">
-<div class="info"><h6 class=page_title><a href="page/novaja-staraja-veshh-ot-apple" title="Новая старая вещь от Apple">Новая старая вещь от Apple</a></h6><span class="page_category">Рубрика:</span> <a href="category/statii">Статьи</a> | <a href="category/iznutri">Изнутри</a><br><span class="page_date">Вторник, 4 июля 2017 г.</span><span class="page_view">Просмотров: 409</span><span class="comments-link"><a href="page/novaja-staraja-veshh-ot-apple#comments">Обсудить</a></span> [ <a href="cm/admin/page_edit/6635">Edit page</a>]</div><div class="img_prewiev"><a href="page/novaja-staraja-veshh-ot-apple" title=""><img src="cm/uploads/prev/23/6635_22.gif"></a></div><div class="page_content">Apple выпустили новый хит - устройство, которое настолько популярно, что его продают в большей части Америки и Британии. Если вы заказываете его в интернете, то доставка займет шесть недель. “Лучший продукт Apple за долгое время”, - гласит один интернет-комментарий. Полезный и (конечно) отлично разработанный, он имеет самые высокие показатели удовлетворенности потребителей по сравнению с любым продуктом Apple...<span class="cut"><a href="page/novaja-staraja-veshh-ot-apple" title="Далее...">Далее...</a></span><div class="break"></div></div>
-</div><!--div class="page_only"-->
-
-<div class="page_only">
-<div class="info"><h6 class=page_title><a href="page/pravilnye-voprosy-google" title="Правильные вопросы Google">Правильные вопросы Google</a></h6><span class="page_category">Рубрика:</span> <a href="category/statii">Статьи</a> | <a href="category/vlast-i-biznes">Власть и бизнес</a><br><span class="page_date">Вторник, 4 июля 2017 г.</span><span class="page_view">Просмотров: 419</span><span class="comments-link"><a href="page/pravilnye-voprosy-google#comments">Обсудить</a></span> [ <a href="cm/admin/page_edit/6634">Edit page</a>]</div><div class="img_prewiev"><a href="page/pravilnye-voprosy-google" title=""><img src="cm/uploads/prev/23/6634_22.gif"></a></div><div class="page_content">Не должно быть сюрпризом, что на прошлой неделе, Маргрете Вестагер, комиссар по конкуренции Европейского Союза, приняла жесткую позицию в отношении Google. Размер штрафа, который технологический гигант должен будет оплатить за злоупотребление своим монопольным положением в онлайн-поисковике, составляет €2,4 млрд и устанавливает рекорд для европейских антимонопольных штрафов.<span class="cut"><a href="page/pravilnye-voprosy-google" title="Далее...">Далее...</a></span><div class="break"></div></div>
-</div><!--div class="page_only"-->
-
-<div class="page_only">
-<div class="info"><h6 class=page_title><a href="page/svetlaja-storona-biznesa-evgenija-kasperskogo" title="Светлая сторона бизнеса Евгения Касперского">Светлая сторона бизнеса Евгения Касперского</a></h6><span class="page_category">Рубрика:</span> <a href="category/statii">Статьи</a> | <a href="category/vlast-i-biznes">Власть и бизнес</a><br><span class="page_date">Вторник, 4 июля 2017 г.</span><span class="page_view">Просмотров: 398</span><span class="comments-link"><a href="page/svetlaja-storona-biznesa-evgenija-kasperskogo#comments">Обсудить</a></span> [ <a href="cm/admin/page_edit/6633">Edit page</a>]</div><div class="img_prewiev"><a href="page/svetlaja-storona-biznesa-evgenija-kasperskogo" title=""><img src="cm/uploads/prev/23/6633_22.gif"></a></div><div class="page_content">Исполнительный директор российской «Лаборатории Касперского» говорит, что готов предоставить исходный код своей компании на ознакомление государственным чиновникам США, чтобы помочь развеять давние подозрения в связях его компании с Кремлем.<span class="cut"><a href="page/svetlaja-storona-biznesa-evgenija-kasperskogo" title="Далее...">Далее...</a></span><div class="break"></div></div>
-</div><!--div class="page_only"-->
-
-<div class="page_only">
-<div class="info"><h6 class=page_title><a href="page/samsung-vkladyvaet-milliardy-v-novye-iphone" title="Samsung вкладывает миллиарды в новые iPhone">Samsung вкладывает миллиарды в новые iPhone</a></h6><span class="page_category">Рубрика:</span> <a href="category/statii">Статьи</a> | <a href="category/biznes-gambit">Бизнес гамбит</a><br><span class="page_date">Понедельник, 3 июля 2017 г.</span><span class="page_view">Просмотров: 652</span><span class="comments-link"><a href="page/samsung-vkladyvaet-milliardy-v-novye-iphone#comments">Обсудить</a></span> [ <a href="cm/admin/page_edit/6631">Edit page</a>]</div><div class="img_prewiev"><a href="page/samsung-vkladyvaet-milliardy-v-novye-iphone" title=""><img src="cm/uploads/prev/23/6631_22.gif"></a></div><div class="page_content">Осталось всего пару месяцев до того момента, когда iPhone 8 получит официальный статус, а мы уже имеем хорошую новость о том, что Samsung будет поставлять OLED-панели для последних и самых лучших Apple. Хотя, согласно слухам от новой сети поставщиков, Samsung не собирается останавливаться на достигнутом...<span class="cut"><a href="page/samsung-vkladyvaet-milliardy-v-novye-iphone" title="Далее...">Далее...</a></span><div class="break"></div></div>
-</div><!--div class="page_only"-->
-
-<div class="page_only">
-<div class="info"><h6 class=page_title><a href="page/gde-vypit-kofe-za-bitkoiny" title="Где выпить кофе за биткоины">Где выпить кофе за биткоины?</a></h6><span class="page_category">Рубрика:</span> <a href="category/statii">Статьи</a> | <a href="category/interesnye-fakty">Интересные факты</a><br><span class="page_date">Понедельник, 3 июля 2017 г.</span><span class="page_view">Просмотров: 411</span><span class="comments-link"><a href="page/gde-vypit-kofe-za-bitkoiny#comments">Обсудить</a></span> [ <a href="cm/admin/page_edit/6632">Edit page</a>]</div><div class="page_content">Криптовалюта завоевывает расположение потребителей, а ее стоимость возрастает с каждым днем. А реально ли обменять виртуальные деньги на реальные товары в России?<span class="cut"><a href="page/gde-vypit-kofe-za-bitkoiny" title="Далее...">Далее...</a></span><div class="break"></div></div>
-</div><!--div class="page_only"-->
-
-<div class="page_only">
-<div class="info"><h6 class=page_title><a href="page/sonyvremja-play-station-5-eshhe-ne-prishlo" title="Sony:время Play Station 5 еще не пришло">Sony:время Play Station 5 еще не пришло</a></h6><span class="page_category">Рубрика:</span> <a href="category/statii">Статьи</a> | <a href="category/iznutri">Изнутри</a><br><span class="page_date">Понедельник, 3 июля 2017 г.</span><span class="page_view">Просмотров: 639</span><span class="comments-link"><a href="page/sonyvremja-play-station-5-eshhe-ne-prishlo#comments">Обсудить</a></span> [ <a href="cm/admin/page_edit/6629">Edit page</a>]</div><div class="page_content">В то время, как Microsoft официально представляет Xbox One X, многих сейчас интересует то, когда Sony представит PlayStation 5. Генеральный директор Sony Interactive Entertainment America Шон Лайден подтвердил планы относительно PlayStation 5.<span class="cut"><a href="page/sonyvremja-play-station-5-eshhe-ne-prishlo" title="Далее...">Далее...</a></span><div class="break"></div></div>
-</div><!--div class="page_only"-->
-
-<div class="pagination"><span class="pagination-first">« Первая</span> &middot; <span class="pagination-prev">‹ предыдущая</span> |  <strong>1</strong> &middot; <a href="category/statii/next/2">2</a> &middot; <a href="category/statii/next/3">3</a> &middot; <a href="category/statii/next/4">4</a> ... <a class="pagination-end" href="category/statii/next/443">443</a>  | <a class="pagination-next" href="category/statii/next/2">следующая ›</a> &middot; <a  class="pagination-last" href="category/statii/next/443">последняя »</a></div>
-
-</div><!-- class="type type_category" -->
-				
-				<div class="content-bottom"></div>
-				
-			</div><!-- div id="content" -->
-
-	
-			
-		<div id="rsidebars">
-		
-		<nav class="parts">
-<ul class="cat_link">
-<li><a href="category/biznes-gambit" title="Бизнес гамбит">Бизнес гамбит</a></li>
-<li><a href="category/vlast-i-biznes" title="Власть и бизнес">Власть и бизнес</a></li>
-<li><a href="category/dengi" title="Деньги">Деньги</a></li>
-<li><a href="category/iznutri" title="Изнутри">Изнутри</a></li>
-<li><a href="category/intervju" title="Интервью">Интервью</a></li>
-<li><a href="category/interesnye-fakty" title="Интересные факты">Интересные факты</a></li>
-<li><a href="category/karera" title="Карьера">Карьера</a></li>
-<li><a href="category/lichnosti" title="Личности">Личности</a></li>
-<li><a href="category/lichnye-finansy" title="Личные финансы">Личные финансы</a></li>
-<li><a href="category/lozhnyj-shag" title="Ложный шаг">Ложный шаг</a></li>
-<li><a href="category/malyj-biznes" title="Малый бизнес">Малый бизнес</a></li>
-<li><a href="category/press-relizy" title="Пресс-релизы">Пресс-релизы</a></li>
-<li><a href="category/uspeshnye-proekty" title="Успешные проекты">Успешные проекты</a></li>
-<li><a href="category/citaty" title="Цитаты">Цитаты</a></li>
-</ul>
-</nav>
- 			<aside id="sidebar1">
-			<div class="wrap">
-
-<div id="widget textblock"><div class="wr"><h2 class="box"><span>TextBlock</span></h2><div class="widget-content"><ul class="is_link page_list TextBlock">
-<li><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес: как мотивировать сотрудников</a></li>
-<li><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ России от членских взносов в ПАСЕ,  чем это обернется?</a></li>
-<li><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока</a></li>
-<li><a href="page/pochemu-v-turcii-deshevle">Почему в Турции дешевле?</a></li>
-<li><a href="page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov">Внутри секретного и прибыльного мира «суперрепетиторов»</a></li>
-<li><a href="page/rodom-iz-formula-1">Родом из Formula 1</a></li>
-<li><a href="page/predprinimateli-protiv-onlajn-kass">Предприниматели против онлайн-касс</a></li>
-<li><a href="page/novaja-staraja-veshh-ot-apple">Новая старая вещь от Apple</a></li>
-<li><a href="page/pravilnye-voprosy-google">Правильные вопросы Google</a></li>
-<li><a href="page/svetlaja-storona-biznesa-evgenija-kasperskogo">Светлая сторона бизнеса Евгения Касперского</a></li>
-</ul>
-</div></div></div>
-
-<div id="widget noheader"><div class="wr"><div class="widget-content"><ul class="is_link page_list">
-<li><h2><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес: как мотивировать сотрудников</a></h2></li>
-<li><h2><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ России от членских взносов в ПАСЕ,  чем это обернется?</a></h2></li>
-</ul>
-</div></div></div>
-
-<div id="widget miidlesolumnonseconds"><div class="wr"><h2 class="box"><span>LСolumn</span></h2><div class="widget-content"><ul class="is_link page_list LСolumn">
-<li><div class="widget_prev"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img src="cm/uploads/prev/23/6642_22.gif" class="widgit_img" title="Аптечный бизнес: как мотивировать сотрудников"></a></div>
-<h6 class="widget_tit"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес: как мотивировать сотрудников</a></h6>
-<div class="widget_date">07.07.2017</div>
-<div class="widget_count_page">357</div></li>
-<li><div class="widget_prev"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"><img src="cm/uploads/prev/23/6641_22.gif" class="widgit_img" title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a></div>
-<h6 class="widget_tit"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ России от членских взносов в ПАСЕ,  чем это обернется?</a></h6>
-<div class="widget_date">07.07.2017</div>
-<div class="widget_count_page">529</div></li>
-<li><div class="widget_prev"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"><img src="cm/uploads/prev/23/6640_22.gif" class="widgit_img" title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a></div>
-<h6 class="widget_tit"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока</a></h6>
-<div class="widget_date">07.07.2017</div>
-<div class="widget_count_page">413</div></li>
-<li><div class="widget_prev"><a href="page/pochemu-v-turcii-deshevle"><img src="cm/uploads/prev/23/6639_22.gif" class="widgit_img" title="Почему в Турции дешевле?"></a></div>
-<h6 class="widget_tit"><a href="page/pochemu-v-turcii-deshevle">Почему в Турции дешевле?</a></h6>
-<div class="widget_date">06.07.2017</div>
-<div class="widget_count_page">382</div></li>
-<li><div class="widget_prev"><a href="page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov"><img src="cm/uploads/prev/23/6638_22.gif" class="widgit_img" title="Внутри секретного и прибыльного мира «суперрепетиторов»"></a></div>
-<h6 class="widget_tit"><a href="page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov">Внутри секретного и прибыльного мира «суперрепетиторов»</a></h6>
-<div class="widget_date">06.07.2017</div>
-<div class="widget_count_page">386</div></li>
-<li><div class="widget_prev"><a href="page/rodom-iz-formula-1"><img src="cm/uploads/prev/23/6637_22.gif" class="widgit_img" title="Родом из Formula 1"></a></div>
-<h6 class="widget_tit"><a href="page/rodom-iz-formula-1">Родом из Formula 1</a></h6>
-<div class="widget_date">05.07.2017</div>
-<div class="widget_count_page">246</div></li>
-<li><div class="widget_prev"><a href="page/predprinimateli-protiv-onlajn-kass"></a></div>
-<h6 class="widget_tit"><a href="page/predprinimateli-protiv-onlajn-kass">Предприниматели против онлайн-касс</a></h6>
-<div class="widget_date">05.07.2017</div>
-<div class="widget_count_page">488</div></li>
-<li><div class="widget_prev"><a href="page/novaja-staraja-veshh-ot-apple"><img src="cm/uploads/prev/23/6635_22.gif" class="widgit_img" title="Новая старая вещь от Apple"></a></div>
-<h6 class="widget_tit"><a href="page/novaja-staraja-veshh-ot-apple">Новая старая вещь от Apple</a></h6>
-<div class="widget_date">04.07.2017</div>
-<div class="widget_count_page">409</div></li>
-<li><div class="widget_prev"><a href="page/pravilnye-voprosy-google"><img src="cm/uploads/prev/23/6634_22.gif" class="widgit_img" title="Правильные вопросы Google"></a></div>
-<h6 class="widget_tit"><a href="page/pravilnye-voprosy-google">Правильные вопросы Google</a></h6>
-<div class="widget_date">04.07.2017</div>
-<div class="widget_count_page">419</div></li>
-<li><div class="widget_prev"><a href="page/svetlaja-storona-biznesa-evgenija-kasperskogo"><img src="cm/uploads/prev/23/6633_22.gif" class="widgit_img" title="Светлая сторона бизнеса Евгения Касперского"></a></div>
-<h6 class="widget_tit"><a href="page/svetlaja-storona-biznesa-evgenija-kasperskogo">Светлая сторона бизнеса Евгения Касперского</a></h6>
-<div class="widget_date">04.07.2017</div>
-<div class="widget_count_page">398</div></li>
-</ul>
-</div></div></div>
-
-<div id="widget newws"><div class="wr"><h2 class="box"><span>Рубрики</span></h2><div class="widget-content">
-<ul class="is_link">
-
-<li class="group"><a href="category/biznes-mehanika" title="Бизнес технологии">Бизнес технологии<sup>1196</sup></a><br>
-	<ul class="child level1">
-	<li><a href="category/investicii" title="Инвестиции">Инвестиции<sup>17</sup></a><br></li>
-	<li><a href="category/innovacii" title="Инновации">Инновации<sup>16</sup></a><br></li>
-	<li><a href="category/logistika" title="Логистика">Логистика<sup>51</sup></a><br></li>
-	<li><a href="category/marketing" title="Маркетинг">Маркетинг<sup>94</sup></a><br></li>
-	<li><a href="category/nalogi-i-uchet" title="Налоги и учет">Налоги и учет<sup>73</sup></a><br></li>
-	<li><a href="category/personal" title="Персонал">Персонал<sup>110</sup></a><br></li>
-	<li><a href="category/pravo" title="Право">Право<sup>6</sup></a><br></li>
-	<li><a href="category/prodazhi" title="Продажи">Продажи<sup>185</sup></a><br></li>
-	<li><a href="category/proekty" title="Проекты">Проекты<sup>161</sup></a><br></li>
-	<li><a href="category/proizvodstvo" title="Производство">Производство<sup>41</sup></a><br></li>
-	<li><a href="category/reklama-i-pr" title="Реклама и PR">Реклама и PR<sup>103</sup></a><br></li>
-	<li><a href="category/torgovlja" title="Торговля">Торговля<sup>101</sup></a><br></li>
-	<li><a href="category/upravlenie" title="Управление">Управление<sup>151</sup></a><br></li>
-	<li><a href="category/finansy" title="Финансы">Финансы<sup>95</sup></a><br></li>
-	</ul>
-
-</li>
-<li><a href="aboutsite" title="О сайте">О сайте<sup>4</sup></a><br></li>
-<li class="current-page"><span>Статьи<sup>4433</sup></span><br>
-	<ul class="child level1">
-	<li><a href="category/biznes-gambit" title="Бизнес гамбит">Бизнес гамбит<sup>617</sup></a><br></li>
-	<li><a href="category/vlast-i-biznes" title="Власть и бизнес">Власть и бизнес<sup>729</sup></a><br></li>
-	<li><a href="category/dengi" title="Деньги">Деньги<sup>554</sup></a><br></li>
-	<li><a href="category/iznutri" title="Изнутри">Изнутри<sup>797</sup></a><br></li>
-	<li><a href="category/intervju" title="Интервью">Интервью<sup>4</sup></a><br></li>
-	<li><a href="category/interesnye-fakty" title="Интересные факты">Интересные факты<sup>568</sup></a><br></li>
-	<li><a href="category/karera" title="Карьера">Карьера<sup>8</sup></a><br></li>
-	<li><a href="category/lichnosti" title="Личности">Личности<sup>215</sup></a><br></li>
-	<li><a href="category/lichnye-finansy" title="Личные финансы">Личные финансы<sup>174</sup></a><br></li>
-	<li><a href="category/lozhnyj-shag" title="Ложный шаг">Ложный шаг<sup>337</sup></a><br></li>
-	<li><a href="category/malyj-biznes" title="Малый бизнес">Малый бизнес<sup>55</sup></a><br></li>
-	<li><a href="category/press-relizy" title="Пресс-релизы">Пресс-релизы<sup>37</sup></a><br></li>
-	<li><a href="category/uspeshnye-proekty" title="Успешные проекты">Успешные проекты<sup>235</sup></a><br></li>
-	<li><a href="category/citaty" title="Цитаты">Цитаты<sup>89</sup></a><br></li>
-	</ul>
-
-</li>
-</ul>
-</div></div></div>
-			</div><!-- div class=wrap -->
-
-</aside><!-- div id="sub-container" -->
-</div> <!-- div class=rsidebars --> 	
-
-	
-		
-			<div id="sidebars">
-		
-			<aside id="sidebar2"><div class="wrap">
-
-<div class="widget social_links"><div class="wr"><div class="widget-content"><div class="social-link-wrapper">
-<a class="social-link" href="http://facebook.com/rosinvestcom" target="_blank" title="Facebook"><i class="fa-facebook"></i></a>
-<a class="social-link" href="http://vk.com/rosinvestcom" target="_blank" title="Ввконтакте"><i class="fa-vk"></i></a>
-<a class="social-link" href="http://twitter.com/rosinvestcom" target="_blank" title="Twitter"><i class="fa-twitter"></i></a>
-<a class="social-link" href="http://rosinvest.com/feed" target="_blank" title="RSS статьи"><i class="fa-rss"></i></a>
-<a class="social-link" href="http://rosinvest.com/rosinvest_com.rss" target="_blank" title="RSS новости"><i class="fa-rss-news"></i></a>
-</div></div></div></div>
-
-<div class="widget littel_preview"><div class="wr"><h2 class="box"><span>MLittel</span></h2><div class="widget-content"><ul class="is_link page_list MLittel">
-<li><div class="widget_prev">
-<a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img src="cm/uploads/prev/23/6642_11.gif" class="widgit_img" title="Аптечный бизнес: как мотивировать сотрудников"></a>
-</div>
-
-<h6 class="widget_tit"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес: как мотивировать сотрудников</a></h6>
-<div class="widget_date">07/07/2017</div>
-<div class="widget_count_page">357</div></li>
-<li><div class="widget_prev">
-<a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"><img src="cm/uploads/prev/23/6641_11.gif" class="widgit_img" title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a>
-</div>
-
-<h6 class="widget_tit"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ России от членских взносов в ПАСЕ,  чем это обернется?</a></h6>
-<div class="widget_date">07/07/2017</div>
-<div class="widget_count_page">529</div></li>
-<li><div class="widget_prev">
-<a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"><img src="cm/uploads/prev/23/6640_11.gif" class="widgit_img" title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a>
-</div>
-
-<h6 class="widget_tit"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока</a></h6>
-<div class="widget_date">07/07/2017</div>
-<div class="widget_count_page">413</div></li>
-<li><div class="widget_prev">
-<a href="page/pochemu-v-turcii-deshevle"><img src="cm/uploads/prev/23/6639_11.gif" class="widgit_img" title="Почему в Турции дешевле?"></a>
-</div>
-
-<h6 class="widget_tit"><a href="page/pochemu-v-turcii-deshevle">Почему в Турции дешевле?</a></h6>
-<div class="widget_date">06/07/2017</div>
-<div class="widget_count_page">382</div></li>
-</ul>
-</div></div></div>
-
-<div class="widget block"><div class="wr"><h2 class="box"><span>PhotoBlock</span></h2><div class="widget-content"><ul class="is_link page_list PhotoBlock">
-<li><div class="widget_prev"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img src="cm/uploads/prev/23/6642_11.gif" class="widgit_img" title="Аптечный бизнес: как мотивировать сотрудников"></a></div>
-<h6  class="widget_tit"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес: как мотивировать сотрудников</a></h6>
-<div class="widget_date">07.07.2017</div></li>
-<li><div class="widget_prev"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"><img src="cm/uploads/prev/23/6641_11.gif" class="widgit_img" title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a></div>
-<h6  class="widget_tit"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ России от членских взносов в ПАСЕ,  чем это обернется?</a></h6>
-<div class="widget_date">07.07.2017</div></li>
-<li><div class="widget_prev"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"><img src="cm/uploads/prev/23/6640_11.gif" class="widgit_img" title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a></div>
-<h6  class="widget_tit"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока</a></h6>
-<div class="widget_date">07.07.2017</div></li>
-<li><div class="widget_prev"><a href="page/pochemu-v-turcii-deshevle"><img src="cm/uploads/prev/23/6639_11.gif" class="widgit_img" title="Почему в Турции дешевле?"></a></div>
-<h6  class="widget_tit"><a href="page/pochemu-v-turcii-deshevle">Почему в Турции дешевле?</a></h6>
-<div class="widget_date">06.07.2017</div></li>
-</ul>
-</div></div></div>
-
-<div class="widget littel_preview_description"><div class="wr"><h2 class="box"><span>LTxtPhoto</span></h2><div class="widget-content"><ul class="is_link page_list LTxtPhoto">
-<li><h6 class="widget_tit"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес: как мотивировать сотрудников</a></h6>
-<div class="widget_date">07.07.2017</div>
-<div class="widget_count_page">357</div> 
-<div class="widget_prev"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img src="cm/uploads/prev/23/6642_11.gif" class="widgit_img" title="Аптечный бизнес: как мотивировать сотрудников"></a></div>
-<div class="widget_short_text">
-Большинство производителей аптечных товаров ставят главной целью попасть на прилавки ...</div>
-<a class="cut" href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Прочитать</a></li>
-<li><h6 class="widget_tit"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ России от членских взносов в ПАСЕ,  чем это обернется?</a></h6>
-<div class="widget_date">07.07.2017</div>
-<div class="widget_count_page">529</div> 
-<div class="widget_prev"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"><img src="cm/uploads/prev/23/6641_11.gif" class="widgit_img" title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a></div>
-<div class="widget_short_text">
-Российские власти решили сократить выплаты в Совет Европы из-за введенных ...</div>
-<a class="cut" href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Прочитать</a></li>
-<li><h6 class="widget_tit"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока</a></h6>
-<div class="widget_date">07.07.2017</div>
-<div class="widget_count_page">413</div> 
-<div class="widget_prev"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"><img src="cm/uploads/prev/23/6640_11.gif" class="widgit_img" title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a></div>
-<div class="widget_short_text">
-Покупки могут временно улучшить плохое настроение, но ощущение вины, которая ...</div>
-<a class="cut" href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Прочитать</a></li>
-<li><h6 class="widget_tit"><a href="page/pochemu-v-turcii-deshevle">Почему в Турции дешевле?</a></h6>
-<div class="widget_date">06.07.2017</div>
-<div class="widget_count_page">382</div> 
-<div class="widget_prev"><a href="page/pochemu-v-turcii-deshevle"><img src="cm/uploads/prev/23/6639_11.gif" class="widgit_img" title="Почему в Турции дешевле?"></a></div>
-<div class="widget_short_text">
-Турецкий отдых - это отличный стимул для развития российских направлений. ...</div>
-<a class="cut" href="page/pochemu-v-turcii-deshevle">Прочитать</a></li>
-</ul>
-</div></div></div>
-
-<div class="widget test_widget"><div class="wr"><div class="widget-content"><div class="tabs_widget tabs_widget_test_widget"><div class="widget-content">
-<div class="tabs"><ul class="tabs-nav">
-<li class="elem tabs-current"><span>Новые</span></li>
-<li class="elem"><span>Новые</span></li>
-<li class="elem"><span>Новые4</span></li>
-</ul><div class="clearfix"></div>
-<div class="tabs-box tabs-visible"><ul class="is_link page_list LittelBlock">
-<li><div class="widget_prev"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img src="cm/uploads/prev/23/6642_11.gif" class="widgit_img" title="Аптечный бизнес: как мотивировать сотрудников"></a></div>
-<h6 class="widget_tit"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес: как мотивировать сотрудников</a></h6>
-
-<div class="widget_date">07.07.2017</div>
-<div class="widget_count_page">357</div></li>
-<li><div class="widget_prev"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"><img src="cm/uploads/prev/23/6641_11.gif" class="widgit_img" title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a></div>
-<h6 class="widget_tit"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ России от членских взносов в ПАСЕ,  чем это обернется?</a></h6>
-
-<div class="widget_date">07.07.2017</div>
-<div class="widget_count_page">529</div></li>
-<li><div class="widget_prev"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"><img src="cm/uploads/prev/23/6640_11.gif" class="widgit_img" title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a></div>
-<h6 class="widget_tit"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока</a></h6>
-
-<div class="widget_date">07.07.2017</div>
-<div class="widget_count_page">413</div></li>
-<li><div class="widget_prev"><a href="page/pochemu-v-turcii-deshevle"><img src="cm/uploads/prev/23/6639_11.gif" class="widgit_img" title="Почему в Турции дешевле?"></a></div>
-<h6 class="widget_tit"><a href="page/pochemu-v-turcii-deshevle">Почему в Турции дешевле?</a></h6>
-
-<div class="widget_date">06.07.2017</div>
-<div class="widget_count_page">382</div></li>
-</ul>
-</div><b></b>
-<div class="tabs-box"><ul class="is_link page_list">
-<li><h6 class="widget_tit"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес: как мотивировать сотрудников</a></h6></li>
-<li><h6 class="widget_tit"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ России от членских взносов в ПАСЕ,  чем это обернется?</a></h6></li>
-<li><h6 class="widget_tit"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока</a></h6></li>
-</ul>
-</div><b></b>
-<div class="tabs-box"><ul class="is_link page_list">
-<li><h6 class="widget_tit"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес: как мотивировать сотрудников</a></h6></li>
-<li><h6 class="widget_tit"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ России от членских взносов в ПАСЕ,  чем это обернется?</a></h6></li>
-<li><h6 class="widget_tit"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока</a></h6></li>
-</ul>
-</div><b></b>
-</div><!-- div class="tabs -->
-</div><!-- div class=widget-content --></div></div></div></div>
-
-<div class="widget accordion_block"><div class="wr"><div class="widget-content"><div class="accordion_widget accordion_widget_accordion_block"><div class="widget-content">
-<div class="acc-wrapper">
-<div class="accordion-title"><h3><a href="#">Новые</a></h3><span></span></div>
-<div class="accordion-container" style="display: none;"><ul class="is_link page_list LittelBlock">
-<li><div class="widget_prev"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img src="cm/uploads/prev/23/6642_11.gif" class="widgit_img" title="Аптечный бизнес: как мотивировать сотрудников"></a></div>
-<h6 class="widget_tit"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес: как мотивировать сотрудников</a></h6>
-
-<div class="widget_date">07.07.2017</div>
-<div class="widget_count_page">357</div></li>
-<li><div class="widget_prev"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"><img src="cm/uploads/prev/23/6641_11.gif" class="widgit_img" title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a></div>
-<h6 class="widget_tit"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ России от членских взносов в ПАСЕ,  чем это обернется?</a></h6>
-
-<div class="widget_date">07.07.2017</div>
-<div class="widget_count_page">529</div></li>
-<li><div class="widget_prev"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"><img src="cm/uploads/prev/23/6640_11.gif" class="widgit_img" title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a></div>
-<h6 class="widget_tit"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока</a></h6>
-
-<div class="widget_date">07.07.2017</div>
-<div class="widget_count_page">413</div></li>
-<li><div class="widget_prev"><a href="page/pochemu-v-turcii-deshevle"><img src="cm/uploads/prev/23/6639_11.gif" class="widgit_img" title="Почему в Турции дешевле?"></a></div>
-<h6 class="widget_tit"><a href="page/pochemu-v-turcii-deshevle">Почему в Турции дешевле?</a></h6>
-
-<div class="widget_date">06.07.2017</div>
-<div class="widget_count_page">382</div></li>
-</ul>
-</div><div class="accordion-title"><h3><a href="#">Новые</a></h3><span></span></div>
-<div class="accordion-container" style="display: none;"><ul class="is_link page_list">
-<li><h6 class="widget_tit"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес: как мотивировать сотрудников</a></h6></li>
-<li><h6 class="widget_tit"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ России от членских взносов в ПАСЕ,  чем это обернется?</a></h6></li>
-<li><h6 class="widget_tit"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока</a></h6></li>
-</ul>
-</div><div class="accordion-title"><h3><a href="#">Новые4</a></h3><span></span></div>
-<div class="accordion-container" style="display: none;"><ul class="is_link page_list">
-<li><h6 class="widget_tit"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес: как мотивировать сотрудников</a></h6></li>
-<li><h6 class="widget_tit"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ России от членских взносов в ПАСЕ,  чем это обернется?</a></h6></li>
-<li><h6 class="widget_tit"><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока</a></h6></li>
-</ul>
-</div></div><!-- div class=widget-content --></div></div></div></div>
-
-<div class="widget newslistblock"><div class="wr"><h2 class="box"><span>NewsBlock</span></h2><div class="widget-content"><div class="NewsList  NewsBlock"><div id=news_block><div id=news_time><span class="n_hour">18</span>:<span class="n_minut">40</span></div><div id=news_url><a class="n_link" href="novosti/1320510">ЦБ увеличил до 21 число банков с правом открывать счета эскроу для долевого строительства</a></div></div><div id=news_block><div id=news_time><span class="n_hour">18</span>:<span class="n_minut">20</span></div><div id=news_url><a class="n_link" href="novosti/1320509">В Армении планируют увеличить размер предоставляемых кредитов малым и средним сельским хозяйствам</a></div></div><div id=news_block><div id=news_time><span class="n_hour">18</span>:<span class="n_minut">20</span></div><div id=news_url><a class="n_link" href="novosti/1320508">Сердце не шалит? Спросите у искусственного интеллекта</a></div></div><div id=news_block><div id=news_time><span class="n_hour">18</span>:<span class="n_minut">20</span></div><div id=news_url><a class="n_link" href="novosti/1320507">Xiaomi собирает деньги на интересные наушники</a></div></div><div id=news_block><div id=news_time><span class="n_hour">18</span>:<span class="n_minut">00</span></div><div id=news_url><a class="n_link" href="novosti/1320506">Вдоль трассы &quot;Таврида&quot; установят шумозащитные экраны и высадят тысячи деревьев</a></div></div><div id=news_block><div id=news_time><span class="n_hour">18</span>:<span class="n_minut">00</span></div><div id=news_url><a class="n_link" href="novosti/1320505">Обитатели экзотариума в ТРЦ &quot;Рио&quot; при пожаре не пострадали</a></div></div><div id=news_block><div id=news_time><span class="n_hour">18</span>:<span class="n_minut">00</span></div><div id=news_url><a class="n_link" href="novosti/1320504">Dalian Wanda одолжит покупателю своей недвижимости $4,35 млрд</a></div></div><div id=news_block><div id=news_time><span class="n_hour">17</span>:<span class="n_minut">40</span></div><div id=news_url><a class="n_link" href="novosti/1320503">Свыше 26 тыс. нарушений норм благоустройства выявлено за полгода в Подмосковье</a></div></div><div id=news_block><div id=news_time><span class="n_hour">17</span>:<span class="n_minut">40</span></div><div id=news_url><a class="n_link" href="novosti/1320502">ЮниКредит Банк начал выдавать кредиты на покупку автомобилей марки Brilliance</a></div></div><div id=news_block><div id=news_time><span class="n_hour">17</span>:<span class="n_minut">40</span></div><div id=news_url><a class="n_link" href="novosti/1320501">Стал известен будущий новый состав совета директоров АСВ</a></div></div><div id=news_block><div id=news_time><span class="n_hour">17</span>:<span class="n_minut">40</span></div><div id=news_url><a class="n_link" href="novosti/1320500">Выплаты по программе продпомощи могут составить 1,8 тыс. рублей в месяц на человека</a></div></div></div></div></div></div></div>
+            <div class="type type_category">
 
 
-		</div><!-- div class=wrap -->
-		</aside><!-- div id="sidebar-2" -->
-					
-		</div><!-- div id="sidebars" -->	
-		
-		
-	</div><!-- div id="wrapper" -->	
+                <nav id="page_path">
 
-	</div><!-- div id="sub-container" -->
-	
-	
-<div class="foot_sb"><div class="w0"><div class="w1"><div class="widget-content"><div class="tagclouds"><a href="tag/Forex">Forex</a><sub style="font-size: 7pt;">3</sub> <a href="tag/Galaxy+S4">Galaxy S4</a><sub style="font-size: 7pt;">4</sub> <a href="tag/GlaxoSmithKline">GlaxoSmithKline</a><sub style="font-size: 7pt;">8</sub> <a href="tag/IBM">IBM</a><sub style="font-size: 7pt;">22</sub> <a href="tag/Minecraft">Minecraft</a><sub style="font-size: 7pt;">4</sub> <a href="tag/Nokia">Nokia</a><sub style="font-size: 7pt;">36</sub> <a href="tag/Roshen">Roshen</a><sub style="font-size: 7pt;">5</sub> <a href="tag/SpaceX">SpaceX</a><sub style="font-size: 7pt;">7</sub> <a href="tag/Zappos">Zappos</a><sub style="font-size: 7pt;">3</sub> <a href="tag/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80+%D0%A2%D0%BA%D0%B0%D1%87%D0%B5%D0%B2">Александр Ткачев</a><sub style="font-size: 7pt;">4</sub> <a href="tag/%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7">анализ</a><sub style="font-size: 7pt;">4</sub> <a href="tag/%D0%B1%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0">банковская система</a><sub style="font-size: 7pt;">3</sub> <a href="tag/%D0%91%D0%B5%D0%BB%D1%8C%D0%B3%D0%B8%D1%8F">Бельгия</a><sub style="font-size: 7pt;">3</sub> <a href="tag/%D0%B1%D0%B5%D0%BD%D0%B7%D0%B8%D0%BD">бензин</a><sub style="font-size: 7pt;">3</sub> <a href="tag/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">бизнес-образование</a><sub style="font-size: 7pt;">4</sub> <a href="tag/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">бизнес-планирование</a><sub style="font-size: 7pt;">3</sub> <a href="tag/%D0%B1%D1%8E%D0%B4%D0%B6%D0%B5%D1%82">бюджет</a><sub style="font-size: 7pt;">3</sub> <a href="tag/%D0%93%D0%90%D0%97">ГАЗ</a><sub style="font-size: 7pt;">4</sub> <a href="tag/%D0%B8%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D0%B8">инновации</a><sub style="font-size: 7pt;">5</sub> <a href="tag/%D0%9C%D0%A2%D0%A1">МТС</a><sub style="font-size: 7pt;">18</sub> <a href="tag/%D0%BD%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D1%8B%D0%B5+%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D1%8B">налоговые органы</a><sub style="font-size: 7pt;">4</sub> <a href="tag/%D0%BD%D0%B5%D1%84%D1%82%D0%B5%D0%BF%D0%B5%D1%80%D0%B5%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0">нефтепереработка</a><sub style="font-size: 7pt;">3</sub> <a href="tag/%D0%BE%D0%B1%D0%BB%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%B8">облигации</a><sub style="font-size: 7pt;">10</sub> <a href="tag/%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0+%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0">продажа бизнеса</a><sub style="font-size: 7pt;">5</sub> <a href="tag/%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0">распродажа</a><sub style="font-size: 7pt;">3</sub> <a href="tag/%D1%80%D1%8B%D0%BD%D0%BE%D0%BA">рынок</a><sub style="font-size: 7pt;">6</sub> <a href="tag/%D1%81%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D1%8B">смартфоны</a><sub style="font-size: 7pt;">4</sub> <a href="tag/%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D0%B8%D0%B8">стратегии</a><sub style="font-size: 7pt;">7</sub> <a href="tag/%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D0%B8%D1%8F">стратегия</a><sub style="font-size: 7pt;">4</sub> <a href="tag/%D0%A1%D0%A8%D0%90">США</a><sub style="font-size: 7pt;">23</sub> <a href="tag/%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8">технологии</a><sub style="font-size: 7pt;">4</sub> <a href="tag/%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D0%BD%D0%B5%D1%84%D1%82%D1%8C">Транснефть</a><sub style="font-size: 7pt;">4</sub> <a href="tag/%D1%82%D1%83%D1%80%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81">туристический бизнес</a><sub style="font-size: 7pt;">12</sub> <a href="tag/%D1%83%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0">украина</a><sub style="font-size: 7pt;">75</sub> <a href="tag/%D0%A3%D0%BE%D1%80%D1%80%D0%B5%D0%BD+%D0%91%D0%B0%D1%84%D1%84%D0%B5%D1%82%D1%82">Уоррен Баффетт</a><sub style="font-size: 7pt;">3</sub> <a href="tag/%D1%84%D0%B0%D1%80%D0%BC%D0%B0%D1%86%D0%B5%D0%B2%D1%82%D0%B8%D0%BA%D0%B0">фармацевтика</a><sub style="font-size: 7pt;">8</sub> <a href="tag/%D1%84%D0%B0%D1%81%D1%82-%D1%84%D1%83%D0%B4">фаст-фуд</a><sub style="font-size: 7pt;">3</sub> <a href="tag/%D0%A6%D0%91">ЦБ</a><sub style="font-size: 7pt;">9</sub> <a href="tag/%D1%88%D0%BE%D1%83-%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81">шоу-бизнес</a><sub style="font-size: 7pt;">3</sub> <a href="tag/%D1%8D%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8">экономика России</a><sub style="font-size: 7pt;">6</sub> </div></div></div><div class="w2"></div></div></div>
+                    <a href='/'>Главная</a> &gt; <a href="category/statii" title="Статьи">Статьи</a>
+                </nav><!-- nav id="page_path" -->
+                <div class="widget Top_category">
+                    <div class="widget block">
+                        <div class="wr"><h2 class="box"><span>Главные статьи раздела</span></h2>
+                            <div class="widget-content">
+                                <ul class="top_cat clearfix">
+                                    <li>
+                                        <div class="widget_prev"><img src="cm/uploads/prev/23/6640_33.gif"
+                                                                      class="widgit_img"
+                                                                      title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока">
+                                        </div>
+                                        <h6 class="widget_tit"><a
+                                                href="page/reuters-eks-zhena-putina-svjazana-s-mnogomillionnoj-nedvizhimostju"
+                                                title="Reuters: экс-жена Путина связана с многомиллионной недвижимостью">Reuters:
+                                            экс-жена Путина связана с многомиллионной недвижимостью</a></h6>
+                                        <div class="widget_date">Понедельник, 22 мая 2017 г.</div>
+                                        <div class="widget_count_page">82</div>
+                                        <div class="widget_short_text">По утверждению издания Reuters, бывшая жена
+                                            российского президента Владимира Путина помогла создать и теперь
+                                            поддерживает фонд, который владеет исторической собственностью ...
+                                        </div>
+                                        Reuters: экс-жена Путина связана с многомиллионной недвижимостью
+                                    </li>
+                                    <li><h6 class="widget_tit"><a
+                                            href="page/sopernichestvo-mezhdu-iphone-i-android-mozhet-vskore-stat-namnogo-interesnee"
+                                            title="Соперничество между iPhone и Android может вскоре стать намного интереснее">Соперничество
+                                        между iPhone и Android может вскоре стать намного интереснее</a></h6>
+                                        <div class="widget_date">Понедельник, 19 июня 2017 г.</div>
+                                        <div class="widget_count_page">46</div>
+                                        <div class="widget_short_text">Хотя Google по-прежнему рекламирует Android как
+                                            ОС для масс, не секрет, что поисковик в последние годы медленно, но уверенно
+                                            проявляет ...
+                                        </div>
+                                        Соперничество между iPhone и Android может вскоре стать намного интереснее
+                                    </li>
+                                    <li><h6 class="widget_tit"><a href="page/chto-esli-puzyr-bitkoin-lopnet"
+                                                                  title="Что если пузырь биткоин лопнет">Что если пузырь
+                                        биткоин лопнет?</a></h6>
+                                        <div class="widget_date">Четверг, 8 июня 2017 г.</div>
+                                        <div class="widget_count_page">30</div>
+                                        <div class="widget_short_text">Чаще всего, слово “bitcoin” сейчас связывается со
+                                            словом “пузырь”. На рынках часто образуются пузыри, но бум цифровой валюты
+                                            биткоин является ...
+                                        </div>
+                                        Что если пузырь биткоин лопнет?
+                                    </li>
+                                    <li><h6 class="widget_tit"><a
+                                            href="page/sdelano-v-sirii-nadpisi-kotorye-podstegivajut-prodazhi-obuvi-v-rossijskoj-seti"
+                                            title="Сделано в Сирии: надпись, которая подстегивают продажи обуви в российской сети">Сделано
+                                        в Сирии: надпись, которая подстегивают продажи обуви в российской сети</a></h6>
+                                        <div class="widget_date">Четверг, 25 мая 2017 г.</div>
+                                        <div class="widget_count_page">24</div>
+                                        <div class="widget_short_text">Надписи “сделано в Сирии” и “сделано в Крыму” на
+                                            полках в 350 магазинах Zenden Андрея Павлова создали шумиху в социальных ...
+                                        </div>
+                                        Сделано в Сирии: надпись, которая подстегивают продажи обуви в российской сети
+                                    </li>
+                                    <li><h6 class="widget_tit"><a href="page/rossijskoe-blizhe-k-telu"
+                                                                  title="Российское ближе к телу">Российское ближе к
+                                        телу</a></h6>
+                                        <div class="widget_date">Четверг, 8 июня 2017 г.</div>
+                                        <div class="widget_count_page">22</div>
+                                        <div class="widget_short_text">У жителей России повысился интерес к
+                                            отечественным брендам одежды. Она не соответствует модным тенденциям,
+                                            однако, покупатели теперь считают их достаточно ...
+                                        </div>
+                                        Российское ближе к телу
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="category">Статьи</h1>
+                <div class="rss_category"><a class="rss_link" href="category/statii/feed">RSS</a></div>
+
+                <div class="page_only clearfix">
+                    <div class="info"><h6 class=page_title><a
+                            href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"
+                            title="Отказ России от членских взносов в ПАСЕ,  чем это обернется">Отказ России от членских
+                        взносов в ПАСЕ, чем это обернется?</a></h6><span class="page_category">Рубрика:</span> <a
+                            href="category/statii">Статьи</a> | <a href="category/iznutri">Изнутри</a><br>
+                        <span class="page_date"><span
+                                class="entry-icon icon-clock"></span>Пятница, 7 июля 2017 г.</span><span
+                                class="page_view"><span class="entry-icon icon-eye"></span>Просмотров: 529</span><span
+                                class="comments-link"><a
+                                href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja#comments"><span
+                                class="entry-icon icon-bubble"></span>Обсудить</a></span>
+                        <span>[ <a href="cm/admin/page_edit/6641">Edit page</a>]</span>
+                    </div>
+                    <div class="img_prewiev"><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"
+                                                title=""><img src="cm/uploads/prev/23/6641_22.gif"></a></div>
+                    <div class="page_content">Российские власти решили сократить выплаты в Совет Европы из-за введенных
+                        против нашей страны санкций, и ограничений в отношении делегации в ПАСЕ. Какие вероятные
+                        последствия подобного демарша ожидают Россию?<span class="cut"><a
+                                href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"
+                                title="Далее..."><span class="entry-icon icon-popup"></span>Далее...</a></span>
+                    </div>
+                </div><!--div class="page_only"-->
+
+                <div class="page_only clearfix">
+                    <div class="info"><h6 class=page_title><a
+                            href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"
+                            title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока">Тестовая
+                        страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не
+                        выходит за боковые рамки див блока</a></h6><span class="page_category">Рубрика:</span> <a
+                            href="category/statii">Статьи</a> | <a href="category/interesnye-fakty">Интересные факты</a><br><span
+                            class="page_date"><span
+                            class="entry-icon icon-clock"></span>Пятница, 7 июля 2017 г.</span><span
+                            class="page_view"><span class="entry-icon icon-eye"></span>Просмотров: 413</span><span class="comments-link"><a
+                            href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg#comments"><span
+                            class="entry-icon icon-bubble"></span>Комментариев: 9</a></span>
+                        [ <a href="cm/admin/page_edit/6640">Edit page</a>]
+                    </div>
+                    <div class="img_prewiev"><a
+                            href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg" title=""><img
+                            src="cm/uploads/prev/23/6640_22.gif"></a></div>
+                    <div class="page_content">Покупки могут временно улучшить плохое настроение, но ощущение вины,
+                        которая следует за крупной тратой средств, часто бывает хуже. Есть несколько приемов, которые вы
+                        можете использовать, чтобы предотвратить желание раскошелиться<span class="cut"><a
+                                href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"
+                                title="Далее..."><span class="entry-icon icon-popup"></span>Далее...</a></span>
+                    </div>
+                </div><!--div class="page_only"-->
+
+                <div class="page_only clearfix">
+                    <div class="info"><h6 class=page_title><a href="page/pochemu-v-turcii-deshevle"
+                                                              title="Почему в Турции дешевле">Почему в Турции
+                        дешевле?</a></h6><span class="page_category">Рубрика:</span> <a
+                            href="category/statii">Статьи</a> | <a href="category/interesnye-fakty">Интересные факты</a><br><span
+                            class="page_date">Четверг, 6 июля 2017 г.</span><span
+                            class="page_view">Просмотров: 382</span><span class="comments-link"><a
+                            href="page/pochemu-v-turcii-deshevle#comments">Обсудить</a></span> [ <a
+                            href="cm/admin/page_edit/6639">Edit page</a>]
+                    </div>
+                    <div class="img_prewiev"><a href="page/pochemu-v-turcii-deshevle" title=""><img
+                            src="cm/uploads/prev/23/6639_22.gif"></a></div>
+                    <div class="page_content">Турецкий отдых - это отличный стимул для развития российских направлений.
+                        Представители туристической области делают неутешительные для российских курортов выводы:
+                        турецкий демпинг сильно давит на привлекательность российских направлений.<span class="cut"><a
+                                href="page/pochemu-v-turcii-deshevle" title="Далее...">Далее...</a></span>
+                    </div>
+                </div><!--div class="page_only"-->
+
+                <div class="page_only clearfix">
+                    <div class="info"><h6 class=page_title><a
+                            href="page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov"
+                            title="Внутри секретного и прибыльного мира «суперрепетиторов»">Внутри секретного и
+                        прибыльного мира «суперрепетиторов»</a></h6><span class="page_category">Рубрика:</span> <a
+                            href="category/statii">Статьи</a> | <a href="category/iznutri">Изнутри</a><br><span
+                            class="page_date">Четверг, 6 июля 2017 г.</span><span
+                            class="page_view">Просмотров: 386</span><span class="comments-link"><a
+                            href="page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov#comments">Обсудить</a></span>
+                        [ <a href="cm/admin/page_edit/6638">Edit page</a>]
+                    </div>
+                    <div class="img_prewiev"><a href="page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov"
+                                                title=""><img src="cm/uploads/prev/23/6638_22.gif"></a></div>
+                    <div class="page_content">Услуги в области образования приносят экономике Великобритании £17,5 млрд
+                        в год, но что является движущей силой спроса на британское образование и почему некоторые
+                        родители готовы потратить тысячи фунтов стерлингов, чтобы обеспечить "суперрепетитора" для
+                        своего ребенка?<span class="cut"><a
+                                href="page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov" title="Далее...">Далее...</a></span>
+                    </div>
+                </div><!--div class="page_only"-->
+
+                <div class="page_only clearfix">
+                    <div class="info"><h6 class=page_title><a href="page/novaja-staraja-veshh-ot-apple"
+                                                              title="Новая старая вещь от Apple">Новая старая вещь от
+                        Apple</a></h6><span class="page_category">Рубрика:</span> <a href="category/statii">Статьи</a> |
+                        <a href="category/iznutri">Изнутри</a><br><span class="page_date">Вторник, 4 июля 2017 г.</span><span
+                                class="page_view">Просмотров: 409</span><span class="comments-link"><a
+                                href="page/novaja-staraja-veshh-ot-apple#comments">Обсудить</a></span> [ <a
+                                href="cm/admin/page_edit/6635">Edit page</a>]
+                    </div>
+                    <div class="img_prewiev"><a href="page/novaja-staraja-veshh-ot-apple" title=""><img
+                            src="cm/uploads/prev/23/6635_22.gif"></a></div>
+                    <div class="page_content">Apple выпустили новый хит - устройство, которое настолько популярно, что
+                        его продают в большей части Америки и Британии. Если вы заказываете его в интернете, то доставка
+                        займет шесть недель. “Лучший продукт Apple за долгое время”, - гласит один интернет-комментарий.
+                        Полезный и (конечно) отлично разработанный, он имеет самые высокие показатели удовлетворенности
+                        потребителей по сравнению с любым продуктом Apple...<span class="cut"><a
+                                href="page/novaja-staraja-veshh-ot-apple" title="Далее...">Далее...</a></span>
+                    </div>
+                </div><!--div class="page_only"-->
+
+                <div class="page_only clearfix">
+                    <div class="info"><h6 class=page_title><a href="page/pravilnye-voprosy-google"
+                                                              title="Правильные вопросы Google">Правильные вопросы
+                        Google</a></h6><span class="page_category">Рубрика:</span> <a href="category/statii">Статьи</a>
+                        | <a href="category/vlast-i-biznes">Власть и бизнес</a><br><span class="page_date">Вторник, 4 июля 2017 г.</span><span
+                                class="page_view">Просмотров: 419</span><span class="comments-link"><a
+                                href="page/pravilnye-voprosy-google#comments">Обсудить</a></span> [ <a
+                                href="cm/admin/page_edit/6634">Edit page</a>]
+                    </div>
+                    <div class="img_prewiev"><a href="page/pravilnye-voprosy-google" title=""><img
+                            src="cm/uploads/prev/23/6634_22.gif"></a></div>
+                    <div class="page_content">Не должно быть сюрпризом, что на прошлой неделе, Маргрете Вестагер,
+                        комиссар по конкуренции Европейского Союза, приняла жесткую позицию в отношении Google. Размер
+                        штрафа, который технологический гигант должен будет оплатить за злоупотребление своим
+                        монопольным положением в онлайн-поисковике, составляет €2,4 млрд и устанавливает рекорд для
+                        европейских антимонопольных штрафов.<span class="cut"><a href="page/pravilnye-voprosy-google"
+                                                                                 title="Далее...">Далее...</a></span>
+                    </div>
+                </div><!--div class="page_only"-->
+
+                <div class="page_only clearfix">
+                    <div class="info"><h6 class=page_title><a href="page/svetlaja-storona-biznesa-evgenija-kasperskogo"
+                                                              title="Светлая сторона бизнеса Евгения Касперского">Светлая
+                        сторона бизнеса Евгения Касперского</a></h6><span class="page_category">Рубрика:</span> <a
+                            href="category/statii">Статьи</a> | <a href="category/vlast-i-biznes">Власть и
+                        бизнес</a><br><span class="page_date">Вторник, 4 июля 2017 г.</span><span class="page_view">Просмотров: 398</span><span
+                            class="comments-link"><a href="page/svetlaja-storona-biznesa-evgenija-kasperskogo#comments">Обсудить</a></span>
+                        [ <a href="cm/admin/page_edit/6633">Edit page</a>]
+                    </div>
+                    <div class="img_prewiev"><a href="page/svetlaja-storona-biznesa-evgenija-kasperskogo" title=""><img
+                            src="cm/uploads/prev/23/6633_22.gif"></a></div>
+                    <div class="page_content">Исполнительный директор российской «Лаборатории Касперского» говорит, что
+                        готов предоставить исходный код своей компании на ознакомление государственным чиновникам США,
+                        чтобы помочь развеять давние подозрения в связях его компании с Кремлем.<span class="cut"><a
+                                href="page/svetlaja-storona-biznesa-evgenija-kasperskogo" title="Далее...">Далее...</a></span>
+                    </div>
+                </div><!--div class="page_only"-->
+
+                <div class="page_only clearfix">
+                    <div class="info"><h6 class=page_title><a href="page/samsung-vkladyvaet-milliardy-v-novye-iphone"
+                                                              title="Samsung вкладывает миллиарды в новые iPhone">Samsung
+                        вкладывает миллиарды в новые iPhone</a></h6><span class="page_category">Рубрика:</span> <a
+                            href="category/statii">Статьи</a> | <a href="category/biznes-gambit">Бизнес
+                        гамбит</a><br><span class="page_date">Понедельник, 3 июля 2017 г.</span><span class="page_view">Просмотров: 652</span><span
+                            class="comments-link"><a href="page/samsung-vkladyvaet-milliardy-v-novye-iphone#comments">Обсудить</a></span>
+                        [ <a href="cm/admin/page_edit/6631">Edit page</a>]
+                    </div>
+                    <div class="img_prewiev"><a href="page/samsung-vkladyvaet-milliardy-v-novye-iphone" title=""><img
+                            src="cm/uploads/prev/23/6631_22.gif"></a></div>
+                    <div class="page_content">Осталось всего пару месяцев до того момента, когда iPhone 8 получит
+                        официальный статус, а мы уже имеем хорошую новость о том, что Samsung будет поставлять
+                        OLED-панели для последних и самых лучших Apple. Хотя, согласно слухам от новой сети поставщиков,
+                        Samsung не собирается останавливаться на достигнутом...<span class="cut"><a
+                                href="page/samsung-vkladyvaet-milliardy-v-novye-iphone"
+                                title="Далее...">Далее...</a></span>
+                    </div>
+                </div><!--div class="page_only"-->
+
+                <div class="page_only clearfix">
+                    <div class="info"><h6 class=page_title><a href="page/gde-vypit-kofe-za-bitkoiny"
+                                                              title="Где выпить кофе за биткоины">Где выпить кофе за
+                        биткоины?</a></h6><span class="page_category">Рубрика:</span> <a
+                            href="category/statii">Статьи</a> | <a href="category/interesnye-fakty">Интересные факты</a><br><span
+                            class="page_date">Понедельник, 3 июля 2017 г.</span><span
+                            class="page_view">Просмотров: 411</span><span class="comments-link"><a
+                            href="page/gde-vypit-kofe-za-bitkoiny#comments">Обсудить</a></span> [ <a
+                            href="cm/admin/page_edit/6632">Edit page</a>]
+                    </div>
+                    <div class="page_content">Криптовалюта завоевывает расположение потребителей, а ее стоимость
+                        возрастает с каждым днем. А реально ли обменять виртуальные деньги на реальные товары в
+                        России?<span class="cut"><a href="page/gde-vypit-kofe-za-bitkoiny" title="Далее...">Далее...</a></span>
+                    </div>
+                </div><!--div class="page_only"-->
+
+                <div class="page_only clearfix">
+                    <div class="info"><h6 class=page_title><a href="page/sonyvremja-play-station-5-eshhe-ne-prishlo"
+                                                              title="Sony:время Play Station 5 еще не пришло">Sony:время
+                        Play Station 5 еще не пришло</a></h6><span class="page_category">Рубрика:</span> <a
+                            href="category/statii">Статьи</a> | <a href="category/iznutri">Изнутри</a><br><span
+                            class="page_date">Понедельник, 3 июля 2017 г.</span><span
+                            class="page_view">Просмотров: 639</span><span class="comments-link"><a
+                            href="page/sonyvremja-play-station-5-eshhe-ne-prishlo#comments">Обсудить</a></span> [ <a
+                            href="cm/admin/page_edit/6629">Edit page</a>]
+                    </div>
+                    <div class="page_content">В то время, как Microsoft официально представляет Xbox One X, многих
+                        сейчас интересует то, когда Sony представит PlayStation 5. Генеральный директор Sony Interactive
+                        Entertainment America Шон Лайден подтвердил планы относительно PlayStation 5.<span
+                                class="cut"><a href="page/sonyvremja-play-station-5-eshhe-ne-prishlo" title="Далее...">Далее...</a></span>
+                    </div>
+                </div><!--div class="page_only"-->
+
+                <div class="pagination"><span class="pagination-first">« Первая</span> &middot; <span
+                        class="pagination-prev">‹ предыдущая</span> | <strong>1</strong> &middot; <a
+                        href="category/statii/next/2">2</a> &middot; <a href="category/statii/next/3">3</a> &middot; <a
+                        href="category/statii/next/4">4</a> ... <a class="pagination-end"
+                                                                   href="category/statii/next/443">443</a> | <a
+                        class="pagination-next" href="category/statii/next/2">следующая ›</a> &middot; <a
+                        class="pagination-last" href="category/statii/next/443">последняя »</a></div>
+
+            </div><!-- class="type type_category" -->
+
+            <div class="content-bottom"></div>
+
+        </div><!-- div id="content" -->
 
 
-<div class=topglmen><div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div><div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div><div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div><div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div><div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div><div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div><div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div><div id=search_heard> 
-		<form accept-charset="UTF-8"  action="/isearch" method="get">
-		<input id=search_formi type="text" name=q id="q" size="90" maxlength="150">
-		<input type="submit" id="search_forms" value=" искатЬ ">
-		</form></div></div>
+        <div id="rsidebars" class="col-lg-2">
 
-<div  class=topsubmenD></div><div id="up_body">
+            <nav class="parts">
+                <ul class="cat_link">
+                    <li><a href="category/biznes-gambit" title="Бизнес гамбит">Бизнес гамбит</a></li>
+                    <li><a href="category/vlast-i-biznes" title="Власть и бизнес">Власть и бизнес</a></li>
+                    <li><a href="category/dengi" title="Деньги">Деньги</a></li>
+                    <li><a href="category/iznutri" title="Изнутри">Изнутри</a></li>
+                    <li><a href="category/intervju" title="Интервью">Интервью</a></li>
+                    <li><a href="category/interesnye-fakty" title="Интересные факты">Интересные факты</a></li>
+                    <li><a href="category/karera" title="Карьера">Карьера</a></li>
+                    <li><a href="category/lichnosti" title="Личности">Личности</a></li>
+                    <li><a href="category/lichnye-finansy" title="Личные финансы">Личные финансы</a></li>
+                    <li><a href="category/lozhnyj-shag" title="Ложный шаг">Ложный шаг</a></li>
+                    <li><a href="category/malyj-biznes" title="Малый бизнес">Малый бизнес</a></li>
+                    <li><a href="category/press-relizy" title="Пресс-релизы">Пресс-релизы</a></li>
+                    <li><a href="category/uspeshnye-proekty" title="Успешные проекты">Успешные проекты</a></li>
+                    <li><a href="category/citaty" title="Цитаты">Цитаты</a></li>
+                </ul>
+            </nav>
+            <aside id="sidebar1">
+                <div class="wrap">
+
+                    <div id="widget textblock">
+                        <div class="wr"><h2 class="box"><span>TextBlock</span></h2>
+                            <div class="widget-content">
+                                <ul class="is_link page_list TextBlock">
+                                    <li><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес: как
+                                        мотивировать сотрудников</a></li>
+                                    <li><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
+                                        России от членских взносов в ПАСЕ, чем это обернется?</a></li>
+                                    <li><a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
+                                        страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не
+                                        цепляет и не выходит за боковые рамки див блока</a></li>
+                                    <li><a href="page/pochemu-v-turcii-deshevle">Почему в Турции дешевле?</a></li>
+                                    <li><a href="page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov">Внутри
+                                        секретного и прибыльного мира «суперрепетиторов»</a></li>
+                                    <li><a href="page/rodom-iz-formula-1">Родом из Formula 1</a></li>
+                                    <li><a href="page/predprinimateli-protiv-onlajn-kass">Предприниматели против
+                                        онлайн-касс</a></li>
+                                    <li><a href="page/novaja-staraja-veshh-ot-apple">Новая старая вещь от Apple</a></li>
+                                    <li><a href="page/pravilnye-voprosy-google">Правильные вопросы Google</a></li>
+                                    <li><a href="page/svetlaja-storona-biznesa-evgenija-kasperskogo">Светлая сторона
+                                        бизнеса Евгения Касперского</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="widget noheader">
+                        <div class="wr">
+                            <div class="widget-content">
+                                <ul class="is_link page_list">
+                                    <li><h2><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес:
+                                        как мотивировать сотрудников</a></h2></li>
+                                    <li><h2><a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
+                                        России от членских взносов в ПАСЕ, чем это обернется?</a></h2></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="widget miidlesolumnonseconds">
+                        <div class="wr"><h2 class="box"><span>LСolumn</span></h2>
+                            <div class="widget-content">
+                                <ul class="is_link page_list LСolumn">
+                                    <li>
+                                        <div class="widget_prev"><a
+                                                href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
+                                                src="cm/uploads/prev/23/6642_22.gif" class="widgit_img"
+                                                title="Аптечный бизнес: как мотивировать сотрудников"></a></div>
+                                        <h6 class="widget_tit"><a
+                                                href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
+                                            бизнес: как мотивировать сотрудников</a></h6>
+                                        <div class="widget_date">07.07.2017</div>
+                                        <div class="widget_count_page">357</div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev"><a
+                                                href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"><img
+                                                src="cm/uploads/prev/23/6641_22.gif" class="widgit_img"
+                                                title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a>
+                                        </div>
+                                        <h6 class="widget_tit"><a
+                                                href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
+                                            России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
+                                        <div class="widget_date">07.07.2017</div>
+                                        <div class="widget_count_page">529</div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev"><a
+                                                href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"><img
+                                                src="cm/uploads/prev/23/6640_22.gif" class="widgit_img"
+                                                title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a>
+                                        </div>
+                                        <h6 class="widget_tit"><a
+                                                href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
+                                            страница : и сразу тестируем оооооооочень длинный заголовок, что бы
+                                            проверить не цепляет и не выходит за боковые рамки див блока</a></h6>
+                                        <div class="widget_date">07.07.2017</div>
+                                        <div class="widget_count_page">413</div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev"><a href="page/pochemu-v-turcii-deshevle"><img
+                                                src="cm/uploads/prev/23/6639_22.gif" class="widgit_img"
+                                                title="Почему в Турции дешевле?"></a></div>
+                                        <h6 class="widget_tit"><a href="page/pochemu-v-turcii-deshevle">Почему в Турции
+                                            дешевле?</a></h6>
+                                        <div class="widget_date">06.07.2017</div>
+                                        <div class="widget_count_page">382</div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev"><a
+                                                href="page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov"><img
+                                                src="cm/uploads/prev/23/6638_22.gif" class="widgit_img"
+                                                title="Внутри секретного и прибыльного мира «суперрепетиторов»"></a>
+                                        </div>
+                                        <h6 class="widget_tit"><a
+                                                href="page/vnutri-sekretnogo-i-pribylnogo-mira-superrepetitorov">Внутри
+                                            секретного и прибыльного мира «суперрепетиторов»</a></h6>
+                                        <div class="widget_date">06.07.2017</div>
+                                        <div class="widget_count_page">386</div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev"><a href="page/rodom-iz-formula-1"><img
+                                                src="cm/uploads/prev/23/6637_22.gif" class="widgit_img"
+                                                title="Родом из Formula 1"></a></div>
+                                        <h6 class="widget_tit"><a href="page/rodom-iz-formula-1">Родом из Formula 1</a>
+                                        </h6>
+                                        <div class="widget_date">05.07.2017</div>
+                                        <div class="widget_count_page">246</div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev"><a href="page/predprinimateli-protiv-onlajn-kass"></a>
+                                        </div>
+                                        <h6 class="widget_tit"><a href="page/predprinimateli-protiv-onlajn-kass">Предприниматели
+                                            против онлайн-касс</a></h6>
+                                        <div class="widget_date">05.07.2017</div>
+                                        <div class="widget_count_page">488</div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev"><a href="page/novaja-staraja-veshh-ot-apple"><img
+                                                src="cm/uploads/prev/23/6635_22.gif" class="widgit_img"
+                                                title="Новая старая вещь от Apple"></a></div>
+                                        <h6 class="widget_tit"><a href="page/novaja-staraja-veshh-ot-apple">Новая старая
+                                            вещь от Apple</a></h6>
+                                        <div class="widget_date">04.07.2017</div>
+                                        <div class="widget_count_page">409</div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev"><a href="page/pravilnye-voprosy-google"><img
+                                                src="cm/uploads/prev/23/6634_22.gif" class="widgit_img"
+                                                title="Правильные вопросы Google"></a></div>
+                                        <h6 class="widget_tit"><a href="page/pravilnye-voprosy-google">Правильные
+                                            вопросы Google</a></h6>
+                                        <div class="widget_date">04.07.2017</div>
+                                        <div class="widget_count_page">419</div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev"><a
+                                                href="page/svetlaja-storona-biznesa-evgenija-kasperskogo"><img
+                                                src="cm/uploads/prev/23/6633_22.gif" class="widgit_img"
+                                                title="Светлая сторона бизнеса Евгения Касперского"></a></div>
+                                        <h6 class="widget_tit"><a
+                                                href="page/svetlaja-storona-biznesa-evgenija-kasperskogo">Светлая
+                                            сторона бизнеса Евгения Касперского</a></h6>
+                                        <div class="widget_date">04.07.2017</div>
+                                        <div class="widget_count_page">398</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="widget newws" class="widget newws">
+                        <div class="wr"><h2 class="box"><span>Рубрики</span></h2>
+                            <div class="widget-content">
+                                <ul class="is_link">
+
+                                    <li class="group"><a href="category/biznes-mehanika" title="Бизнес технологии">Бизнес
+                                        технологии<sup>1196</sup></a><br>
+                                        <ul class="child level1">
+                                            <li><a href="category/investicii" title="Инвестиции">Инвестиции<sup>17</sup></a><br>
+                                            </li>
+                                            <li><a href="category/innovacii"
+                                                   title="Инновации">Инновации<sup>16</sup></a><br></li>
+                                            <li><a href="category/logistika"
+                                                   title="Логистика">Логистика<sup>51</sup></a><br></li>
+                                            <li><a href="category/marketing"
+                                                   title="Маркетинг">Маркетинг<sup>94</sup></a><br></li>
+                                            <li><a href="category/nalogi-i-uchet" title="Налоги и учет">Налоги и
+                                                учет<sup>73</sup></a><br></li>
+                                            <li><a href="category/personal"
+                                                   title="Персонал">Персонал<sup>110</sup></a><br></li>
+                                            <li><a href="category/pravo" title="Право">Право<sup>6</sup></a><br></li>
+                                            <li><a href="category/prodazhi"
+                                                   title="Продажи">Продажи<sup>185</sup></a><br></li>
+                                            <li><a href="category/proekty" title="Проекты">Проекты<sup>161</sup></a><br>
+                                            </li>
+                                            <li><a href="category/proizvodstvo"
+                                                   title="Производство">Производство<sup>41</sup></a><br></li>
+                                            <li><a href="category/reklama-i-pr" title="Реклама и PR">Реклама и PR<sup>103</sup></a><br>
+                                            </li>
+                                            <li><a href="category/torgovlja" title="Торговля">Торговля<sup>101</sup></a><br>
+                                            </li>
+                                            <li><a href="category/upravlenie"
+                                                   title="Управление">Управление<sup>151</sup></a><br></li>
+                                            <li><a href="category/finansy" title="Финансы">Финансы<sup>95</sup></a><br>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li><a href="aboutsite" title="О сайте">О сайте<sup>4</sup></a><br></li>
+                                    <li class="current-page"><span>Статьи<sup>4433</sup></span><br>
+                                        <ul class="child level1">
+                                            <li><a href="category/biznes-gambit" title="Бизнес гамбит">Бизнес
+                                                гамбит<sup>617</sup></a><br></li>
+                                            <li><a href="category/vlast-i-biznes" title="Власть и бизнес">Власть и
+                                                бизнес<sup>729</sup></a><br></li>
+                                            <li><a href="category/dengi" title="Деньги">Деньги<sup>554</sup></a><br>
+                                            </li>
+                                            <li><a href="category/iznutri" title="Изнутри">Изнутри<sup>797</sup></a><br>
+                                            </li>
+                                            <li><a href="category/intervju"
+                                                   title="Интервью">Интервью<sup>4</sup></a><br></li>
+                                            <li><a href="category/interesnye-fakty" title="Интересные факты">Интересные
+                                                факты<sup>568</sup></a><br></li>
+                                            <li><a href="category/karera" title="Карьера">Карьера<sup>8</sup></a><br>
+                                            </li>
+                                            <li><a href="category/lichnosti" title="Личности">Личности<sup>215</sup></a><br>
+                                            </li>
+                                            <li><a href="category/lichnye-finansy" title="Личные финансы">Личные финансы<sup>174</sup></a><br>
+                                            </li>
+                                            <li><a href="category/lozhnyj-shag" title="Ложный шаг">Ложный
+                                                шаг<sup>337</sup></a><br></li>
+                                            <li><a href="category/malyj-biznes" title="Малый бизнес">Малый
+                                                бизнес<sup>55</sup></a><br></li>
+                                            <li><a href="category/press-relizy"
+                                                   title="Пресс-релизы">Пресс-релизы<sup>37</sup></a><br></li>
+                                            <li><a href="category/uspeshnye-proekty" title="Успешные проекты">Успешные
+                                                проекты<sup>235</sup></a><br></li>
+                                            <li><a href="category/citaty" title="Цитаты">Цитаты<sup>89</sup></a><br>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- div class=wrap -->
+
+            </aside><!-- div id="sub-container" -->
+        </div> <!-- div class=rsidebars -->
+
+
+        <div id="sidebars" class="col-lg-3 sidebars">
+
+            <aside id="sidebar2">
+                <div class="wrap">
+
+                    <div class="widget social_links">
+                        <div class="wr">
+                            <div class="widget-content">
+                                <div class="social-link-wrapper">
+                                    <a class="social-link" href="http://facebook.com/rosinvestcom" target="_blank"
+                                       title="Facebook"><i class="fa-facebook"></i></a>
+                                    <a class="social-link" href="http://vk.com/rosinvestcom" target="_blank"
+                                       title="Ввконтакте"><i class="fa-vk"></i></a>
+                                    <a class="social-link" href="http://twitter.com/rosinvestcom" target="_blank"
+                                       title="Twitter"><i class="fa-twitter"></i></a>
+                                    <a class="social-link" href="http://rosinvest.com/feed" target="_blank"
+                                       title="RSS статьи"><i class="fa-rss"></i></a>
+                                    <a class="social-link" href="http://rosinvest.com/rosinvest_com.rss" target="_blank"
+                                       title="RSS новости"><i class="fa-rss-news"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget littel_preview">
+                        <div class="wr"><h2 class="box"><span>MLittel</span></h2>
+                            <div class="widget-content">
+                                <ul class="is_link page_list MLittel">
+                                    <li>
+                                        <div class="widget_prev">
+                                            <a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
+                                                    src="cm/uploads/prev/23/6642_11.gif" class="widgit_img"
+                                                    title="Аптечный бизнес: как мотивировать сотрудников"></a>
+                                        </div>
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
+                                                бизнес: как мотивировать сотрудников</a></h6>
+                                            <div class="widget_date-wrap">
+                                                <div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                <div class="widget_count_page"><span class="entry-icon icon-eye"></span>357</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev">
+                                            <a href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"><img
+                                                    src="cm/uploads/prev/23/6641_11.gif" class="widgit_img"
+                                                    title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a>
+                                        </div>
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
+                                                    href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
+                                                России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
+                                            <div class="widget_date-wrap">
+                                                <div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                <div class="widget_count_page"><span class="entry-icon icon-eye"></span>529</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev">
+                                            <a href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"><img
+                                                    src="cm/uploads/prev/23/6640_11.gif" class="widgit_img"
+                                                    title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a>
+                                        </div>
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a
+                                                    href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
+                                                страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не
+                                                цепляет и не выходит за боковые рамки див блока</a></h6>
+                                            <div class="widget_date-wrap">
+                                                <div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                <div class="widget_count_page"><span class="entry-icon icon-eye"></span>413</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev">
+                                            <a href="page/pochemu-v-turcii-deshevle"><img
+                                                    src="cm/uploads/prev/23/6639_11.gif" class="widgit_img"
+                                                    title="Почему в Турции дешевле?"></a>
+                                        </div>
+                                        <div class="widget_heading">
+                                            <h6 class="widget_tit"><a href="page/pochemu-v-turcii-deshevle">Почему в Турции
+                                                дешевле?</a></h6>
+                                            <div class="widget_date-wrap">
+                                                <div class="widget_date"><span class="entry-icon icon-clock"></span>06.07.2017</div>
+                                                <div class="widget_count_page"><span class="entry-icon icon-eye"></span>382</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget block">
+                        <div class="wr"><h2 class="box"><span>PhotoBlock</span></h2>
+                            <div class="widget-content">
+                                <ul class="is_link page_list PhotoBlock clearfix">
+                                    <li>
+                                        <div class="widget_prev"><a
+                                                href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
+                                                src="cm/uploads/prev/23/6642_11.gif" class="widgit_img"
+                                                title="Аптечный бизнес: как мотивировать сотрудников"></a></div>
+                                        <h6 class="widget_tit"><a
+                                                href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
+                                            бизнес: как мотивировать сотрудников</a></h6>
+                                        <div class="widget_date">07.07.2017</div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev"><a
+                                                href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"><img
+                                                src="cm/uploads/prev/23/6641_11.gif" class="widgit_img"
+                                                title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a>
+                                        </div>
+                                        <h6 class="widget_tit"><a
+                                                href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
+                                            России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
+                                        <div class="widget_date">07.07.2017</div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev"><a
+                                                href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"><img
+                                                src="cm/uploads/prev/23/6640_11.gif" class="widgit_img"
+                                                title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a>
+                                        </div>
+                                        <h6 class="widget_tit"><a
+                                                href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
+                                            страница : и сразу тестируем оооооооочень длинный заголовок, что бы
+                                            проверить не цепляет и не выходит за боковые рамки див блока</a></h6>
+                                        <div class="widget_date">07.07.2017</div>
+                                    </li>
+                                    <li>
+                                        <div class="widget_prev"><a href="page/pochemu-v-turcii-deshevle"><img
+                                                src="cm/uploads/prev/23/6639_11.gif" class="widgit_img"
+                                                title="Почему в Турции дешевле?"></a></div>
+                                        <h6 class="widget_tit"><a href="page/pochemu-v-turcii-deshevle">Почему в Турции
+                                            дешевле?</a></h6>
+                                        <div class="widget_date">06.07.2017</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget littel_preview_description">
+                        <div class="wr"><h2 class="box"><span>LTxtPhoto</span></h2>
+                            <div class="widget-content">
+                                <ul class="is_link page_list LTxtPhoto">
+                                    <li><h6 class="widget_tit"><a
+                                            href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный бизнес:
+                                        как мотивировать сотрудников</a></h6>
+                                        <div class="widget_date">07.07.2017</div>
+                                        <div class="widget_count_page">357</div>
+                                        <div class="widget_prev"><a
+                                                href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
+                                                src="cm/uploads/prev/23/6642_11.gif" class="widgit_img"
+                                                title="Аптечный бизнес: как мотивировать сотрудников"></a></div>
+                                        <div class="widget_short_text">
+                                            Большинство производителей аптечных товаров ставят главной целью попасть на
+                                            прилавки ...
+                                        </div>
+                                        <a class="cut" href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Прочитать</a>
+                                    </li>
+                                    <li><h6 class="widget_tit"><a
+                                            href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
+                                        России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
+                                        <div class="widget_date">07.07.2017</div>
+                                        <div class="widget_count_page">529</div>
+                                        <div class="widget_prev"><a
+                                                href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"><img
+                                                src="cm/uploads/prev/23/6641_11.gif" class="widgit_img"
+                                                title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a>
+                                        </div>
+                                        <div class="widget_short_text">
+                                            Российские власти решили сократить выплаты в Совет Европы из-за введенных
+                                            ...
+                                        </div>
+                                        <a class="cut"
+                                           href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Прочитать</a>
+                                    </li>
+                                    <li><h6 class="widget_tit"><a
+                                            href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
+                                        страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не
+                                        цепляет и не выходит за боковые рамки див блока</a></h6>
+                                        <div class="widget_date">07.07.2017</div>
+                                        <div class="widget_count_page">413</div>
+                                        <div class="widget_prev"><a
+                                                href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"><img
+                                                src="cm/uploads/prev/23/6640_11.gif" class="widgit_img"
+                                                title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a>
+                                        </div>
+                                        <div class="widget_short_text">
+                                            Покупки могут временно улучшить плохое настроение, но ощущение вины, которая
+                                            ...
+                                        </div>
+                                        <a class="cut"
+                                           href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Прочитать</a>
+                                    </li>
+                                    <li><h6 class="widget_tit"><a href="page/pochemu-v-turcii-deshevle">Почему в Турции
+                                        дешевле?</a></h6>
+                                        <div class="widget_date">06.07.2017</div>
+                                        <div class="widget_count_page">382</div>
+                                        <div class="widget_prev"><a href="page/pochemu-v-turcii-deshevle"><img
+                                                src="cm/uploads/prev/23/6639_11.gif" class="widgit_img"
+                                                title="Почему в Турции дешевле?"></a></div>
+                                        <div class="widget_short_text">
+                                            Турецкий отдых - это отличный стимул для развития российских направлений.
+                                            ...
+                                        </div>
+                                        <a class="cut" href="page/pochemu-v-turcii-deshevle">Прочитать</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget test_widget">
+                        <div class="wr">
+                            <div class="widget-content">
+                                <div class="tabs_widget tabs_widget_test_widget">
+                                    <div class="widget-content">
+                                        <div class="tabs">
+                                            <ul class="tabs-nav">
+                                                <li class="elem tabs-current"><span>Новые</span></li>
+                                                <li class="elem"><span>Новые</span></li>
+                                                <li class="elem"><span>Новые4</span></li>
+                                            </ul>
+                                            <div class="clearfix"></div>
+                                            <div class="tabs-box tabs-visible">
+                                                <ul class="is_link page_list LittelBlock">
+                                                    <li>
+                                                        <div class="widget_prev"><a
+                                                                href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
+                                                                src="cm/uploads/prev/23/6642_11.gif" class="widgit_img"
+                                                                title="Аптечный бизнес: как мотивировать сотрудников"></a>
+                                                        </div>
+                                                        <div class="widget_heading">
+                                                            <h6 class="widget_tit"><a
+                                                                    href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
+                                                                бизнес: как мотивировать сотрудников</a></h6>
+                                                            <div class="widget_date-wrap">
+                                                                <div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                                <div class="widget_count_page"><span class="entry-icon icon-eye"></span>357</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="widget_prev"><a
+                                                                href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"><img
+                                                                src="cm/uploads/prev/23/6641_11.gif" class="widgit_img"
+                                                                title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a>
+                                                        </div>
+                                                        <div class="widget_heading">
+                                                            <h6 class="widget_tit"><a
+                                                                    href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
+                                                                России от членских взносов в ПАСЕ, чем это обернется?</a>
+                                                            </h6>
+                                                            <div class="widget_date-wrap">
+                                                                <div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                                <div class="widget_count_page"><span class="entry-icon icon-eye"></span>529</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="widget_prev"><a
+                                                                href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"><img
+                                                                src="cm/uploads/prev/23/6640_11.gif" class="widgit_img"
+                                                                title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a>
+                                                        </div>
+                                                        <div class="widget_heading">
+                                                            <h6 class="widget_tit"><a
+                                                                    href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
+                                                                страница : и сразу тестируем оооооооочень длинный заголовок,
+                                                                что бы проверить не цепляет и не выходит за боковые рамки
+                                                                див блока</a></h6>
+                                                            <div class="widget_date-wrap">
+                                                                <div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                                <div class="widget_count_page"><span class="entry-icon icon-eye"></span>413</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="widget_prev"><a
+                                                                href="page/pochemu-v-turcii-deshevle"><img
+                                                                src="cm/uploads/prev/23/6639_11.gif" class="widgit_img"
+                                                                title="Почему в Турции дешевле?"></a></div>
+                                                        <div class="widget_heading">
+                                                            <h6 class="widget_tit"><a href="page/pochemu-v-turcii-deshevle">Почему
+                                                                в Турции дешевле?</a></h6>
+                                                            <div class="widget_date-wrap">
+                                                                <div class="widget_date"><span class="entry-icon icon-clock"></span>06.07.2017</div>
+                                                                <div class="widget_count_page"><span class="entry-icon icon-eye"></span>382</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <b></b>
+                                            <div class="tabs-box">
+                                                <ul class="is_link page_list">
+                                                    <li><h6 class="widget_tit"><a
+                                                            href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
+                                                        бизнес: как мотивировать сотрудников</a></h6></li>
+                                                    <li><h6 class="widget_tit"><a
+                                                            href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
+                                                        России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
+                                                    </li>
+                                                    <li><h6 class="widget_tit"><a
+                                                            href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
+                                                        страница : и сразу тестируем оооооооочень длинный заголовок, что
+                                                        бы проверить не цепляет и не выходит за боковые рамки див
+                                                        блока</a></h6></li>
+                                                </ul>
+                                            </div>
+                                            <b></b>
+                                            <div class="tabs-box">
+                                                <ul class="is_link page_list">
+                                                    <li><h6 class="widget_tit"><a
+                                                            href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
+                                                        бизнес: как мотивировать сотрудников</a></h6></li>
+                                                    <li><h6 class="widget_tit"><a
+                                                            href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
+                                                        России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
+                                                    </li>
+                                                    <li><h6 class="widget_tit"><a
+                                                            href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
+                                                        страница : и сразу тестируем оооооооочень длинный заголовок, что
+                                                        бы проверить не цепляет и не выходит за боковые рамки див
+                                                        блока</a></h6></li>
+                                                </ul>
+                                            </div>
+                                            <b></b>
+                                        </div><!-- div class="tabs -->
+                                    </div><!-- div class=widget-content --></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="widget accordion_block">
+                        <div class="wr">
+                            <div class="widget-content">
+                                <div class="accordion_widget accordion_widget_accordion_block">
+                                    <div class="widget-content">
+                                        <div class="acc-wrapper">
+                                            <div class="accordion-title"><h3><a href="#">Новые</a></h3><span></span>
+                                            </div>
+                                            <div class="accordion-container" style="display: none;">
+                                                <ul class="is_link page_list LittelBlock">
+                                                    <li>
+                                                        <div class="widget_prev"><a
+                                                                href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov"><img
+                                                                src="cm/uploads/prev/23/6642_11.gif" class="widgit_img"
+                                                                title="Аптечный бизнес: как мотивировать сотрудников"></a>
+                                                        </div>
+                                                        <div class="widget_heading">
+                                                            <h6 class="widget_tit"><a
+                                                                    href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
+                                                                бизнес: как мотивировать сотрудников</a></h6>
+                                                            <div class="widget_date-wrap">
+                                                                <div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                                <div class="widget_count_page"><span class="entry-icon icon-eye"></span>357</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="widget_prev"><a
+                                                                href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja"><img
+                                                                src="cm/uploads/prev/23/6641_11.gif" class="widgit_img"
+                                                                title="Отказ России от членских взносов в ПАСЕ,  чем это обернется?"></a>
+                                                        </div>
+                                                        <div class="widget_heading">
+                                                            <h6 class="widget_tit"><a
+                                                                    href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
+                                                                России от членских взносов в ПАСЕ, чем это обернется?</a>
+                                                            </h6>
+                                                            <div class="widget_date-wrap">
+                                                                <div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                                <div class="widget_count_page"><span class="entry-icon icon-eye"></span>529</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="widget_prev"><a
+                                                                href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg"><img
+                                                                src="cm/uploads/prev/23/6640_11.gif" class="widgit_img"
+                                                                title="Тестовая страница : и сразу тестируем оооооооочень длинный заголовок, что бы проверить не цепляет и не выходит за боковые рамки див блока"></a>
+                                                        </div>
+                                                        <div class="widget_heading">
+                                                            <h6 class="widget_tit"><a
+                                                                    href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
+                                                                страница : и сразу тестируем оооооооочень длинный заголовок,
+                                                                что бы проверить не цепляет и не выходит за боковые рамки
+                                                                див блока</a></h6>
+                                                            <div class="widget_date-wrap">
+                                                                <div class="widget_date"><span class="entry-icon icon-clock"></span>07.07.2017</div>
+                                                                <div class="widget_count_page"><span class="entry-icon icon-eye"></span>413</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="widget_prev"><a
+                                                                href="page/pochemu-v-turcii-deshevle"><img
+                                                                src="cm/uploads/prev/23/6639_11.gif" class="widgit_img"
+                                                                title="Почему в Турции дешевле?"></a></div>
+                                                        <div class="widget_heading">
+                                                            <h6 class="widget_tit"><a href="page/pochemu-v-turcii-deshevle">Почему
+                                                                в Турции дешевле?</a></h6>
+                                                            <div class="widget_date-wrap">
+                                                                <div class="widget_date"><span class="entry-icon icon-clock"></span>06.07.2017</div>
+                                                                <div class="widget_count_page"><span class="entry-icon icon-eye"></span>382</div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="accordion-title"><h3><a href="#">Новые</a></h3><span></span>
+                                            </div>
+                                            <div class="accordion-container" style="display: none;">
+                                                <ul class="is_link page_list">
+                                                    <li><h6 class="widget_tit"><a
+                                                            href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
+                                                        бизнес: как мотивировать сотрудников</a></h6></li>
+                                                    <li><h6 class="widget_tit"><a
+                                                            href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
+                                                        России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
+                                                    </li>
+                                                    <li><h6 class="widget_tit"><a
+                                                            href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
+                                                        страница : и сразу тестируем оооооооочень длинный заголовок, что
+                                                        бы проверить не цепляет и не выходит за боковые рамки див
+                                                        блока</a></h6></li>
+                                                </ul>
+                                            </div>
+                                            <div class="accordion-title"><h3><a href="#">Новые4</a></h3><span></span>
+                                            </div>
+                                            <div class="accordion-container" style="display: none;">
+                                                <ul class="is_link page_list">
+                                                    <li><h6 class="widget_tit"><a
+                                                            href="page/aptechnyj-biznes-kak-motivirovat-sotrudnikov">Аптечный
+                                                        бизнес: как мотивировать сотрудников</a></h6></li>
+                                                    <li><h6 class="widget_tit"><a
+                                                            href="page/otkaz-rossii-ot-chlenskih-vznosov-v-pase-chem-eto-obernetsja">Отказ
+                                                        России от членских взносов в ПАСЕ, чем это обернется?</a></h6>
+                                                    </li>
+                                                    <li><h6 class="widget_tit"><a
+                                                            href="page/kak-poddelat-oshhushhenie-ejforii-ot-shoppinga-ne-tratja-deneg">Тестовая
+                                                        страница : и сразу тестируем оооооооочень длинный заголовок, что
+                                                        бы проверить не цепляет и не выходит за боковые рамки див
+                                                        блока</a></h6></li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- div class=widget-content --></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="widget newslistblock">
+                            <div class="wr"><h2 class="box"><span>NewsBlock</span></h2>
+                                <div class="widget-content">
+                                    <div class="NewsList  NewsBlock">
+                                        <div id=news_block>
+                                            <div id=news_time><span class="n_hour">18</span>:<span
+                                                    class="n_minut">40</span></div>
+                                            <div id=news_url><a class="n_link" href="novosti/1320510">ЦБ увеличил до 21
+                                                число банков с правом открывать счета эскроу для долевого
+                                                строительства</a></div>
+                                        </div>
+                                        <div id=news_block>
+                                            <div id=news_time><span class="n_hour">18</span>:<span
+                                                    class="n_minut">20</span></div>
+                                            <div id=news_url><a class="n_link" href="novosti/1320509">В Армении
+                                                планируют увеличить размер предоставляемых кредитов малым и средним
+                                                сельским хозяйствам</a></div>
+                                        </div>
+                                        <div id=news_block>
+                                            <div id=news_time><span class="n_hour">18</span>:<span
+                                                    class="n_minut">20</span></div>
+                                            <div id=news_url><a class="n_link" href="novosti/1320508">Сердце не шалит?
+                                                Спросите у искусственного интеллекта</a></div>
+                                        </div>
+                                        <div id=news_block>
+                                            <div id=news_time><span class="n_hour">18</span>:<span
+                                                    class="n_minut">20</span></div>
+                                            <div id=news_url><a class="n_link" href="novosti/1320507">Xiaomi собирает
+                                                деньги на интересные наушники</a></div>
+                                        </div>
+                                        <div id=news_block>
+                                            <div id=news_time><span class="n_hour">18</span>:<span
+                                                    class="n_minut">00</span></div>
+                                            <div id=news_url><a class="n_link" href="novosti/1320506">Вдоль трассы
+                                                &quot;Таврида&quot; установят шумозащитные экраны и высадят тысячи
+                                                деревьев</a></div>
+                                        </div>
+                                        <div id=news_block>
+                                            <div id=news_time><span class="n_hour">18</span>:<span
+                                                    class="n_minut">00</span></div>
+                                            <div id=news_url><a class="n_link" href="novosti/1320505">Обитатели
+                                                экзотариума в ТРЦ &quot;Рио&quot; при пожаре не пострадали</a></div>
+                                        </div>
+                                        <div id=news_block>
+                                            <div id=news_time><span class="n_hour">18</span>:<span
+                                                    class="n_minut">00</span></div>
+                                            <div id=news_url><a class="n_link" href="novosti/1320504">Dalian Wanda
+                                                одолжит покупателю своей недвижимости $4,35 млрд</a></div>
+                                        </div>
+                                        <div id=news_block>
+                                            <div id=news_time><span class="n_hour">17</span>:<span
+                                                    class="n_minut">40</span></div>
+                                            <div id=news_url><a class="n_link" href="novosti/1320503">Свыше 26 тыс.
+                                                нарушений норм благоустройства выявлено за полгода в Подмосковье</a>
+                                            </div>
+                                        </div>
+                                        <div id=news_block>
+                                            <div id=news_time><span class="n_hour">17</span>:<span
+                                                    class="n_minut">40</span></div>
+                                            <div id=news_url><a class="n_link" href="novosti/1320502">ЮниКредит Банк
+                                                начал выдавать кредиты на покупку автомобилей марки Brilliance</a></div>
+                                        </div>
+                                        <div id=news_block>
+                                            <div id=news_time><span class="n_hour">17</span>:<span
+                                                    class="n_minut">40</span></div>
+                                            <div id=news_url><a class="n_link" href="novosti/1320501">Стал известен
+                                                будущий новый состав совета директоров АСВ</a></div>
+                                        </div>
+                                        <div id=news_block>
+                                            <div id=news_time><span class="n_hour">17</span>:<span
+                                                    class="n_minut">40</span></div>
+                                            <div id=news_url><a class="n_link" href="novosti/1320500">Выплаты по
+                                                программе продпомощи могут составить 1,8 тыс. рублей в месяц на
+                                                человека</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div><!-- div class=wrap -->
+            </aside><!-- div id="sidebar-2" -->
+
+        </div><!-- div id="sidebars" -->
+
+
+    </div><!-- div id="wrapper" -->
+
+</div><!-- div id="sub-container" -->
+
+
+<div class="foot_sb">
+        <div class="w0">
+            <div class="w1">
+                <div class="widget-content">
+                    <div class="tagclouds"><a href="tag/Forex">Forex&nbsp;<sub style="font-size: 7pt;">3</sub></a> <a
+                            href="tag/Galaxy+S4">Galaxy S4&nbsp;<sub style="font-size: 7pt;">4</sub></a> <a
+                            href="tag/GlaxoSmithKline">GlaxoSmithKline<sub style="font-size: 7pt;">8</sub></a> <a
+                            href="tag/IBM">IBM&nbsp;<sub style="font-size: 7pt;">22</sub></a> <a
+                            href="tag/Minecraft">Minecraft&nbsp;<sub style="font-size: 7pt;">4</sub></a> <a
+                            href="tag/Nokia">Nokia&nbsp;<sub style="font-size: 7pt;">36</sub></a> <a
+                            href="tag/Roshen">Roshen&nbsp;<sub style="font-size: 7pt;">5</sub></a> <a href="tag/SpaceX">SpaceX&nbsp;<sub
+                            style="font-size: 7pt;">7</sub></a> <a href="tag/Zappos">Zappos&nbsp;<sub
+                            style="font-size: 7pt;">3</sub></a> <a
+                            href="tag/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80+%D0%A2%D0%BA%D0%B0%D1%87%D0%B5%D0%B2">Александр
+                        Ткачев&nbsp;<sub style="font-size: 7pt;">4</sub></a> <a href="tag/%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7">анализ&nbsp;<sub
+                            style="font-size: 7pt;">4</sub></a> <a
+                            href="tag/%D0%B1%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0">банковская
+                        система&nbsp;<sub style="font-size: 7pt;">3</sub></a> <a
+                            href="tag/%D0%91%D0%B5%D0%BB%D1%8C%D0%B3%D0%B8%D1%8F">Бельгия&nbsp;<sub
+                            style="font-size: 7pt;">3</sub></a> <a
+                            href="tag/%D0%B1%D0%B5%D0%BD%D0%B7%D0%B8%D0%BD">бензин&nbsp;<sub style="font-size: 7pt;">3</sub></a>
+                        <a href="tag/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">бизнес-образование&nbsp;<sub
+                                style="font-size: 7pt;">4</sub></a> <a
+                                href="tag/%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81-%D0%BF%D0%BB%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">бизнес-планирование&nbsp;<sub
+                                style="font-size: 7pt;">3</sub></a> <a
+                                href="tag/%D0%B1%D1%8E%D0%B4%D0%B6%D0%B5%D1%82">бюджет&nbsp;<sub
+                                style="font-size: 7pt;">3</sub></a> <a href="tag/%D0%93%D0%90%D0%97">ГАЗ&nbsp;<sub
+                                style="font-size: 7pt;">4</sub></a> <a
+                                href="tag/%D0%B8%D0%BD%D0%BD%D0%BE%D0%B2%D0%B0%D1%86%D0%B8%D0%B8">инновации&nbsp;<sub
+                                style="font-size: 7pt;">5</sub></a> <a href="tag/%D0%9C%D0%A2%D0%A1">МТС&nbsp;<sub
+                                style="font-size: 7pt;">18</sub></a> <a
+                                href="tag/%D0%BD%D0%B0%D0%BB%D0%BE%D0%B3%D0%BE%D0%B2%D1%8B%D0%B5+%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D1%8B">налоговые
+                            органы&nbsp;<sub style="font-size: 7pt;">4</sub></a> <a
+                                href="tag/%D0%BD%D0%B5%D1%84%D1%82%D0%B5%D0%BF%D0%B5%D1%80%D0%B5%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0">нефтепереработка&nbsp;<sub
+                                style="font-size: 7pt;">3</sub></a> <a
+                                href="tag/%D0%BE%D0%B1%D0%BB%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%B8">облигации&nbsp;<sub
+                                style="font-size: 7pt;">10</sub></a> <a
+                                href="tag/%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0+%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81%D0%B0">продажа
+                            бизнеса&nbsp;<sub style="font-size: 7pt;">5</sub></a> <a
+                                href="tag/%D1%80%D0%B0%D1%81%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B0">распродажа&nbsp;<sub
+                                style="font-size: 7pt;">3</sub></a> <a href="tag/%D1%80%D1%8B%D0%BD%D0%BE%D0%BA">рынок&nbsp;<sub
+                                style="font-size: 7pt;">6</sub></a> <a
+                                href="tag/%D1%81%D0%BC%D0%B0%D1%80%D1%82%D1%84%D0%BE%D0%BD%D1%8B">смартфоны&nbsp;<sub
+                                style="font-size: 7pt;">4</sub></a> <a
+                                href="tag/%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D0%B8%D0%B8">стратегии&nbsp;<sub
+                                style="font-size: 7pt;">7</sub></a> <a
+                                href="tag/%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B5%D0%B3%D0%B8%D1%8F">стратегия&nbsp;<sub
+                                style="font-size: 7pt;">4</sub></a> <a href="tag/%D0%A1%D0%A8%D0%90">США&nbsp;<sub
+                                style="font-size: 7pt;">23</sub></a> <a
+                                href="tag/%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8">технологии&nbsp;<sub
+                                style="font-size: 7pt;">4</sub></a> <a
+                                href="tag/%D0%A2%D1%80%D0%B0%D0%BD%D1%81%D0%BD%D0%B5%D1%84%D1%82%D1%8C">Транснефть&nbsp;<sub
+                                style="font-size: 7pt;">4</sub></a> <a
+                                href="tag/%D1%82%D1%83%D1%80%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9+%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81">туристический
+                            бизнес&nbsp;<sub style="font-size: 7pt;">12</sub></a> <a
+                                href="tag/%D1%83%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0">украина&nbsp;<sub
+                                style="font-size: 7pt;">75</sub></a> <a
+                                href="tag/%D0%A3%D0%BE%D1%80%D1%80%D0%B5%D0%BD+%D0%91%D0%B0%D1%84%D1%84%D0%B5%D1%82%D1%82">Уоррен
+                            Баффетт&nbsp;<sub style="font-size: 7pt;">3</sub></a> <a
+                                href="tag/%D1%84%D0%B0%D1%80%D0%BC%D0%B0%D1%86%D0%B5%D0%B2%D1%82%D0%B8%D0%BA%D0%B0">фармацевтика&nbsp;<sub
+                                style="font-size: 7pt;">8</sub></a> <a href="tag/%D1%84%D0%B0%D1%81%D1%82-%D1%84%D1%83%D0%B4">фаст-фуд&nbsp;<sub
+                                style="font-size: 7pt;">3</sub></a> <a href="tag/%D0%A6%D0%91">ЦБ&nbsp;<sub
+                                style="font-size: 7pt;">9</sub></a> <a
+                                href="tag/%D1%88%D0%BE%D1%83-%D0%B1%D0%B8%D0%B7%D0%BD%D0%B5%D1%81">шоу-бизнес&nbsp;<sub
+                                style="font-size: 7pt;">3</sub></a> <a
+                                href="tag/%D1%8D%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8">экономика
+                            России&nbsp;<sub style="font-size: 7pt;">6</sub></a></div>
+                </div>
+            </div>
+            <div class="w2"></div>
+        </div>
+    </div>
+
+
+<div class="row no-gutters topglmen-wrap">
+        <div class="topglmen col-lg-8">
+            <div class=topglmendv><a class=topglmenurl href="/novosti">Новости бизнеса</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/statii">Статьи</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/know-how">Ноу Хау</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/acolumn/">Аналитика</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/dengi">Деньги</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/category/biznes-mehanika">Бизнес технологии</a></div>
+            <div class=topglmendv><a class=topglmenurl href="/kurs">Курс валют</a></div>
+        </div>
+
+        <div id=search_heard class="col-lg-4 search-form">
+            <form accept-charset="UTF-8" action="/isearch" method="get">
+                <input class="search-form-input input-placeholder" type="text" placeholder="Искать" name=q id="q" size="90" maxlength="150">
+                <input class="search-form-btn svg-icon svg-icon--search" type="submit" id="search_forms" value="">
+            </form>
+        </div>
+    </div>
+
+<div class=topsubmenD></div>
+<div id="up_body">
 </div><!-- Footer -->
-	<div id="footergl">
-		<div class="right">
-<!--RAX counter--><script language="JavaScript"><!--
-document.write('<a href="http://www.rax.ru/click" '+
-'target=_blank><img src="http://counter.yadro.ru/hit?t44.6;r'+
-escape(document.referrer)+((typeof(screen)=='undefined')?'':
-';s'+screen.width+'*'+screen.height+'*'+(screen.colorDepth?
-screen.colorDepth:screen.pixelDepth))+';'+Math.random()+
-'" width=1 height=1 border=0></a>')//--></script><!--/RAX-->
-
-<!--Rating@Mail.ru counter-->
-<a rel="nofollow" target="_top" href="http://top.mail.ru/jump?from=549851">
-<img src="http://d3.c6.b8.a0.top.mail.ru/counter?id=549851;t=96" 
-border="0" height="18" width="88" alt="Rating@Mail.ru"></a>
-<!--// Rating@Mail.ru counter-->
+<div id="footergl" class="footergl">
 
 
-		</div>
-		
-		<div class="left">
-Условия <a href="/about/reklama-na-sajte">размещения рекламы</a><p>
-Наша <a href="/about/redakcija">редакция</a><p>
-<a href="/msg.php">Обратная связь</a>
-		</div>
-		
-		<div class="center">
-RosInvest.Com не несет ответственности за опубликованные материалы и комментарии пользователей. Возрастной цензор 16+.<p>
-Ответственность за высказанные, размещённую информацию и оценки, в рамках проекта RosInvest.Com, лежит полностью на лицах опубликовавших эти материалы. Использование материалов,  допускается со ссылкой на сайт <a href="/">RosInvest.Com</a>.<p>
-<noindex>Skype: rosinvest.com (Русский, English, Zhōng wén)</noindex>.
-<p>
-Архивы новостей за: <a href="http://rosinvest.com/news/archives/y/2017/">2017</a>, <a href="http://rosinvest.com/news/archives/y/2016/">2016</a>, <a href="http://rosinvest.com/news/archives/y/2015/">2015</a>, <a href="http://rosinvest.com/news/archives/y/2014/">2014</a>, <a href="http://rosinvest.com/news/archives/y/2013/">2013</a>, <a href="http://rosinvest.com/news/archives/y/2012/">2012</a>, <a href="http://rosinvest.com/news/archives/y/2011/">2011</a>, <a href="http://rosinvest.com/news/archives/y/2010/">2010</a>, <a href="http://rosinvest.com/news/archives/y/2009/">2009</a>, <a href="http://rosinvest.com/news/archives/y/2008/">2008</a>, <a href="http://rosinvest.com/news/archives/y/2007/">2007</a>, <a href="http://rosinvest.com/news/archives/y/2006/">2006</a>, <a href="http://rosinvest.com/news/archives/y/2005/">2005</a>, <a href="http://rosinvest.com/news/archives/y/2004/">2004</a>, <a href="http://rosinvest.com/news/archives/y/2003/">2003</a>
+    <div class="left col-md-2">
+        Условия <a href="/about/reklama-na-sajte">размещения рекламы</a>
+        <p>
+            Наша <a href="/about/redakcija">редакция</a>
+        <p>
+            <a href="/msg.php">Обратная связь</a>
+    </div>
 
-		</div>
-	</div>
+    <div class="center col-md-8">
+        RosInvest.Com не несет ответственности за опубликованные материалы и комментарии пользователей. Возрастной
+        цензор 16+.<p>
+        Ответственность за высказанные, размещённую информацию и оценки, в рамках проекта RosInvest.Com, лежит полностью
+        на лицах опубликовавших эти материалы. Использование материалов, допускается со ссылкой на сайт <a href="/">RosInvest.Com</a>.
+        <p>
+            <noindex>Skype: rosinvest.com (Русский, English, Zhōng wén)</noindex>
+            .
+        <p>
+            Архивы новостей за: <a href="http://rosinvest.com/news/archives/y/2017/">2017</a>, <a
+                href="http://rosinvest.com/news/archives/y/2016/">2016</a>, <a
+                href="http://rosinvest.com/news/archives/y/2015/">2015</a>, <a
+                href="http://rosinvest.com/news/archives/y/2014/">2014</a>, <a
+                href="http://rosinvest.com/news/archives/y/2013/">2013</a>, <a
+                href="http://rosinvest.com/news/archives/y/2012/">2012</a>, <a
+                href="http://rosinvest.com/news/archives/y/2011/">2011</a>, <a
+                href="http://rosinvest.com/news/archives/y/2010/">2010</a>, <a
+                href="http://rosinvest.com/news/archives/y/2009/">2009</a>, <a
+                href="http://rosinvest.com/news/archives/y/2008/">2008</a>, <a
+                href="http://rosinvest.com/news/archives/y/2007/">2007</a>, <a
+                href="http://rosinvest.com/news/archives/y/2006/">2006</a>, <a
+                href="http://rosinvest.com/news/archives/y/2005/">2005</a>, <a
+                href="http://rosinvest.com/news/archives/y/2004/">2004</a>, <a
+                href="http://rosinvest.com/news/archives/y/2003/">2003</a>
 
-<!-- /Footer --></div>
+    </div>
+
+    <div class="right col-md-2">
+        <!--RAX counter-->
+        <script language="JavaScript"><!--
+        document.write('<a href="http://www.rax.ru/click" ' +
+            'target=_blank><img src="http://counter.yadro.ru/hit?t44.6;r' +
+            escape(document.referrer) + ((typeof(screen) == 'undefined') ? '' :
+                ';s' + screen.width + '*' + screen.height + '*' + (screen.colorDepth ?
+                screen.colorDepth : screen.pixelDepth)) + ';' + Math.random() +
+            '" width=1 height=1 border=0></a>')//--></script><!--/RAX-->
+
+        <!--Rating@Mail.ru counter-->
+        <a rel="nofollow" target="_top" href="http://top.mail.ru/jump?from=549851">
+            <img src="http://d3.c6.b8.a0.top.mail.ru/counter?id=549851;t=96"
+                 border="0" height="18" width="88" alt="Rating@Mail.ru"></a>
+        <!--// Rating@Mail.ru counter-->
 
 
+    </div>
 
-
- 
-
-
+</div><!-- /Footer -->
 
 
 <!--  Время: 1.3847 | SQL: 10 | Память: 3.94MB-->
 
 
-
-</div><!-- div id="container" -->
-
+<!-- div id="container" -->
+</div>
 
 </body>
 </html>
